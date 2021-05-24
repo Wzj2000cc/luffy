@@ -1,0 +1,525 @@
+INFO 2021-05-20 19:13:46,395 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-20 19:13:48,558 basehttp 154 "GET / HTTP/1.1" 200 16348
+WARNING 2021-05-20 19:13:48,731 log 228 Not Found: /favicon.ico
+WARNING 2021-05-20 19:13:48,732 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 1974
+INFO 2021-05-20 19:27:34,684 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-20 20:26:27,084 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-20 20:26:33,209 basehttp 154 "GET / HTTP/1.1" 200 16348
+WARNING 2021-05-20 20:26:33,973 log 228 Not Found: /favicon.ico
+WARNING 2021-05-20 20:26:33,975 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 1974
+INFO 2021-05-21 08:40:26,646 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 15:40:51,018 autoreload 597 Watching for file changes with StatReloader
+ERROR 2021-05-21 15:40:53,091 exception 77 Invalid HTTP_HOST header: 'api.luffycity.cn:8001'. You may need to add 'api.luffycity.cn' to ALLOWED_HOSTS.
+WARNING 2021-05-21 15:40:53,162 log 228 Bad Request: /
+WARNING 2021-05-21 15:40:53,163 basehttp 154 "GET / HTTP/1.1" 400 67367
+ERROR 2021-05-21 15:40:53,468 exception 77 Invalid HTTP_HOST header: 'api.luffycity.cn:8001'. You may need to add 'api.luffycity.cn' to ALLOWED_HOSTS.
+WARNING 2021-05-21 15:40:53,509 log 228 Bad Request: /favicon.ico
+WARNING 2021-05-21 15:40:53,510 basehttp 154 "GET /favicon.ico HTTP/1.1" 400 67427
+INFO 2021-05-21 15:52:16,094 autoreload 597 Watching for file changes with StatReloader
+ERROR 2021-05-21 15:55:11,322 exception 77 Invalid HTTP_HOST header: 'api.luffycity.cn:8001'. You may need to add 'api.luffycity.cn' to ALLOWED_HOSTS.
+WARNING 2021-05-21 15:55:11,369 log 228 Bad Request: /
+WARNING 2021-05-21 15:55:11,370 basehttp 154 "GET / HTTP/1.1" 400 67367
+ERROR 2021-05-21 15:55:11,657 exception 77 Invalid HTTP_HOST header: 'api.luffycity.cn:8001'. You may need to add 'api.luffycity.cn' to ALLOWED_HOSTS.
+WARNING 2021-05-21 15:55:11,697 log 228 Bad Request: /favicon.ico
+WARNING 2021-05-21 15:55:11,698 basehttp 154 "GET /favicon.ico HTTP/1.1" 400 67427
+INFO 2021-05-21 15:59:46,322 autoreload 217 E:\luffy\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2021-05-21 15:59:47,362 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 16:00:07,456 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 16:00:09,859 basehttp 154 "GET / HTTP/1.1" 200 16348
+INFO 2021-05-21 16:00:09,920 basehttp 154 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2021-05-21 16:00:10,025 basehttp 154 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2021-05-21 16:00:10,026 basehttp 154 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO 2021-05-21 16:00:10,026 basehttp 154 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+WARNING 2021-05-21 16:00:10,067 log 228 Not Found: /favicon.ico
+WARNING 2021-05-21 16:00:10,067 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 1981
+INFO 2021-05-21 16:03:17,106 autoreload 217 E:\luffy\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2021-05-21 16:03:18,131 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 16:03:34,712 autoreload 217 E:\luffy\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2021-05-21 16:03:35,648 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 16:03:44,850 autoreload 217 E:\luffy\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2021-05-21 16:03:45,892 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 16:05:31,467 autoreload 217 E:\luffy\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2021-05-21 16:05:32,580 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 16:06:46,966 autoreload 217 E:\luffy\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2021-05-21 16:06:47,908 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 16:07:05,744 autoreload 217 E:\luffy\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2021-05-21 16:07:06,885 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 16:19:47,329 autoreload 217 E:\luffy\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2021-05-21 16:19:48,277 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 16:27:05,410 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-05-21 16:27:10,719 log 228 Not Found: /
+WARNING 2021-05-21 16:27:10,720 basehttp 154 "GET / HTTP/1.1" 404 2054
+INFO 2021-05-21 16:27:20,420 basehttp 154 "GET /admin HTTP/1.1" 301 0
+INFO 2021-05-21 16:27:20,440 basehttp 154 "GET /admin/ HTTP/1.1" 302 0
+INFO 2021-05-21 16:27:20,486 basehttp 154 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1819
+INFO 2021-05-21 16:27:20,512 basehttp 154 "GET /static/admin/css/login.css HTTP/1.1" 200 1233
+INFO 2021-05-21 16:27:20,513 basehttp 154 "GET /static/admin/css/base.css HTTP/1.1" 200 16378
+INFO 2021-05-21 16:27:20,513 basehttp 154 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17944
+INFO 2021-05-21 16:27:33,827 autoreload 217 E:\luffy\luffyapi\luffyapi\urls.py changed, reloading.
+INFO 2021-05-21 16:27:34,922 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 16:33:12,627 autoreload 217 E:\luffy\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2021-05-21 16:33:13,683 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 16:39:00,430 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 16:39:15,749 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-05-21 16:39:20,441 log 228 Not Found: /
+WARNING 2021-05-21 16:39:20,443 basehttp 154 "GET / HTTP/1.1" 404 2054
+INFO 2021-05-21 16:39:59,600 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 16:50:52,163 autoreload 217 E:\luffy\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2021-05-21 16:50:53,305 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 16:51:49,194 autoreload 217 E:\luffy\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2021-05-21 16:51:50,161 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 16:53:20,417 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\home\models.py changed, reloading.
+INFO 2021-05-21 16:53:21,420 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 16:55:16,888 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\home\models.py changed, reloading.
+INFO 2021-05-21 16:55:17,801 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 17:06:28,711 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\home\models.py changed, reloading.
+INFO 2021-05-21 17:06:29,690 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 17:11:26,465 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\home\admin.py changed, reloading.
+INFO 2021-05-21 17:11:27,396 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 17:14:39,492 autoreload 217 E:\luffy\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2021-05-21 17:14:40,960 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 17:19:04,472 autoreload 217 E:\envs\luffy\Lib\site-packages\xadmin\plugins\importexport.py changed, reloading.
+INFO 2021-05-21 17:19:05,919 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 17:22:37,603 autoreload 217 E:\luffy\luffyapi\luffyapi\urls.py changed, reloading.
+INFO 2021-05-21 17:22:39,510 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 17:31:15,362 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\home\__init__.py changed, reloading.
+INFO 2021-05-21 17:31:16,972 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 17:31:52,175 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-05-21 17:31:55,294 log 228 Not Found: /
+WARNING 2021-05-21 17:31:55,295 basehttp 154 "GET / HTTP/1.1" 404 2161
+INFO 2021-05-21 17:31:59,634 basehttp 154 "GET /xadmin HTTP/1.1" 301 0
+INFO 2021-05-21 17:31:59,677 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 4354
+INFO 2021-05-21 17:31:59,707 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+INFO 2021-05-21 17:31:59,711 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 21658
+INFO 2021-05-21 17:31:59,713 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8376
+INFO 2021-05-21 17:31:59,714 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+INFO 2021-05-21 17:31:59,718 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+INFO 2021-05-21 17:31:59,718 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+INFO 2021-05-21 17:31:59,725 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+INFO 2021-05-21 17:31:59,729 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+INFO 2021-05-21 17:31:59,738 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+INFO 2021-05-21 17:31:59,738 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4361
+INFO 2021-05-21 17:31:59,739 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+INFO 2021-05-21 17:31:59,742 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+INFO 2021-05-21 17:31:59,745 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+INFO 2021-05-21 17:31:59,745 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+INFO 2021-05-21 17:31:59,747 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4165
+INFO 2021-05-21 17:31:59,747 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 200 3489
+INFO 2021-05-21 17:31:59,748 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 200 31918
+INFO 2021-05-21 17:31:59,802 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 44432
+INFO 2021-05-21 17:32:05,636 basehttp 154 "POST /xadmin/ HTTP/1.1" 302 0
+INFO 2021-05-21 17:32:07,834 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 12833
+INFO 2021-05-21 17:32:07,869 basehttp 154 "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 200 790
+INFO 2021-05-21 17:32:07,869 basehttp 154 "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 200 3208
+INFO 2021-05-21 17:32:07,878 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 200 1000
+INFO 2021-05-21 17:32:07,889 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-21 17:32:22,028 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 12833
+INFO 2021-05-21 17:32:22,057 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-21 17:32:23,319 basehttp 154 "GET /xadmin/reversion/revision/ HTTP/1.1" 200 27488
+INFO 2021-05-21 17:32:23,347 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3763
+INFO 2021-05-21 17:32:23,350 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/css/datepicker.css HTTP/1.1" 200 10225
+INFO 2021-05-21 17:32:23,351 basehttp 154 "GET /static/xadmin/vendor/select2/select2.css HTTP/1.1" 200 19226
+INFO 2021-05-21 17:32:23,360 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.bootstrap3.css HTTP/1.1" 200 10602
+INFO 2021-05-21 17:32:23,360 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.css HTTP/1.1" 200 8425
+INFO 2021-05-21 17:32:23,361 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 200 2319
+INFO 2021-05-21 17:32:23,364 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 200 529
+INFO 2021-05-21 17:32:23,367 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js HTTP/1.1" 200 32656
+INFO 2021-05-21 17:32:23,371 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 200 1990
+INFO 2021-05-21 17:32:23,374 basehttp 154 "GET /static/xadmin/js/xadmin.widget.datetime.js HTTP/1.1" 200 2979
+INFO 2021-05-21 17:32:23,374 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 200 1105
+INFO 2021-05-21 17:32:23,378 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.js HTTP/1.1" 200 98602
+INFO 2021-05-21 17:32:23,381 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-21 17:32:23,383 basehttp 154 "GET /static/xadmin/vendor/select2/select2.js HTTP/1.1" 200 104906
+INFO 2021-05-21 17:32:23,384 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 200 694
+INFO 2021-05-21 17:32:23,385 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+INFO 2021-05-21 17:32:23,385 basehttp 154 "GET /static/xadmin/js/xadmin.widget.select.js HTTP/1.1" 200 1344
+INFO 2021-05-21 17:32:27,053 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 12833
+INFO 2021-05-21 17:32:27,328 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 12833
+INFO 2021-05-21 17:32:32,712 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 12833
+INFO 2021-05-21 17:32:32,730 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-21 17:32:37,115 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 22529
+INFO 2021-05-21 17:32:37,146 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-21 17:32:53,910 basehttp 154 "GET /xadmin/home/banner/add/ HTTP/1.1" 200 18231
+INFO 2021-05-21 17:32:53,932 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/css/bootstrap-image-gallery.css HTTP/1.1" 200 3339
+INFO 2021-05-21 17:32:53,933 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/js/bootstrap-image-gallery.js HTTP/1.1" 200 15611
+INFO 2021-05-21 17:32:53,933 basehttp 154 "GET /static/xadmin/vendor/load-image/load-image.js HTTP/1.1" 200 8309
+INFO 2021-05-21 17:32:53,941 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-21 17:35:16,807 basehttp 154 "POST /xadmin/home/banner/add/ HTTP/1.1" 302 0
+INFO 2021-05-21 17:35:16,883 basehttp 154 "GET /xadmin/home/banner/add/ HTTP/1.1" 200 18587
+INFO 2021-05-21 17:35:16,906 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 304 0
+INFO 2021-05-21 17:35:16,907 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2021-05-21 17:35:16,908 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 304 0
+INFO 2021-05-21 17:35:16,909 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 304 0
+INFO 2021-05-21 17:35:16,909 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 304 0
+INFO 2021-05-21 17:35:16,915 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 304 0
+INFO 2021-05-21 17:35:16,920 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:35:16,921 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 304 0
+INFO 2021-05-21 17:35:16,925 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:35:16,925 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-21 17:35:16,926 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/css/bootstrap-image-gallery.css HTTP/1.1" 304 0
+INFO 2021-05-21 17:35:16,927 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:35:16,933 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:35:16,933 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:35:16,936 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:35:16,936 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:35:16,937 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:35:16,940 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:35:16,942 basehttp 154 "GET /static/xadmin/vendor/load-image/load-image.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:35:16,943 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:35:16,945 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:35:16,945 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:35:16,946 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/js/bootstrap-image-gallery.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:36:33,587 basehttp 154 "POST /xadmin/home/banner/add/ HTTP/1.1" 302 0
+INFO 2021-05-21 17:36:33,646 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 27162
+INFO 2021-05-21 17:36:33,675 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:36:33,675 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:36:33,677 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:36:33,678 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:36:33,678 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-21 17:36:33,678 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 200 4198
+WARNING 2021-05-21 17:42:09,203 log 228 Not Found: /
+WARNING 2021-05-21 17:42:09,203 basehttp 154 "GET / HTTP/1.1" 404 2161
+INFO 2021-05-21 17:44:19,771 basehttp 154 "GET /xadmin/home/banner/add/ HTTP/1.1" 200 18231
+INFO 2021-05-21 17:44:19,791 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2021-05-21 17:44:19,793 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 304 0
+INFO 2021-05-21 17:44:19,801 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 304 0
+INFO 2021-05-21 17:44:19,805 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 304 0
+INFO 2021-05-21 17:44:19,805 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 304 0
+INFO 2021-05-21 17:44:19,806 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 304 0
+INFO 2021-05-21 17:44:19,807 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/css/bootstrap-image-gallery.css HTTP/1.1" 304 0
+INFO 2021-05-21 17:44:19,810 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 304 0
+INFO 2021-05-21 17:44:19,811 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:44:19,818 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:44:19,818 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-21 17:44:19,821 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:44:19,821 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:44:19,821 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:44:19,825 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:44:19,828 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:44:19,830 basehttp 154 "GET /static/xadmin/vendor/load-image/load-image.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:44:19,832 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:44:19,832 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:44:19,832 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:44:19,834 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:44:19,836 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:44:19,836 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 304 0
+INFO 2021-05-21 17:44:19,838 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/js/bootstrap-image-gallery.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:20,580 basehttp 154 "GET /admin/ HTTP/1.1" 200 3003
+INFO 2021-05-21 17:48:20,606 basehttp 154 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+INFO 2021-05-21 17:48:20,630 basehttp 154 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2021-05-21 17:48:20,631 basehttp 154 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2021-05-21 17:48:22,760 basehttp 154 "GET /admin/auth/user/ HTTP/1.1" 200 6641
+INFO 2021-05-21 17:48:22,784 basehttp 154 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+INFO 2021-05-21 17:48:22,784 basehttp 154 "GET /static/admin/js/core.js HTTP/1.1" 200 7099
+INFO 2021-05-21 17:48:22,785 basehttp 154 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+INFO 2021-05-21 17:48:22,791 basehttp 154 "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-21 17:48:22,792 basehttp 154 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+INFO 2021-05-21 17:48:22,797 basehttp 154 "GET /static/admin/js/actions.js HTTP/1.1" 200 6766
+INFO 2021-05-21 17:48:22,798 basehttp 154 "GET /static/admin/js/urlify.js HTTP/1.1" 200 8941
+INFO 2021-05-21 17:48:22,799 basehttp 154 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+INFO 2021-05-21 17:48:22,799 basehttp 154 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+INFO 2021-05-21 17:48:22,800 basehttp 154 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+INFO 2021-05-21 17:48:22,818 basehttp 154 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2021-05-21 17:48:22,818 basehttp 154 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2021-05-21 17:48:22,828 basehttp 154 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2021-05-21 17:48:22,829 basehttp 154 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2021-05-21 17:48:24,858 basehttp 154 "GET /admin/ HTTP/1.1" 200 3003
+INFO 2021-05-21 17:48:25,914 basehttp 154 "GET /admin/auth/group/ HTTP/1.1" 200 3482
+INFO 2021-05-21 17:48:25,935 basehttp 154 "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-21 17:48:27,028 basehttp 154 "GET /admin/ HTTP/1.1" 200 3003
+INFO 2021-05-21 17:48:31,451 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 26852
+INFO 2021-05-21 17:48:31,481 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:31,483 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:31,486 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:31,489 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:31,492 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:31,492 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:31,494 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:31,500 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:31,503 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:31,504 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-21 17:48:31,506 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:31,506 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:31,508 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:31,512 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:31,516 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:31,516 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:31,519 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:31,519 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:31,521 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:31,524 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:31,525 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:31,527 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:31,528 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:31,528 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:31,529 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:31,982 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 12833
+INFO 2021-05-21 17:48:32,002 basehttp 154 "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:32,003 basehttp 154 "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:32,005 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:32,006 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-21 17:48:32,952 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 26852
+INFO 2021-05-21 17:48:32,975 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-21 17:48:33,924 basehttp 154 "GET /xadmin/home/banner/2/update/ HTTP/1.1" 200 18817
+INFO 2021-05-21 17:48:33,942 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/css/bootstrap-image-gallery.css HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:33,948 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-21 17:48:33,951 basehttp 154 "GET /static/xadmin/vendor/load-image/load-image.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:33,955 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/js/bootstrap-image-gallery.js HTTP/1.1" 304 0
+INFO 2021-05-21 17:48:33,957 basehttp 154 "GET /media/banner/banner2.png HTTP/1.1" 200 111031
+INFO 2021-05-21 17:48:46,228 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 26852
+INFO 2021-05-21 17:48:46,254 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-21 17:48:48,967 basehttp 154 "GET /xadmin/home/banner/add/ HTTP/1.1" 200 18231
+INFO 2021-05-21 17:48:48,991 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-21 17:49:52,672 basehttp 154 "POST /xadmin/home/banner/add/ HTTP/1.1" 302 0
+INFO 2021-05-21 17:49:52,740 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 27723
+INFO 2021-05-21 17:49:52,775 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2021-05-21 17:50:50,487 log 228 Not Found: /media/finder.png
+WARNING 2021-05-21 17:50:50,487 basehttp 154 "GET /media/finder.png HTTP/1.1" 404 1788
+INFO 2021-05-21 17:51:23,441 basehttp 154 "GET /media/banner/finder.png HTTP/1.1" 200 8076
+WARNING 2021-05-21 17:51:32,333 log 228 Not Found: /
+WARNING 2021-05-21 17:51:32,334 basehttp 154 "GET / HTTP/1.1" 404 2161
+INFO 2021-05-21 17:51:37,926 basehttp 154 "GET /media/banner/finder.png HTTP/1.1" 304 0
+INFO 2021-05-21 17:51:45,832 basehttp 154 "GET /media/banner/banner1.png HTTP/1.1" 200 264105
+INFO 2021-05-21 19:08:10,210 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 19:08:24,010 basehttp 154 "GET /media/banner/banner2.png HTTP/1.1" 304 0
+WARNING 2021-05-21 19:08:30,273 log 228 Not Found: /media/banner/mac.png
+WARNING 2021-05-21 19:08:30,273 basehttp 154 "GET /media/banner/mac.png HTTP/1.1" 404 1800
+INFO 2021-05-21 19:08:55,980 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 25847
+INFO 2021-05-21 19:08:56,012 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 304 0
+INFO 2021-05-21 19:08:56,013 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2021-05-21 19:08:56,023 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 304 0
+INFO 2021-05-21 19:08:56,028 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 304 0
+INFO 2021-05-21 19:08:56,034 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 304 0
+INFO 2021-05-21 19:08:56,042 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:08:56,043 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 304 0
+INFO 2021-05-21 19:08:56,046 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 304 0
+INFO 2021-05-21 19:08:56,051 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:08:56,061 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:08:56,062 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-21 19:08:56,065 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:08:56,071 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:08:56,071 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:08:56,072 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:08:56,080 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:08:56,084 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:08:56,085 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:08:56,090 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:08:56,091 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:08:56,091 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:08:56,096 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:08:56,098 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:08:56,099 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:08:56,101 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 304 0
+INFO 2021-05-21 19:09:33,837 basehttp 154 "GET /media/banner/finder.png HTTP/1.1" 304 0
+INFO 2021-05-21 19:10:05,952 basehttp 154 "GET /media/banner/banner1.png HTTP/1.1" 304 0
+INFO 2021-05-21 19:24:10,802 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 19:25:26,572 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 19:26:14,264 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 19:27:58,759 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 19:29:24,037 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 19:36:52,455 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 19:37:32,998 autoreload 217 E:\luffy\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2021-05-21 19:37:35,854 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 19:40:36,679 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-05-21 19:40:38,843 log 228 Not Found: /
+WARNING 2021-05-21 19:40:38,843 basehttp 154 "GET / HTTP/1.1" 404 2161
+INFO 2021-05-21 19:40:43,250 basehttp 154 "GET /xadmin/home/banner/2/update/ HTTP/1.1" 200 18817
+INFO 2021-05-21 19:40:43,274 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 304 0
+INFO 2021-05-21 19:40:43,275 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2021-05-21 19:40:43,275 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 304 0
+INFO 2021-05-21 19:40:43,285 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 304 0
+INFO 2021-05-21 19:40:43,285 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 304 0
+INFO 2021-05-21 19:40:43,285 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 304 0
+INFO 2021-05-21 19:40:43,292 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 304 0
+INFO 2021-05-21 19:40:43,292 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/css/bootstrap-image-gallery.css HTTP/1.1" 304 0
+INFO 2021-05-21 19:40:43,292 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:40:43,306 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:40:43,309 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-21 19:40:43,316 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:40:43,318 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:40:43,318 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:40:43,325 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:40:43,326 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:40:43,328 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:40:43,334 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:40:43,334 basehttp 154 "GET /static/xadmin/vendor/load-image/load-image.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:40:43,338 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:40:43,343 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:40:43,343 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:40:43,345 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/js/bootstrap-image-gallery.js HTTP/1.1" 304 0
+INFO 2021-05-21 19:40:43,351 basehttp 154 "GET /media/banner/banner2.png HTTP/1.1" 304 0
+INFO 2021-05-21 19:40:43,419 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 304 0
+INFO 2021-05-21 19:44:21,881 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 19:46:46,686 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 19:47:23,996 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 19:47:53,302 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 19:49:08,692 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 19:49:36,006 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 19:49:58,136 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 19:50:32,080 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 19:52:10,873 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-21 19:52:21,568 basehttp 154 "GET /xadmin/home/banner/2/update/ HTTP/1.1" 200 18817
+INFO 2021-05-21 19:52:30,971 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 27431
+INFO 2021-05-21 19:52:31,163 basehttp 154 "GET /xadmin/home/banner/add/ HTTP/1.1" 200 18231
+INFO 2021-05-21 19:52:31,329 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 27431
+INFO 2021-05-21 19:52:32,407 basehttp 154 "GET /xadmin/home/banner/add/ HTTP/1.1" 200 18231
+INFO 2021-05-21 19:52:33,090 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 27431
+INFO 2021-05-24 08:11:52,393 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-24 08:26:22,945 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-05-24 08:26:29,082 log 228 Not Found: /
+WARNING 2021-05-24 08:26:29,083 basehttp 154 "GET / HTTP/1.1" 404 2161
+WARNING 2021-05-24 08:26:29,182 log 228 Not Found: /favicon.ico
+WARNING 2021-05-24 08:26:29,183 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 2212
+INFO 2021-05-24 08:26:37,220 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 12833
+INFO 2021-05-24 08:26:37,255 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 304 0
+INFO 2021-05-24 08:26:37,256 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2021-05-24 08:26:37,257 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 304 0
+INFO 2021-05-24 08:26:37,258 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 304 0
+INFO 2021-05-24 08:26:37,258 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 304 0
+INFO 2021-05-24 08:26:37,258 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 304 0
+INFO 2021-05-24 08:26:37,266 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2021-05-24 08:26:37,267 basehttp 154 "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 304 0
+INFO 2021-05-24 08:26:37,272 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 304 0
+INFO 2021-05-24 08:26:37,275 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 304 0
+INFO 2021-05-24 08:26:37,278 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 304 0
+INFO 2021-05-24 08:26:37,280 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 304 0
+INFO 2021-05-24 08:26:37,282 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 304 0
+INFO 2021-05-24 08:26:37,287 basehttp 154 "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 304 0
+INFO 2021-05-24 08:26:37,287 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 304 0
+INFO 2021-05-24 08:26:37,289 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 304 0
+INFO 2021-05-24 08:26:37,291 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 304 0
+INFO 2021-05-24 08:26:37,292 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 304 0
+INFO 2021-05-24 08:26:37,293 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 304 0
+INFO 2021-05-24 08:26:37,296 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-24 08:26:37,356 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 304 0
+INFO 2021-05-24 08:26:40,405 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 12833
+INFO 2021-05-24 08:26:40,434 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-24 08:26:41,487 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 27431
+INFO 2021-05-24 08:26:41,510 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 304 0
+INFO 2021-05-24 08:26:41,514 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 304 0
+INFO 2021-05-24 08:26:41,515 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 304 0
+INFO 2021-05-24 08:26:41,516 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 304 0
+INFO 2021-05-24 08:26:41,516 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 304 0
+INFO 2021-05-24 08:26:41,520 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-24 08:26:41,521 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 304 0
+INFO 2021-05-24 08:26:41,522 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 304 0
+INFO 2021-05-24 08:27:40,330 basehttp 154 "GET /xadmin/home/banner/3/update/ HTTP/1.1" 200 18743
+INFO 2021-05-24 08:27:40,357 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/css/bootstrap-image-gallery.css HTTP/1.1" 304 0
+INFO 2021-05-24 08:27:40,361 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-24 08:27:40,367 basehttp 154 "GET /static/xadmin/vendor/load-image/load-image.js HTTP/1.1" 304 0
+INFO 2021-05-24 08:27:40,380 basehttp 154 "GET /media/banner/finder.png HTTP/1.1" 304 0
+INFO 2021-05-24 08:27:40,380 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/js/bootstrap-image-gallery.js HTTP/1.1" 304 0
+INFO 2021-05-24 08:28:00,835 basehttp 154 "POST /xadmin/home/banner/3/update/ HTTP/1.1" 302 0
+INFO 2021-05-24 08:28:00,899 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 27660
+INFO 2021-05-24 08:28:00,927 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-24 08:28:02,550 basehttp 154 "GET /xadmin/home/banner/3/update/ HTTP/1.1" 200 18741
+INFO 2021-05-24 08:28:02,573 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-24 08:28:02,586 basehttp 154 "GET /media/banner/macos.png HTTP/1.1" 200 2490541
+INFO 2021-05-24 08:28:12,396 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 27431
+INFO 2021-05-24 08:28:14,761 basehttp 154 "GET /xadmin/auth/group/ HTTP/1.1" 200 22054
+INFO 2021-05-24 08:28:14,791 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-24 08:28:16,549 basehttp 154 "GET /xadmin/xadmin/log/ HTTP/1.1" 200 36985
+INFO 2021-05-24 08:28:16,570 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/css/datepicker.css HTTP/1.1" 304 0
+INFO 2021-05-24 08:28:16,570 basehttp 154 "GET /static/xadmin/vendor/select2/select2.css HTTP/1.1" 304 0
+INFO 2021-05-24 08:28:16,580 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.css HTTP/1.1" 304 0
+INFO 2021-05-24 08:28:16,581 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js HTTP/1.1" 304 0
+INFO 2021-05-24 08:28:16,582 basehttp 154 "GET /static/xadmin/js/xadmin.widget.datetime.js HTTP/1.1" 304 0
+INFO 2021-05-24 08:28:16,584 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.js HTTP/1.1" 304 0
+INFO 2021-05-24 08:28:16,586 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.bootstrap3.css HTTP/1.1" 304 0
+INFO 2021-05-24 08:28:16,587 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-24 08:28:16,589 basehttp 154 "GET /static/xadmin/vendor/select2/select2.js HTTP/1.1" 304 0
+INFO 2021-05-24 08:28:16,589 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 304 0
+INFO 2021-05-24 08:28:16,590 basehttp 154 "GET /static/xadmin/js/xadmin.widget.select.js HTTP/1.1" 304 0
+INFO 2021-05-24 08:29:21,105 basehttp 154 "GET /xadmin/auth/group/ HTTP/1.1" 200 22054
+INFO 2021-05-24 08:29:21,136 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-24 08:29:22,620 basehttp 154 "GET /xadmin/auth/user/ HTTP/1.1" 200 32393
+INFO 2021-05-24 08:29:22,641 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-24 08:29:33,209 basehttp 154 "GET /xadmin/auth/user/1/update/ HTTP/1.1" 200 26434
+INFO 2021-05-24 08:29:33,236 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.quick-form.js HTTP/1.1" 200 7546
+INFO 2021-05-24 08:29:33,236 basehttp 154 "GET /static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.css HTTP/1.1" 200 3729
+INFO 2021-05-24 08:29:33,238 basehttp 154 "GET /static/xadmin/css/xadmin.widget.select-transfer.css HTTP/1.1" 200 2317
+INFO 2021-05-24 08:29:33,238 basehttp 154 "GET /static/xadmin/js/xadmin.widget.select-transfer.js HTTP/1.1" 200 8214
+INFO 2021-05-24 08:29:33,240 basehttp 154 "GET /static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.js HTTP/1.1" 200 21112
+INFO 2021-05-24 08:29:33,240 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-24 08:30:18,082 basehttp 154 "GET /xadmin/auth/user/1/password/ HTTP/1.1" 200 14582
+INFO 2021-05-24 08:30:18,110 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-24 08:30:22,025 basehttp 154 "GET /xadmin/auth/user/1/update/ HTTP/1.1" 200 26434
+INFO 2021-05-24 08:30:29,167 basehttp 154 "POST /xadmin/auth/user/1/update/ HTTP/1.1" 302 0
+INFO 2021-05-24 08:30:29,240 basehttp 154 "GET /xadmin/auth/user/ HTTP/1.1" 200 32614
+INFO 2021-05-24 08:30:29,262 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-24 08:31:29,666 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 12832
+INFO 2021-05-24 08:31:29,691 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-24 08:31:33,238 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 12832
+INFO 2021-05-24 08:31:33,266 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-24 08:31:34,215 basehttp 154 "GET /xadmin/reversion/revision/ HTTP/1.1" 200 27487
+INFO 2021-05-24 08:31:34,239 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-24 08:31:36,496 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 27430
+INFO 2021-05-24 08:31:36,527 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2021-05-24 09:26:21,772 log 228 Not Found: /
+WARNING 2021-05-24 09:26:21,774 basehttp 154 "GET / HTTP/1.1" 404 2161
+WARNING 2021-05-24 09:26:21,871 log 228 Not Found: /favicon.ico
+WARNING 2021-05-24 09:26:21,872 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 2212
+INFO 2021-05-24 09:26:30,143 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 12832
+INFO 2021-05-24 09:26:30,177 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-24 09:26:43,202 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 27430
+INFO 2021-05-24 09:26:43,227 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-24 09:27:26,525 basehttp 154 "GET /xadmin/home/banner/3/update/ HTTP/1.1" 200 18740
+INFO 2021-05-24 09:27:26,554 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-24 09:27:26,567 basehttp 154 "GET /media/banner/macos.png HTTP/1.1" 304 0
+INFO 2021-05-24 09:27:59,430 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 27430
+INFO 2021-05-24 09:28:00,871 basehttp 154 "GET /xadmin/home/banner/2/update/ HTTP/1.1" 200 18816
+INFO 2021-05-24 09:28:00,893 basehttp 154 "GET /media/banner/banner2.png HTTP/1.1" 304 0
+INFO 2021-05-24 09:28:00,959 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-24 09:28:03,681 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 27430
+INFO 2021-05-24 09:28:16,380 basehttp 154 "GET /xadmin/home/banner/add/ HTTP/1.1" 200 18230
+INFO 2021-05-24 09:28:16,413 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-24 09:29:08,790 basehttp 154 "POST /xadmin/home/banner/add/ HTTP/1.1" 302 0
+INFO 2021-05-24 09:29:08,864 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 28307
+INFO 2021-05-24 09:29:08,896 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-24 09:29:16,312 basehttp 154 "GET /xadmin/home/banner/?o=orders HTTP/1.1" 200 29589
+INFO 2021-05-24 09:29:16,344 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-24 10:17:49,900 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-05-24 10:17:59,914 log 228 Not Found: /
+WARNING 2021-05-24 10:17:59,914 basehttp 154 "GET / HTTP/1.1" 404 2266
+INFO 2021-05-24 10:18:08,972 basehttp 154 "GET /home/banner HTTP/1.1" 301 0
+INFO 2021-05-24 10:18:09,025 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 5967
+INFO 2021-05-24 10:18:09,050 basehttp 154 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2021-05-24 10:18:09,052 basehttp 154 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2021-05-24 10:18:09,055 basehttp 154 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2021-05-24 10:18:09,055 basehttp 154 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2021-05-24 10:18:09,058 basehttp 154 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2021-05-24 10:18:09,058 basehttp 154 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+INFO 2021-05-24 10:18:09,061 basehttp 154 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO 2021-05-24 10:18:09,062 basehttp 154 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2021-05-24 10:18:09,065 basehttp 154 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2021-05-24 10:18:09,065 basehttp 154 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2021-05-24 10:18:09,072 basehttp 154 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2021-05-24 10:19:24,962 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-05-24 10:19:27,198 log 228 Not Found: /
+WARNING 2021-05-24 10:19:27,199 basehttp 154 "GET / HTTP/1.1" 404 2266
+INFO 2021-05-24 10:19:30,436 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 5967
+INFO 2021-05-24 10:21:53,603 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-24 10:22:07,668 autoreload 217 E:\luffy\luffyapi\luffyapi\urls.py changed, reloading.
+INFO 2021-05-24 10:22:09,506 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-24 10:22:09,958 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 6021
+INFO 2021-05-24 10:23:28,543 autoreload 217 E:\luffy\luffyapi\luffyapi\urls.py changed, reloading.
+INFO 2021-05-24 10:23:30,185 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-24 10:42:00,219 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 267
+INFO 2021-05-24 10:42:17,389 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 267
+INFO 2021-05-24 10:42:17,404 basehttp 154 "GET /media/banner/banner1.png HTTP/1.1" 304 0
+INFO 2021-05-24 10:42:29,608 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 267
+INFO 2021-05-24 10:45:09,185 autoreload 217 E:\luffy\luffyapi\luffyapi\urls.py changed, reloading.
+INFO 2021-05-24 10:45:10,721 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-24 10:48:28,836 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2021-05-24 10:48:30,543 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-24 10:48:31,771 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 309
+INFO 2021-05-24 10:48:31,788 basehttp 154 "GET /media/banner/macos.png HTTP/1.1" 304 0
+INFO 2021-05-24 10:48:31,789 basehttp 154 "GET /media/banner/%E6%AC%A7%E7%BE%8E%E8%A1%97%E6%8B%8D%E9%BB%91%E4%B8%9D%E8%A2%9C%E7%BE%8E%E5%A5%B3%E5%9B%BE%E7%89%87.png HTTP/1.1" 200 19021
+INFO 2021-05-24 10:51:38,103 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2021-05-24 10:51:39,847 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-24 10:51:40,384 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 267
+INFO 2021-05-24 11:05:09,248 autoreload 217 E:\luffy\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2021-05-24 11:08:28,730 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-24 11:11:41,760 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-24 11:25:52,054 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 267
+INFO 2021-05-24 11:31:27,398 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 267

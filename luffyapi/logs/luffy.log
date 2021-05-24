@@ -523,3 +523,8 @@ INFO 2021-05-24 11:08:28,730 autoreload 597 Watching for file changes with StatR
 INFO 2021-05-24 11:11:41,760 autoreload 597 Watching for file changes with StatReloader
 INFO 2021-05-24 11:25:52,054 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 267
 INFO 2021-05-24 11:31:27,398 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 267
+INFO 2021-05-24 14:35:40,778 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-24 14:35:47,389 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 267
+INFO 2021-05-24 14:46:16,832 autoreload 217 E:\luffy\luffyapi\luffyapi\settings\contants.py changed, reloading.
+INFO 2021-05-24 14:46:18,469 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-24 14:46:44,761 autoreload 597 Watching for file changes with StatReloader

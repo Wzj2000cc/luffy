@@ -630,3 +630,396 @@ INFO 2021-05-25 08:41:03,797 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 309
 INFO 2021-05-25 08:41:23,764 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
 INFO 2021-05-25 08:41:25,243 autoreload 597 Watching for file changes with StatReloader
 INFO 2021-05-25 08:41:25,733 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-05-25 09:16:25,919 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-25 09:16:38,337 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-05-25 10:35:15,832 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-05-25 10:35:17,357 log 228 Not Found: /
+WARNING 2021-05-25 10:35:17,358 basehttp 154 "GET / HTTP/1.1" 404 2266
+INFO 2021-05-25 10:35:22,664 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 12832
+INFO 2021-05-25 10:35:22,714 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 10:35:22,731 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 12832
+INFO 2021-05-25 10:35:25,443 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 28012
+INFO 2021-05-25 10:35:25,481 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 10:35:27,432 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 12832
+INFO 2021-05-25 10:35:27,462 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 10:35:28,861 basehttp 154 "GET /xadmin/reversion/revision/ HTTP/1.1" 200 27487
+INFO 2021-05-25 10:35:28,889 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/css/datepicker.css HTTP/1.1" 304 0
+INFO 2021-05-25 10:35:28,892 basehttp 154 "GET /static/xadmin/vendor/select2/select2.css HTTP/1.1" 304 0
+INFO 2021-05-25 10:35:28,894 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.bootstrap3.css HTTP/1.1" 304 0
+INFO 2021-05-25 10:35:28,896 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.css HTTP/1.1" 304 0
+INFO 2021-05-25 10:35:28,897 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js HTTP/1.1" 304 0
+INFO 2021-05-25 10:35:28,899 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.js HTTP/1.1" 304 0
+INFO 2021-05-25 10:35:28,903 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 10:35:28,907 basehttp 154 "GET /static/xadmin/js/xadmin.widget.datetime.js HTTP/1.1" 304 0
+INFO 2021-05-25 10:35:28,908 basehttp 154 "GET /static/xadmin/vendor/select2/select2.js HTTP/1.1" 304 0
+INFO 2021-05-25 10:35:28,909 basehttp 154 "GET /static/xadmin/js/xadmin.widget.select.js HTTP/1.1" 304 0
+INFO 2021-05-25 10:35:28,909 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 304 0
+INFO 2021-05-25 10:35:30,735 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 28012
+INFO 2021-05-25 10:35:30,759 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 10:35:31,470 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 28012
+INFO 2021-05-25 10:35:31,501 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 10:35:33,199 basehttp 154 "GET /xadmin/xadmin/log/ HTTP/1.1" 200 41660
+INFO 2021-05-25 10:35:33,231 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 10:35:37,212 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 12832
+INFO 2021-05-25 10:35:37,243 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 10:52:38,993 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-25 10:52:45,905 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 28012
+INFO 2021-05-25 10:52:45,964 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 11:03:47,997 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-05-25 11:03:54,749 log 228 Not Found: /
+WARNING 2021-05-25 11:03:54,750 basehttp 154 "GET / HTTP/1.1" 404 2266
+INFO 2021-05-25 11:03:55,716 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\home\adminx.py changed, reloading.
+INFO 2021-05-25 11:03:57,616 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-25 11:04:23,393 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\home\adminx.py changed, reloading.
+INFO 2021-05-25 11:04:25,269 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-25 11:04:39,318 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-25 11:04:44,444 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 13249
+INFO 2021-05-25 11:04:44,516 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 11:04:46,425 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 23122
+INFO 2021-05-25 11:04:46,454 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 11:04:48,294 basehttp 154 "GET /xadmin/home/nav/add/ HTTP/1.1" 200 17643
+INFO 2021-05-25 11:04:48,316 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 11:13:33,766 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2021-05-25 11:13:35,196 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-25 11:19:21,523 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2021-05-25 11:19:23,360 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-25 14:15:14,811 autoreload 217 E:\luffy\luffyapi\luffyapi\utils\models.py changed, reloading.
+INFO 2021-05-25 14:15:16,768 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-25 14:35:05,310 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-05-25 14:35:09,857 log 228 Not Found: /
+WARNING 2021-05-25 14:35:09,858 basehttp 154 "GET / HTTP/1.1" 404 2266
+INFO 2021-05-25 14:35:20,685 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 28733
+INFO 2021-05-25 14:35:20,735 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:35:23,231 basehttp 154 "GET /xadmin/home/banner/1/update/ HTTP/1.1" 200 19216
+INFO 2021-05-25 14:35:23,255 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:35:23,267 basehttp 154 "GET /media/banner/banner1.png HTTP/1.1" 304 0
+INFO 2021-05-25 14:35:49,145 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 28733
+INFO 2021-05-25 14:35:50,658 basehttp 154 "GET /xadmin/home/banner/add/ HTTP/1.1" 200 18647
+INFO 2021-05-25 14:35:50,693 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:36:37,185 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 23484
+INFO 2021-05-25 14:36:37,211 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:36:43,628 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 13249
+INFO 2021-05-25 14:36:43,660 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:36:45,883 basehttp 154 "GET /xadmin/reversion/revision/ HTTP/1.1" 200 27824
+INFO 2021-05-25 14:36:45,916 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:36:46,783 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 28733
+INFO 2021-05-25 14:36:46,814 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:36:47,442 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 23484
+INFO 2021-05-25 14:36:47,472 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:36:49,329 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 28733
+INFO 2021-05-25 14:36:49,361 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:37:14,959 basehttp 154 "GET /xadmin/home/banner/add/ HTTP/1.1" 200 18647
+INFO 2021-05-25 14:37:14,999 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:38:24,150 basehttp 154 "POST /xadmin/home/banner/add/ HTTP/1.1" 302 0
+INFO 2021-05-25 14:38:24,223 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 29616
+INFO 2021-05-25 14:38:24,266 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:38:41,545 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 23484
+INFO 2021-05-25 14:38:41,566 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:44:14,627 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 23484
+INFO 2021-05-25 14:44:14,656 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:44:17,782 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 23484
+INFO 2021-05-25 14:44:17,811 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:44:21,934 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 13249
+INFO 2021-05-25 14:44:21,959 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:44:48,827 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 13249
+INFO 2021-05-25 14:44:48,859 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:44:55,572 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-05-25 14:44:57,238 log 228 Not Found: /
+WARNING 2021-05-25 14:44:57,238 basehttp 154 "GET / HTTP/1.1" 404 2266
+INFO 2021-05-25 14:44:59,680 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 9820
+INFO 2021-05-25 14:44:59,711 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:45:00,993 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 9820
+INFO 2021-05-25 14:45:18,682 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 9820
+INFO 2021-05-25 14:45:18,719 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:45:20,847 basehttp 154 "GET /xadmin/xadmin/log/ HTTP/1.1" 200 39550
+INFO 2021-05-25 14:45:20,875 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:45:23,957 basehttp 154 "GET /xadmin/reversion/revision/ HTTP/1.1" 200 24395
+INFO 2021-05-25 14:45:23,982 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:45:36,816 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-25 14:45:44,635 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 9820
+INFO 2021-05-25 14:45:44,662 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:45:55,316 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-05-25 14:46:03,445 log 228 Not Found: /
+WARNING 2021-05-25 14:46:03,446 basehttp 154 "GET / HTTP/1.1" 404 2266
+INFO 2021-05-25 14:46:07,486 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 9820
+INFO 2021-05-25 14:46:07,524 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:46:09,071 basehttp 154 "GET /xadmin/xadmin/log/ HTTP/1.1" 200 39550
+INFO 2021-05-25 14:46:09,103 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:46:40,437 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-05-25 14:46:44,632 log 228 Not Found: /
+WARNING 2021-05-25 14:46:44,633 basehttp 154 "GET / HTTP/1.1" 404 2266
+INFO 2021-05-25 14:46:55,315 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 13249
+INFO 2021-05-25 14:46:55,362 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:46:57,198 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 23484
+INFO 2021-05-25 14:46:57,229 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:46:58,870 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 29318
+INFO 2021-05-25 14:46:58,890 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:46:59,708 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 23484
+INFO 2021-05-25 14:46:59,742 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:48:47,859 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-25 14:49:00,941 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-25 14:49:19,797 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\home\adminx.py changed, reloading.
+INFO 2021-05-25 14:49:21,419 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-25 14:49:48,058 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\home\adminx.py changed, reloading.
+INFO 2021-05-25 14:49:49,824 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-25 14:50:49,944 basehttp 154 "GET /home/nav HTTP/1.1" 301 0
+INFO 2021-05-25 14:50:49,954 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-05-25 14:50:50,047 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 2
+INFO 2021-05-25 14:50:50,055 basehttp 154 "GET /media/banner/banner2.png HTTP/1.1" 304 0
+INFO 2021-05-25 14:51:01,714 basehttp 154 "GET /xadmin/home/nav/add/ HTTP/1.1" 200 17643
+INFO 2021-05-25 14:51:01,760 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:51:43,740 basehttp 154 "POST /xadmin/home/nav/add/ HTTP/1.1" 302 0
+INFO 2021-05-25 14:51:43,831 basehttp 154 "GET /xadmin/home/nav/add/ HTTP/1.1" 200 17989
+INFO 2021-05-25 14:51:43,861 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:53:39,243 basehttp 154 "POST /xadmin/home/nav/add/ HTTP/1.1" 302 0
+INFO 2021-05-25 14:53:39,326 basehttp 154 "GET /xadmin/home/nav/add/ HTTP/1.1" 200 17986
+INFO 2021-05-25 14:53:39,359 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:54:04,033 basehttp 154 "POST /xadmin/home/nav/add/ HTTP/1.1" 302 0
+INFO 2021-05-25 14:54:04,129 basehttp 154 "GET /xadmin/home/nav/add/ HTTP/1.1" 200 17989
+INFO 2021-05-25 14:54:04,156 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:54:24,554 basehttp 154 "POST /xadmin/home/nav/add/ HTTP/1.1" 302 0
+INFO 2021-05-25 14:54:24,618 basehttp 154 "GET /xadmin/home/nav/add/ HTTP/1.1" 200 17986
+INFO 2021-05-25 14:54:24,647 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:54:44,388 basehttp 154 "POST /xadmin/home/nav/add/ HTTP/1.1" 302 0
+INFO 2021-05-25 14:54:44,476 basehttp 154 "GET /xadmin/home/nav/add/ HTTP/1.1" 200 17986
+INFO 2021-05-25 14:54:44,508 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:55:21,846 basehttp 154 "POST /xadmin/home/nav/add/ HTTP/1.1" 302 0
+INFO 2021-05-25 14:55:21,924 basehttp 154 "GET /xadmin/home/nav/add/ HTTP/1.1" 200 17992
+INFO 2021-05-25 14:55:21,948 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:55:47,066 basehttp 154 "POST /xadmin/home/nav/add/ HTTP/1.1" 302 0
+INFO 2021-05-25 14:55:47,143 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 36680
+INFO 2021-05-25 14:55:47,172 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 14:57:22,993 basehttp 154 "GET /home/nav HTTP/1.1" 301 0
+INFO 2021-05-25 14:57:23,039 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 6405
+INFO 2021-05-25 14:57:23,099 basehttp 154 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2021-05-25 14:57:23,100 basehttp 154 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2021-05-25 14:57:23,101 basehttp 154 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2021-05-25 14:57:23,102 basehttp 154 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2021-05-25 14:57:23,103 basehttp 154 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2021-05-25 14:57:23,104 basehttp 154 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2021-05-25 14:57:23,105 basehttp 154 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+INFO 2021-05-25 14:57:23,105 basehttp 154 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2021-05-25 14:57:23,134 basehttp 154 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2021-05-25 14:57:23,135 basehttp 154 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2021-05-25 14:57:23,163 basehttp 154 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO 2021-05-25 15:01:05,134 basehttp 154 "GET /home/nav HTTP/1.1" 301 0
+INFO 2021-05-25 15:01:05,153 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 397
+INFO 2021-05-25 15:01:48,687 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 397
+INFO 2021-05-25 15:05:49,897 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-05-25 15:05:49,908 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 397
+INFO 2021-05-25 15:06:08,606 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2021-05-25 15:06:10,761 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-25 15:06:12,496 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-05-25 15:06:12,506 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 397
+INFO 2021-05-25 15:06:16,627 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 397
+INFO 2021-05-25 15:06:57,319 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 397
+INFO 2021-05-25 15:07:01,451 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-05-25 15:07:01,453 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 397
+INFO 2021-05-25 15:07:04,071 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 397
+INFO 2021-05-25 15:07:08,399 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 397
+INFO 2021-05-25 15:07:09,021 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-05-25 15:07:09,023 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 397
+INFO 2021-05-25 15:07:13,514 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 397
+INFO 2021-05-25 15:07:40,571 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 397
+INFO 2021-05-25 15:07:43,113 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 397
+INFO 2021-05-25 15:07:45,877 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-05-25 15:07:45,879 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 397
+WARNING 2021-05-25 15:09:53,899 log 228 Not Found: /
+WARNING 2021-05-25 15:09:53,900 basehttp 154 "GET / HTTP/1.1" 404 2266
+INFO 2021-05-25 15:09:58,938 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 13249
+INFO 2021-05-25 15:09:58,989 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 13249
+INFO 2021-05-25 15:09:58,994 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:10:00,386 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 36385
+INFO 2021-05-25 15:10:00,420 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:10:19,359 basehttp 154 "GET /xadmin/home/nav/6/update/ HTTP/1.1" 200 17987
+INFO 2021-05-25 15:10:19,394 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:10:31,614 basehttp 154 "POST /xadmin/home/nav/6/update/ HTTP/1.1" 302 0
+INFO 2021-05-25 15:10:31,728 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 36621
+INFO 2021-05-25 15:10:31,766 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:11:15,639 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 396
+INFO 2021-05-25 15:11:20,497 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 396
+INFO 2021-05-25 15:11:22,541 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 396
+INFO 2021-05-25 15:11:24,658 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 396
+INFO 2021-05-25 15:11:37,179 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 396
+INFO 2021-05-25 15:11:38,604 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-05-25 15:11:38,609 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 396
+INFO 2021-05-25 15:12:00,960 basehttp 154 "GET /xadmin/home/nav/6/update/ HTTP/1.1" 200 17983
+INFO 2021-05-25 15:12:00,992 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:12:08,979 basehttp 154 "POST /xadmin/home/nav/6/update/ HTTP/1.1" 302 0
+INFO 2021-05-25 15:12:09,057 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 36623
+INFO 2021-05-25 15:12:09,113 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:12:12,338 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-05-25 15:12:12,349 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 397
+INFO 2021-05-25 15:13:40,029 basehttp 154 "GET /xadmin/home/nav/2/update/ HTTP/1.1" 200 17915
+INFO 2021-05-25 15:13:40,061 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:14:17,133 basehttp 154 "POST /xadmin/home/nav/2/update/ HTTP/1.1" 302 0
+INFO 2021-05-25 15:14:17,211 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 36656
+INFO 2021-05-25 15:14:17,248 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:14:23,283 basehttp 154 "GET /xadmin/home/nav/3/update/ HTTP/1.1" 200 17927
+INFO 2021-05-25 15:14:23,314 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:14:42,437 basehttp 154 "POST /xadmin/home/nav/3/update/ HTTP/1.1" 302 0
+INFO 2021-05-25 15:14:42,543 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 36682
+INFO 2021-05-25 15:14:42,582 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:14:56,063 basehttp 154 "GET /xadmin/home/nav/2/update/ HTTP/1.1" 200 17960
+INFO 2021-05-25 15:14:56,092 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:15:00,531 basehttp 154 "POST /xadmin/home/nav/2/update/ HTTP/1.1" 302 0
+INFO 2021-05-25 15:15:00,599 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 36686
+INFO 2021-05-25 15:15:00,622 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:15:02,924 basehttp 154 "GET /xadmin/home/nav/3/update/ HTTP/1.1" 200 17947
+INFO 2021-05-25 15:15:02,950 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:15:04,789 basehttp 154 "POST /xadmin/home/nav/3/update/ HTTP/1.1" 302 0
+INFO 2021-05-25 15:15:04,872 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 36684
+INFO 2021-05-25 15:15:04,897 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:15:13,022 basehttp 154 "GET /xadmin/home/nav/4/update/ HTTP/1.1" 200 17914
+INFO 2021-05-25 15:15:13,052 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:15:14,691 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 36452
+INFO 2021-05-25 15:15:16,989 basehttp 154 "GET /xadmin/home/nav/5/update/ HTTP/1.1" 200 17912
+INFO 2021-05-25 15:15:17,012 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:15:30,506 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 36452
+INFO 2021-05-25 15:15:32,681 basehttp 154 "GET /xadmin/home/nav/4/update/ HTTP/1.1" 200 17914
+INFO 2021-05-25 15:15:32,706 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:15:48,565 basehttp 154 "POST /xadmin/home/nav/4/update/ HTTP/1.1" 302 0
+INFO 2021-05-25 15:15:48,642 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 36729
+INFO 2021-05-25 15:15:48,674 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:15:53,598 basehttp 154 "GET /xadmin/home/nav/5/update/ HTTP/1.1" 200 17912
+INFO 2021-05-25 15:15:53,625 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:16:45,469 basehttp 154 "POST /xadmin/home/nav/5/update/ HTTP/1.1" 302 0
+INFO 2021-05-25 15:16:45,547 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 36779
+INFO 2021-05-25 15:16:45,569 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:16:57,478 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 36550
+INFO 2021-05-25 15:16:57,515 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:17:04,135 basehttp 154 "GET /xadmin/home/nav/2/update/ HTTP/1.1" 200 17968
+INFO 2021-05-25 15:17:04,176 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:17:08,074 basehttp 154 "POST /xadmin/home/nav/2/update/ HTTP/1.1" 302 0
+INFO 2021-05-25 15:17:08,156 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 36784
+INFO 2021-05-25 15:17:08,187 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:17:10,148 basehttp 154 "GET /xadmin/home/nav/3/update/ HTTP/1.1" 200 17955
+INFO 2021-05-25 15:17:10,176 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:17:11,544 basehttp 154 "POST /xadmin/home/nav/3/update/ HTTP/1.1" 302 0
+INFO 2021-05-25 15:17:11,657 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 36780
+INFO 2021-05-25 15:17:11,680 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:17:12,926 basehttp 154 "GET /xadmin/home/nav/4/update/ HTTP/1.1" 200 17972
+INFO 2021-05-25 15:17:12,958 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:17:14,049 basehttp 154 "POST /xadmin/home/nav/4/update/ HTTP/1.1" 302 0
+INFO 2021-05-25 15:17:14,115 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 36782
+INFO 2021-05-25 15:17:14,138 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:17:15,404 basehttp 154 "GET /xadmin/home/nav/5/update/ HTTP/1.1" 200 17966
+INFO 2021-05-25 15:17:15,432 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:17:16,654 basehttp 154 "POST /xadmin/home/nav/5/update/ HTTP/1.1" 302 0
+INFO 2021-05-25 15:17:16,721 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 36775
+INFO 2021-05-25 15:17:16,743 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:17:24,995 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-05-25 15:17:25,046 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 558
+INFO 2021-05-25 15:17:31,653 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-05-25 15:17:31,654 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 558
+INFO 2021-05-25 15:17:34,991 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-05-25 15:17:34,993 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 558
+INFO 2021-05-25 15:17:35,568 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 558
+INFO 2021-05-25 15:18:21,063 basehttp 154 "GET /xadmin/home/nav/2/update/ HTTP/1.1" 200 17960
+INFO 2021-05-25 15:18:21,090 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:18:35,722 basehttp 154 "POST /xadmin/home/nav/2/update/ HTTP/1.1" 302 0
+INFO 2021-05-25 15:18:35,793 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 36756
+INFO 2021-05-25 15:18:35,824 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:18:39,603 basehttp 154 "GET /xadmin/home/nav/3/update/ HTTP/1.1" 200 17947
+INFO 2021-05-25 15:18:39,629 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:18:44,548 basehttp 154 "POST /xadmin/home/nav/3/update/ HTTP/1.1" 302 0
+INFO 2021-05-25 15:18:44,619 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 36728
+INFO 2021-05-25 15:18:44,645 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:18:47,791 basehttp 154 "GET /xadmin/home/nav/4/update/ HTTP/1.1" 200 17964
+INFO 2021-05-25 15:18:47,814 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:18:54,638 basehttp 154 "POST /xadmin/home/nav/4/update/ HTTP/1.1" 302 0
+INFO 2021-05-25 15:18:54,717 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 36706
+INFO 2021-05-25 15:18:54,742 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:18:57,282 basehttp 154 "GET /xadmin/home/nav/5/update/ HTTP/1.1" 200 17958
+INFO 2021-05-25 15:18:57,309 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:19:17,917 basehttp 154 "POST /xadmin/home/nav/5/update/ HTTP/1.1" 302 0
+INFO 2021-05-25 15:19:17,993 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 36650
+INFO 2021-05-25 15:19:18,026 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:20:21,197 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-05-25 15:20:21,260 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-05-25 15:21:57,235 basehttp 154 "GET /xadmin/home/nav/add/ HTTP/1.1" 200 17643
+INFO 2021-05-25 15:21:57,262 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:21:59,619 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 36418
+INFO 2021-05-25 15:22:06,013 basehttp 154 "GET /xadmin/home/nav/add/ HTTP/1.1" 200 17643
+INFO 2021-05-25 15:22:06,056 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:23:03,396 basehttp 154 "POST /xadmin/home/nav/add/ HTTP/1.1" 302 0
+INFO 2021-05-25 15:23:03,478 basehttp 154 "GET /xadmin/home/nav/add/ HTTP/1.1" 200 17992
+INFO 2021-05-25 15:23:03,516 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:24:34,472 basehttp 154 "POST /xadmin/home/nav/add/ HTTP/1.1" 302 0
+INFO 2021-05-25 15:24:34,558 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 38870
+INFO 2021-05-25 15:24:34,582 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:25:17,078 basehttp 154 "GET /xadmin/home/nav/9/update/ HTTP/1.1" 200 17992
+INFO 2021-05-25 15:25:17,123 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:25:19,325 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 38569
+INFO 2021-05-25 15:26:35,081 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\home\serializers.py changed, reloading.
+INFO 2021-05-25 15:26:36,712 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-25 15:29:15,130 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2021-05-25 15:29:16,731 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-25 15:32:42,410 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2021-05-25 15:32:44,130 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-05-25 15:35:58,442 log 228 Not Found: /
+WARNING 2021-05-25 15:35:58,443 basehttp 154 "GET / HTTP/1.1" 404 2266
+INFO 2021-05-25 15:36:25,414 basehttp 154 "GET /home/btmnav HTTP/1.1" 301 0
+INFO 2021-05-25 15:36:25,461 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 5289
+INFO 2021-05-25 15:37:01,008 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 5289
+INFO 2021-05-25 15:37:01,401 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2021-05-25 15:37:03,179 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-25 15:37:08,656 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-25 15:37:11,272 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 5834
+INFO 2021-05-25 15:41:46,188 basehttp 154 "GET /home/btmnav HTTP/1.1" 301 0
+INFO 2021-05-25 15:41:46,210 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-05-25 15:41:50,260 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-05-25 15:41:50,324 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-05-25 15:41:50,326 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-05-25 15:43:02,859 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-05-25 15:43:02,866 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-05-25 15:43:02,867 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-05-25 15:45:19,562 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-05-25 15:45:19,646 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-05-25 15:46:24,467 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-05-25 15:46:24,487 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-05-25 15:46:24,490 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-05-25 15:47:10,787 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2021-05-25 15:47:12,946 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-25 15:48:33,678 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-05-25 15:48:39,717 basehttp 154 "GET /xadmin/home/nav/8/update/ HTTP/1.1" 200 17976
+INFO 2021-05-25 15:48:39,760 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:48:45,659 basehttp 154 "POST /xadmin/home/nav/8/update/ HTTP/1.1" 302 0
+INFO 2021-05-25 15:48:45,734 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 38813
+INFO 2021-05-25 15:48:45,766 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:48:51,875 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-05-25 15:48:51,886 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-05-25 15:48:51,898 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 195
+INFO 2021-05-25 15:49:01,256 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-05-25 15:49:01,259 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 195
+INFO 2021-05-25 15:49:01,264 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-05-25 15:49:06,996 basehttp 154 "GET /xadmin/home/nav/8/update/ HTTP/1.1" 200 17988
+INFO 2021-05-25 15:49:07,026 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:49:11,488 basehttp 154 "POST /xadmin/home/nav/8/update/ HTTP/1.1" 302 0
+INFO 2021-05-25 15:49:11,588 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 38817
+INFO 2021-05-25 15:49:11,621 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:49:15,597 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-05-25 15:49:15,725 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 197
+INFO 2021-05-25 15:49:15,725 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-05-25 15:49:46,347 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 197
+INFO 2021-05-25 15:49:48,464 basehttp 154 "GET /xadmin/home/nav/8/update/ HTTP/1.1" 200 17996
+INFO 2021-05-25 15:49:48,488 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:49:52,714 basehttp 154 "POST /xadmin/home/nav/8/update/ HTTP/1.1" 302 0
+INFO 2021-05-25 15:49:52,807 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 38807
+INFO 2021-05-25 15:49:52,841 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-05-25 15:52:17,828 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2021-05-25 15:52:19,804 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-25 15:55:44,834 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2021-05-25 15:55:46,359 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-25 16:00:49,769 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-05-25 16:00:53,122 log 228 Not Found: /
+WARNING 2021-05-25 16:00:53,123 basehttp 154 "GET / HTTP/1.1" 404 2266
+INFO 2021-05-25 16:00:53,746 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2021-05-25 16:00:55,423 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-25 16:01:03,688 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 6069
+INFO 2021-05-25 16:01:17,919 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-05-25 16:06:03,650 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+WARNING 2021-05-25 16:09:37,931 log 228 Method Not Allowed: /home/btmnav/
+WARNING 2021-05-25 16:09:37,932 basehttp 154 "POST /home/btmnav/ HTTP/1.1" 405 46
+INFO 2021-05-25 16:09:41,820 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-05-25 16:11:16,647 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192

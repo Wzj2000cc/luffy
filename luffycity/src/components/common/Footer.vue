@@ -4,9 +4,10 @@
       <div class="foot-left">
         <div class="foot-content">
           <p>
-            <span>关于我们</span>
-            &nbsp;&nbsp;|&nbsp;&nbsp;
-            <span>贝里小卖铺</span>
+            <span v-for="(value,index) in category_list" :key="value.id">
+              <a :href="value.link">{{value.title}}</a>
+              &nbsp&nbsp
+            </span>
           </p>
           <p>
             地址：北京市昌平区顺沙路八号院汇德商厦402  邮箱：customer@luffycity.com
@@ -31,7 +32,25 @@
 
 <script>
 export default {
-  name: "Foot"
+  name: "Foot",
+  data(){
+    return{
+      category_list: []
+    }
+  },
+  methods:{
+    get_btm_data(){
+      this.$axios.get(`${this.$settings.Host}/home/btmnav`).then((res)=>{
+        // console.log(res)
+        this.category_list = res.data;
+      }).catch((error)=>{
+        console.log(error)
+      })
+    },
+  },
+  created() {
+    this.get_btm_data();
+  }
 }
 </script>
 

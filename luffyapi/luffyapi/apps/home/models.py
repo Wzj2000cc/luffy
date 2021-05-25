@@ -1,8 +1,8 @@
 from django.db import models
-
+from luffyapi.utils.models import BaseModel
 # Create your models here.
 
-class Banner(models.Model):
+class Banner(BaseModel):
     """
     轮播广告图墨香
 
@@ -33,3 +33,31 @@ class Banner(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Nav(BaseModel):
+    """
+    导航菜单模型
+    """
+    POSITION_OPTION = (
+        (1,'顶部导航'),
+        (2,'底部导航')
+    )
+    title = models.CharField(max_length=500,verbose_name='导航标题')
+    link = models.CharField(max_length=500,verbose_name='导航链接')
+    # 通过is_site判断是生成router-link标签（内链）还是a标签（外链）
+    is_site = models.BooleanField(default=False,verbose_name='是否是站外链接')
+    position = models.IntegerField(choices=POSITION_OPTION,default=1,verbose_name='导航位置')
+
+    class Meta:
+        db_table = 'ly_nav'
+        verbose_name = '导航菜单'
+        verbose_name_plural = verbose_name
+
+    def __str__(self):
+        return self.title
+
+
+
+
+

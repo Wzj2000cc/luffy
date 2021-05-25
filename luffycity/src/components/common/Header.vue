@@ -7,29 +7,18 @@
             <el-col class="logo" :span="3">
               <a href="/">
                 <img src="@/assets/head-logo.svg" alt="">
-
               </a>
             </el-col>
+
             <el-col class="nav" :span="10">
               <el-row>
-                <el-col :span="3">
-                  <router-link to="/course/" class="active">免费课</router-link>
-                </el-col>
-                <el-col :span="3">
-                  <router-link to="/">轻课</router-link>
-                </el-col>
-                <el-col :span="3">
-                  <router-link to="/">学位课</router-link>
-                </el-col>
-                <el-col :span="3">
-                  <router-link to="/">题库</router-link>
-                </el-col>
-                <el-col :span="3">
-                  <router-link to="/">教育</router-link>
+                <el-col :span="3" v-for="(value,index) in category_list" :key="value.id">
+                  <router-link :to="value.link" :class="{active:nav_num===index}" @click.native="nav_num=index" v-if="!value.is_site">{{value.title}}</router-link>
+                  <a :href="value.link" v-else>{{value.title}}</a>
                 </el-col>
               </el-row>
-
             </el-col>
+
             <el-col :span="11" class="header-right-box">
               <div class="search">
                 <input type="text" id="Input" placeholder="请输入想搜索的课程" v-show="!status" ref="Input"
@@ -126,6 +115,8 @@ export default {
       token: false, // 登录与否的状态标识
       status: true,  // input搜索标签与ul标签的状态标识
       list_status: true, // 下拉菜单的显示与否的状态标识
+      category_list: [], // 构建顶部导航栏的显示数据
+      nav_num: null, // 控制选中顶部导航栏的显示样式
     }
   },
   methods: {
@@ -147,9 +138,18 @@ export default {
     },
     HideInfoList(){
       this.list_status = false
-    }
-
-
+    },
+    get_nav_data(){
+      this.$axios.get(`${this.$settings.Host}/home/nav`).then((res)=>{
+        // console.log(res)
+        this.category_list = res.data;
+      }).catch((error)=>{
+        console.log(error)
+      })
+    },
+  },
+  created() {
+    this.get_nav_data();
   }
 }
 

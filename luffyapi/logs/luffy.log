@@ -1023,3 +1023,17 @@ WARNING 2021-05-25 16:09:37,931 log 228 Method Not Allowed: /home/btmnav/
 WARNING 2021-05-25 16:09:37,932 basehttp 154 "POST /home/btmnav/ HTTP/1.1" 405 46
 INFO 2021-05-25 16:09:41,820 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
 INFO 2021-05-25 16:11:16,647 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-05-25 16:24:27,435 autoreload 217 E:\luffy\luffyapi\luffyapi\settings\contants.py changed, reloading.
+INFO 2021-05-25 16:24:29,121 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-05-25 16:24:29,658 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+WARNING 2021-05-25 16:26:50,786 log 228 Not Found: /home/btmnav/
+INFO 2021-05-25 16:26:50,786 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+WARNING 2021-05-25 16:26:50,787 log 228 Not Found: /home/nav/
+WARNING 2021-05-25 16:26:50,788 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 404 2374
+WARNING 2021-05-25 16:26:50,789 basehttp 154 "GET /home/nav/ HTTP/1.1" 404 2365
+INFO 2021-05-25 16:26:50,864 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\home\models.py changed, reloading.
+INFO 2021-05-25 16:26:52,764 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-05-25 16:26:55,197 log 228 Not Found: /
+WARNING 2021-05-25 16:26:55,198 basehttp 154 "GET / HTTP/1.1" 404 2266
+INFO 2021-05-25 16:27:04,903 basehttp 154 "GET /home/btmnav HTTP/1.1" 301 0
+INFO 2021-05-25 16:27:04,960 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 5834

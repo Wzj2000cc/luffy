@@ -27,7 +27,9 @@ export default {
       this.$axios.get(`${this.$settings.Host}/home/banner/`).then((res)=>{
         // console.log(res.data())
         this.banner_list=res.data;
-      }).catch()
+      }).catch((error)=>{
+        console.log(error);
+      })
     }
   },
   created() {

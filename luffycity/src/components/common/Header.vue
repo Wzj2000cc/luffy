@@ -69,7 +69,7 @@
                     <div class="nav-study">我的教室</div>
                   </router-link>
                   <div class="nav-img" @mouseover="ShowInfoList" @mouseout="HideInfoList">
-                    <img src="@/assets/1.jpg" alt="" style="border: 1px solid rgb(243, 243, 243);">
+                    <img src="@/assets/shuaige.jpg" alt="" style="border: 1px solid rgb(243, 243, 243);">
                     <ul class="home-my-account" v-show="list_status">
                       <li>
                         我的账户
@@ -104,20 +104,15 @@
                         <img src="https://hcdn1.luffycity.com/static/frontend/activity/back_1568185800.821227.svg"
                              alt="">
                       </li>
-
                     </ul>
                   </div>
-
                 </div>
-
               </div>
-
 
             </el-col>
           </el-row>
         </el-header>
       </el-container>
-
     </div>
   </div>
 

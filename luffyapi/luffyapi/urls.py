@@ -31,5 +31,6 @@ urlpatterns = [
     re_path(r'media/(?P<path>.*)',serve,{'document_root':settings.MEDIA_ROOT}),
     # 轮播图应用
     path(r'home/',include('home.urls')),
+    path(r'users/',include('users.urls')),
 
 ]

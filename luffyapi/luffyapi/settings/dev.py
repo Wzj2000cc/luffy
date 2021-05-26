@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
-import os,sys
+import os,sys,datetime
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'reversion',
 
     'home', # 飘黄，因为没在sys.path里面,上面已经配置
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -122,12 +123,14 @@ LANGUAGE_CODE = 'zh-Hans'
 
 TIME_ZONE = 'Asia/Shanghai'
 
-USE_I18N = True
+USE_I18N = False
 
 USE_L10N = True
 
 USE_TZ = False
 
+# 配置自定义用户模型
+AUTH_USER_MODEL = 'users.User'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
@@ -139,7 +142,13 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'uploads')
 MEDIA_URL = '/media/' # 路径别名
 
 REST_FRAMEWORK = {
-    'EXCEPTION_HANDLER':'luffyapi.utils.exceptions.custom_exception_handler'
+    # 异常处理
+    'EXCEPTION_HANDLER':'luffyapi.utils.exceptions.custom_exception_handler',
+
+    'DEFAULT_AUTHENTICATION_CLASSES':(
+    'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+    'rest_framework.authentication.SessionAuthentication',
+    'rest_framework.authentication.BasicAuthentication'),
 }
 
 
@@ -204,3 +213,9 @@ CORS_ORIGIN_WHITELIST = [
     'http://www.luffycity.cn:8080',
 ]
 CORS_ALLOW_CREDENTTALS = False
+
+
+JWT_AUTH={
+    # 设置过期时间
+    'JWT_EXPIRATION_DELTA':datetime.timedelta(days=7)
+}

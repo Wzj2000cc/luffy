@@ -79,7 +79,7 @@
             <span class="shopping-cart-bot-font" style="margin-left: 15px; cursor: pointer">全选</span>
           </li>
           <li class="charge-list" style="margin-left: 58px;">
-            <!--            <img alt="" width="18" height="auto" src="@/assets/delete.png">-->
+            <!--            <image alt="" width="18" height="auto" src="@/assets/delete.png">-->
             <span class="shopping-cart-bot-font" style="margin-left: 15px; cursor: pointer; border: 0;">删除</span>
           </li>
           <li class="charge-list" style="margin-left: auto">

@@ -91,8 +91,8 @@
                       <div class="list-name">
                         <img class="open" src="@/assets/jiahao.png" alt="" v-show="status!==0">
                         <img class="us" src="@/assets/jianhao.png" alt="" v-show="status===0">
-<!--                        <img class="us" src="@/assets/jianhao.png" alt="" v-show="status_dic[0]">-->
-<!--                        <img class="us" src="@/assets/jianhao.png" alt="" v-show="!status_dic[0]">-->
+<!--                        <image class="us" src="@/assets/jianhao.png" alt="" v-show="status_dic[0]">-->
+<!--                        <image class="us" src="@/assets/jianhao.png" alt="" v-show="!status_dic[0]">-->
                         <p>第1章·基本语法</p>
                       </div>
                       <div class="list-num">
@@ -209,8 +209,8 @@
                       <div class="list-name">
                         <img class="open" src="@/assets/jiahao.png" alt="" v-show="status!==1">
                         <img class="us" src="@/assets/jianhao.png" alt="" v-show="status===1">
-<!--                        <img class="us" src="@/assets/jianhao.png" alt="" v-show="status_dic[1]">-->
-<!--                        <img class="us" src="@/assets/jianhao.png" alt="" v-show="!status_dic[1]">-->
+<!--                        <image class="us" src="@/assets/jianhao.png" alt="" v-show="status_dic[1]">-->
+<!--                        <image class="us" src="@/assets/jianhao.png" alt="" v-show="!status_dic[1]">-->
                         <p>第1章·基本语法</p>
                       </div>
                       <div class="list-num">
@@ -345,9 +345,9 @@
                               @pause="onPlayerPause($event)"
                 >
                 </video-player>
-                <!--                <img src="@/assets/PY1.png" alt="">-->
+                <!--                <image src="@/assets/PY1.png" alt="">-->
                 <!--                <p>-->
-                <!--                  <img src="@/assets/triangle_1.svg" alt="">-->
+                <!--                  <image src="@/assets/triangle_1.svg" alt="">-->
                 <!--                </p>-->
               </div>
               <div class="student-prower">

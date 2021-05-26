@@ -5,6 +5,7 @@ import Home from "../components/Home";
 import Course from "../components/Course";
 import Detail from "../components/Detail";
 import Cart from "../components/Cart";
+import Login from "../components/Login";
 
 Vue.use(Router)
 
@@ -31,5 +32,10 @@ export default new Router({
       path:'/cart/',
       name:'Cart',
       component:Cart
-    }
+    },
+    {
+      path:'/login/',
+      name:'login',
+      component:Login
+    },
   ]})

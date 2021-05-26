@@ -112,7 +112,7 @@ export default {
   name: "Header",
   data() {
     return {
-      token: false, // 登录与否的状态标识
+      token: true, // 登录与否的状态标识
       status: true,  // input搜索标签与ul标签的状态标识
       list_status: true, // 下拉菜单的显示与否的状态标识
       category_list: [], // 构建顶部导航栏的显示数据

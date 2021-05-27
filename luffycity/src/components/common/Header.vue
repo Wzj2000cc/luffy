@@ -33,7 +33,7 @@
                   <img class="new" src="@/assets/new.png" alt="">
                 </p>
               </div>
-              <div class="register" v-show="token">
+              <div class="register" v-show="!token">
                 <router-link to="/login">
                   <button class="signin">登录</button>
                 </router-link>
@@ -45,14 +45,14 @@
 
                 </a>
               </div>
-              <div class="shop-car" v-show="!token">
+              <div class="shop-car" v-show="token">
                 <router-link to="/cart">
                   <b>6</b>
                   <img src="@/assets/shopcart.png" alt="">
                   <span>购物车 </span>
                 </router-link>
               </div>
-              <div class="nav-right-box" v-show="!token">
+              <div class="nav-right-box" v-show="token">
                 <div class="nav-right">
                   <router-link to="/myclass">
                     <div class="nav-study">我的教室</div>
@@ -88,7 +88,7 @@
                         <img src="https://hcdn1.luffycity.com/static/frontend/activity/back_1568185800.821227.svg"
                              alt="">
                       </li>
-                      <li>
+                      <li @click="LogoutHandler">
                         退出
                         <img src="https://hcdn1.luffycity.com/static/frontend/activity/back_1568185800.821227.svg"
                              alt="">
@@ -112,7 +112,7 @@ export default {
   name: "Header",
   data() {
     return {
-      token: true, // 登录与否的状态标识
+      token: false, // 登录与否的状态标识
       status: true,  // input搜索标签与ul标签的状态标识
       list_status: true, // 下拉菜单的显示与否的状态标识
       category_list: [], // 构建顶部导航栏的显示数据
@@ -147,9 +147,24 @@ export default {
         console.log(error)
       })
     },
+
+    check_login_status(){
+      this.token = sessionStorage.user_token || localStorage.user_token
+    },
+
+    LogoutHandler(){
+      localStorage.removeItem('user_token');
+      localStorage.removeItem('id');
+      localStorage.removeItem('username');
+      sessionStorage.removeItem('user_token');
+      sessionStorage.removeItem('id');
+      sessionStorage.removeItem('username');
+      this.check_login_status()
+    }
   },
   created() {
     this.get_nav_data();
+    this.check_login_status();
   }
 }
 

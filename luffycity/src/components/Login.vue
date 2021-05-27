@@ -22,7 +22,8 @@
             </p>
             <p>忘记密码</p>
           </div>
-          <button class="login_btn" @click="LoginHandler">登录</button>
+<!--          <button class="login_btn" @click="LoginHandler">登录</button>-->
+          <el-button :plain="true" @click="LoginHandler" class="login_btn">登录</el-button>
           <p class="go_login" >没有账号 <span>立即注册</span></p>
         </div>
         <div class="inp" v-show="login_type==1">
@@ -65,8 +66,13 @@ export default {
           sessionStorage.user_token = data.token;
         }
         this.$router.push('/'); // vue跳转页面功能
+        this.$message({
+          message: '恭喜你，登录成功！',
+          type: 'success'
+        });
       }).catch(error=>{
         console.log(error);
+        this.$message.error('错了哦，请重新输入');
       })
     }
   },

@@ -219,3 +219,8 @@ JWT_AUTH={
     # 设置过期时间
     'JWT_EXPIRATION_DELTA':datetime.timedelta(days=7)
 }
+
+# 配置自定义认证
+AUTHENTICATION_BACKENDS = [
+    'users.utils.UsernameMobileAuthBackend'
+]

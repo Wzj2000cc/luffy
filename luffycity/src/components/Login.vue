@@ -23,15 +23,25 @@
             <p>忘记密码</p>
           </div>
 <!--          <button class="login_btn" @click="LoginHandler">登录</button>-->
-          <el-button :plain="true" @click="LoginHandler" class="login_btn">登录</el-button>
-          <p class="go_login" >没有账号 <span>立即注册</span></p>
+          <el-button :plain="true" @click="GetCapycha" class="login_btn">登录</el-button>
+          <p class="go_login" >没有账号
+            <router-link to="/register">
+              <span class="go_login">立即注册</span>
+            </router-link>
+          </p>
         </div>
         <div class="inp" v-show="login_type==1">
           <input v-model = "username" type="text" placeholder="手机号码" class="user">
           <input v-model = "password"  type="text" class="pwd" placeholder="短信验证码">
           <button id="get_code">获取验证码</button>
           <button class="login_btn">登录</button>
-          <p class="go_login" >没有账号 <span>立即注册</span></p>
+
+            <p class="go_login" >没有账号
+              <router-link to="/register">
+                <span class="go_login">立即注册</span>
+              </router-link>
+            </p>
+
         </div>
       </div>
     </div>
@@ -74,9 +84,44 @@ export default {
         console.log(error);
         this.$message.error('错了哦，请重新输入');
       })
-    }
-  },
+    },
 
+    handlerPopup(captchaObj){
+
+      document.getElementById('geetest1').innerHTML='';
+      captchaObj.appendTo('#geetest1');
+
+      captchaObj.onSuccess(()=>{ // 实时监听滑动验证码
+        var validate = captchaObj.getValidate();
+        this.$axios.post(`${this.$settings.Host}/users/capycha/`,{
+          geetest_challenge: validate.geetest_challenge,
+          geetest_validate: validate.geetest_validate,
+          geetest_seccode: validate.geetest_seccode,
+        }).then(data =>{
+          console.log(data)
+          if(data.data.status === 'success'){
+            this.LoginHandler();
+          }
+        })
+      });
+
+
+    },
+
+    GetCapycha(){ // 点击登录，发送第一个get请求，获取我们的验证码标签
+      this.$axios.get(`${this.$settings.Host}/users/capycha/`).then(data =>{
+        initGeetest({
+          gt: data.data.gt,
+          challenge: data.data.challenge,
+          product: "popup", // 产品形式，包括：float，embed，popup。注意只对PC版验证码有效
+          offline: !data.data.success // 表示用户后台检测极验服务器是否宕机，一般不需要关注
+        }, this.handlerPopup);
+      }).catch(error =>{
+        console.log(error)
+      });
+    },
+  },
+  // created() {}
 };
 </script>
 

@@ -129,6 +129,8 @@ USE_L10N = True
 
 USE_TZ = False
 
+APPEND_SLASH = True
+
 # 配置自定义用户模型
 AUTH_USER_MODEL = 'users.User'
 

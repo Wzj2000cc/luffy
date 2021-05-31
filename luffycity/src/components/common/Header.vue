@@ -42,7 +42,6 @@
                   <router-link to="/register">
                     <button class="signup">注册</button>
                   </router-link>
-
                 </a>
               </div>
               <div class="shop-car" v-show="token">

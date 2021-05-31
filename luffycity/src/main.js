@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import settings from "./settings";
 import '../static/css/reset.css' /* 引入全局css文件 */
+import '../static/js/gt.js' /* 引入全局js文件 */
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'

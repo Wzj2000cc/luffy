@@ -5,6 +5,7 @@ from . import models
 def get_user_by_account(username):
     try:
         user = models.User.objects.get(Q(username=username) | Q(mobile=username))
+
     except models.User.DoesNotExist:
         return None
     else:

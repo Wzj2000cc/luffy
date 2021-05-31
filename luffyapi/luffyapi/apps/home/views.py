@@ -10,8 +10,6 @@ class BannerAPIView(ListAPIView):
     """
     轮播图视图函数展示所有图片数据
     """
-
-
     # /**
     # * showdoc
     # * @title 轮播图功能
@@ -39,7 +37,6 @@ class HeaderNavAPIView(ListAPIView):
 
 # 底部导航栏视图函数展示所有图片数据
 class BottomHeaderNavAPIView(ListAPIView):
-
 
     queryset = models.Nav.objects.filter(is_show=True,is_deleted=False,position=2).order_by('orders')[:contants.BANNER_LENGTH]
     serializer_class = serializers.NavSerializers

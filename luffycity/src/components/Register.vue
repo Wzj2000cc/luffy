@@ -7,8 +7,11 @@
         <div class="inp">
           <input v-model = "mobile" type="text" placeholder="请输入账号或手机号码" class="user" @blur="checkmobile">
           <input v-model = "password" type="password" placeholder="请输入密码" class="user">
-
-          <input v-model = "sms_code" type="text" placeholder="请输入验证码" class="user">
+          <div class="sms-box">
+            <input v-model = "sms_code" type="text" maxlength='8' placeholder="输入验证码" class="user">
+            <div class="sms-btn" @click="smsHandler">点击发送短信</div>
+            <div v-show="!show" class="sms-btn1">{{count}} s</div>
+          </div>
 
           <!-- <div id="geetest"></div>滑动验证这里我就不加了 -->
           <button class="register_btn" @click="RegisterHandler" >注册</button>
@@ -28,6 +31,10 @@ export default {
       mobile:"",
       password:"",
       validateResult:false,
+      errors_data:{'mobile': '手机号码', 'password': '密码', 'sms_code': '验证码'},
+      show: true,
+      count: '',
+      timer: null,
     }
   },
 
@@ -47,25 +54,58 @@ export default {
         sessionStorage.user_token= res.data.token;
         sessionStorage.id= res.data.id;
         sessionStorage.username= res.data.username;
-        this.$router.push('/')
-        }).catch(error=>{
-          // let data = error.response.data;
-          // let message = '';
-          // console.log(data)
-          // for(let key in data){
-          //   message = data[key][0];
-          // }
-          this.$message.error("手机号码或密码或验证码不能为空")
+
+        this.$alert('注册成功，点击确定直接登录',{
+          confirmButtonText:'确定',
+          callback:action => {
+            this.$router.push('/')
+          }
+        })
+        }).catch(async error=>{
+          let data = error.response.data;
+          let message = '';
+          for(let key in data){
+            message = await this.errors_data[key]+":"+data[key][0];
+            // message = this.errors_data[key]+'字段不能为空';
+            // this.$message({offset:num*40,message:message,type:"error"});
+            this.$message.error(message)
+          }
+          // this.$message.error("手机号码或密码或验证码不能为空")
       })
     },
     checkmobile(){
+
+      // if(! /^1[3-9]\d{9}$/.test(this.mobile)){
+      //   this.$message.error('手机号码格式不正确')
+      // }
       this.$axios.get(`${this.$settings.Host}/users/mobile/${this.mobile}/`).then(
       res=>{
         this.$message.success(res.data.msg)
       }).catch(error=>{
         this.$message.error(error.response.data.msg)
       })
-    }
+    },
+    smsHandler(){
+      this.$axios.get(`${this.$settings.Host}/users/sms/${this.mobile}/`).then(res =>{
+        this.$message.success(res.data.msg)
+        const TIME_COUNT = 60;
+        if (!this.timer) {
+          this.count = TIME_COUNT;
+          this.show = false;
+          this.timer = setInterval(() => {
+            if (this.count > 0 && this.count <= TIME_COUNT) {
+              this.count--;
+            } else {
+              this.show = true;
+              clearInterval(this.timer);
+              this.timer = null;
+            }
+          }, 1000)
+        }
+      }).catch(error =>{
+        this.$message.error(error.response.data.msg)
+      })
+    },
   },
 
 };
@@ -224,6 +264,39 @@ export default {
 .inp .go_login span{
   color: #84cc39;
   cursor: pointer;
+}
+
+.sms-box{
+  position: relative;
+}
+.sms-btn{
+  font-size: 14px;
+  color: #ffc210;
+  letter-spacing: .26px;
+  position: absolute;
+  right: 16px;
+  top: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  background: #fff;
+  border-left: 1px solid #484848;
+  padding-left: 16px;
+  padding-bottom: 4px;
+}
+
+.sms-btn1{
+  font-size: 14px;
+  color: #ffc210;
+  letter-spacing: .26px;
+  position: absolute;
+  right: 16px;
+  top: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  background: #fff;
+  border-left: 1px solid #484848;
+  padding-left: 75px;
+  padding-bottom: 4px;
 }
 </style>
 

@@ -7,6 +7,8 @@ import Detail from "../components/Detail";
 import Cart from "../components/Cart";
 import Login from "../components/Login";
 import Register from "../components/Register";
+import Account from "../components/Account";
+import Respwd from "../components/Respwd";
 
 Vue.use(Router)
 
@@ -14,8 +16,6 @@ export default new Router({
   routes: [
     {
       path: '/',
-      // name: 'HelloWorld',
-      // component: HelloWorld
       name:'Home',
       component:Home,
     },
@@ -43,5 +43,15 @@ export default new Router({
       path:'/register/',
       name:'register',
       component:Register
+    },
+    {
+      path:'/account/',
+      name:'account',
+      component:Account
+    },
+    {
+      path:'/respwd/',
+      name:'respwd',
+      component:Respwd
     },
   ]})

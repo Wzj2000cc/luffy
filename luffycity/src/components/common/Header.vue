@@ -9,17 +9,19 @@
                 <img src="@/assets/head-logo.svg" alt="">
               </a>
             </el-col>
+            <el-col class="nav" :span="15">
 
-            <el-col class="nav" :span="10">
               <el-row>
-                <el-col :span="3" v-for="(value,index) in category_list" :key="value.id">
-                  <router-link :to="value.link" :class="{active:nav_num===index}" @click.native="nav_num=index" v-if="!value.is_site">{{value.title}}</router-link>
+                <el-col :span="2" v-for="(value,index) in category_list" :key="value.id">
+                  <router-link :to="value.link" :class="{active:nav_num===index}" @click.native="nav_num=index"
+                               v-if="!value.is_site">{{value.title}}
+                  </router-link>
                   <a :href="value.link" v-else>{{value.title}}</a>
                 </el-col>
               </el-row>
             </el-col>
 
-            <el-col :span="11" class="header-right-box">
+            <el-col :span="!token?8:10" class="header-right-box">
               <div class="search">
                 <input type="text" id="Input" placeholder="请输入想搜索的课程" v-show="!status" ref="Input"
                        @blur="ReChangeStatus">
@@ -42,11 +44,12 @@
                   <router-link to="/register">
                     <button class="signup">注册</button>
                   </router-link>
+
                 </a>
               </div>
               <div class="shop-car" v-show="token">
                 <router-link to="/cart">
-                  <b>6</b>
+                  <!--                  <b>6</b>-->
                   <img src="@/assets/shopcart.png" alt="">
                   <span>购物车 </span>
                 </router-link>
@@ -57,10 +60,12 @@
                     <div class="nav-study">我的教室</div>
                   </router-link>
                   <div class="nav-img" @mouseover="ShowInfoList" @mouseout="HideInfoList">
-                    <img src="@/assets/shuaige.jpg" alt="" style="border: 1px solid rgb(243, 243, 243);">
+                    <img v-for="i in user" :src="i" alt="" style="border: 1px solid rgb(243, 243, 243);">
                     <ul class="home-my-account" v-show="list_status">
                       <li>
-                        我的账户
+                        <router-link to="/account">
+                          我的账户
+                        </router-link>
                         <img src="https://hcdn1.luffycity.com/static/frontend/activity/back_1568185800.821227.svg"
                              alt="">
                       </li>
@@ -92,17 +97,24 @@
                         <img src="https://hcdn1.luffycity.com/static/frontend/activity/back_1568185800.821227.svg"
                              alt="">
                       </li>
+
                     </ul>
                   </div>
+
                 </div>
+
               </div>
+
 
             </el-col>
           </el-row>
+
         </el-header>
       </el-container>
+
     </div>
   </div>
+
 
 </template>
 
@@ -116,6 +128,9 @@ export default {
       list_status: true, // 下拉菜单的显示与否的状态标识
       category_list: [], // 构建顶部导航栏的显示数据
       nav_num: null, // 控制选中顶部导航栏的显示样式
+      user: {
+        src: ''
+      },
     }
   },
   methods: {
@@ -164,6 +179,10 @@ export default {
   created() {
     this.get_nav_data();
     this.check_login_status();
+    let user_id = sessionStorage.user_id || localStorage.user_id
+    this.$axios.get(`${this.$settings.Host}/users/account/`+ user_id + '/').then((res) => {
+      this.user.src = res.data.avatar
+    })
   }
 }
 

@@ -2,15 +2,12 @@
   <div class="home">
         <el-container>
           <el-header class="out-header">
-    <Header></Header>
-    <Banner></Banner>
-    <add></add>
-
-    <Footer></Footer>
-
+            <Header></Header>
+            <Banner></Banner>
+            <add></add>
+            <Footer></Footer>
           </el-header>
         </el-container>
-`
   </div>
 </template>
 

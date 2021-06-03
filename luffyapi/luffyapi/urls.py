@@ -31,6 +31,9 @@ urlpatterns = [
     re_path(r'media/(?P<path>.*)',serve,{'document_root':settings.MEDIA_ROOT}),
     # 轮播图应用
     path(r'home/',include('home.urls')),
+    # 登录，注册应用
     path(r'users/',include('users.urls')),
+    # 课程详情页面
+    path(r'course/',include('course.urls')),
 
 ]

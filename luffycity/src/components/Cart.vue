@@ -73,6 +73,7 @@
             <!--            </div>-->
           </template>
         </div>
+        <Add></Add>
         <ul class="pas-left">
           <li class="charge-list">
             <input type="checkbox" class="select_all" id="color-input-red" width="20px" height="20px">
@@ -90,7 +91,6 @@
         </ul>
       </div>
     </div>
-    <Add></Add>
     <Footer></Footer>
   </div>
 </template>

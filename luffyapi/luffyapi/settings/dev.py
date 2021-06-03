@@ -25,7 +25,8 @@ SECRET_KEY = 't5c(=51h9yg6mdjxfy*ru3&4yovvfvl%lyo!ixfn--gvviy(5k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['api.luffycity.cn','www.luffycity.cn']
+ALLOWED_HOSTS = ['api.luffycity.cn',
+                 'www.luffycity.cn',]
 
 
 # Application definition
@@ -47,6 +48,7 @@ INSTALLED_APPS = [
 
     'home', # 飘黄，因为没在sys.path里面,上面已经配置
     'users',
+    'course',
 ]
 
 MIDDLEWARE = [
@@ -129,7 +131,7 @@ USE_L10N = True
 
 USE_TZ = False
 
-APPEND_SLASH = True
+# APPEND_SLASH = True
 
 # 配置自定义用户模型
 AUTH_USER_MODEL = 'users.User'
@@ -216,13 +218,68 @@ CORS_ORIGIN_WHITELIST = [
 ]
 CORS_ALLOW_CREDENTTALS = False
 
-
+# 登录时客户端保存JWT信息
 JWT_AUTH={
     # 设置过期时间
-    'JWT_EXPIRATION_DELTA':datetime.timedelta(days=7)
+    'JWT_EXPIRATION_DELTA':datetime.timedelta(days=7),
+    'JWT_RESPONSE_PAYLOAD_HANDLER': 'users.utils.jwt_response_payload_handler',
 }
 
 # 配置自定义认证
 AUTHENTICATION_BACKENDS = [
     'users.utils.UsernameMobileAuthBackend'
 ]
+
+# Redis数据库配置
+CACHES = {
+    # 默认缓存
+    "default": {
+        "BACKEND": 'django_redis.cache.RedisCache',
+        "LOCATION": "redis://127.0.0.1:6379/1",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
+    # 也可以指定缓存的库 session存储配置刀redis里面去，不用的功能在不同的库。
+    # 通过select 1 可以奇幻库
+    # 提供给xadmin或者admin的session存储
+    "session": {
+        "BACKEND": 'django_redis.cache.RedisCache',
+        "LOCATION": "redis://127.0.0.1:6379/1",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
+    "sms_code": {
+        "BACKEND": 'django_redis.cache.RedisCache',
+        "LOCATION": "redis://127.0.0.1:6379/2",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    }
+}
+
+# 设置xadmin用户登录时，登录信息session保存到redis
+SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+SESSION_CACHE_ALIAS = "session"
+
+
+# 容联云配置
+SMS = {
+    'accId' : '8aaf070879c5511c0179c677556200d7',   # 容联云通讯分配的主账号ID
+    'accToken' : '6336a73584a0413b8ed3053ebceaf30c',  # 容联云通讯分配的主账号TOKEN
+    'appId' : '8a216da879c0854b0179c679d3ab0248' # 容联云通讯分配的应用ID
+}
+
+
+#邮箱验证
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_USE_TLS = True # 是否使用TLS安全传输协议(用于在两个通信应用程序之间提供保密性和数据完整性。)
+EMAIL_USE_SSL = True # 是否使用SSL加密，qq企业邮箱要求使用
+# EMAIL_USE_SSL = False #是否使用SSL加密，qq企业邮箱要求使用
+EMAIL_HOST = 'smtp.qq.com'
+# 发送邮件的邮箱 的 SMTP服务器,固定格式,如果是其他的邮箱则是'smtp.xx.com'
+# EMAIL_PORT = 25     # 发件箱的SMTP服务器端口,默认
+EMAIL_PORT = 465     # 发件箱的SMTP服务器端口,默认
+EMAIL_HOST_USER = '2530065079@qq.com'    # 发送邮件的邮箱地址,
+EMAIL_HOST_PASSWORD = 'ehwesfqxqppkdhha'

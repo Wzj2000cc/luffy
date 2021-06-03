@@ -20,7 +20,7 @@
               <input type="checkbox" class="no" name="a" v-model="remember"/>
               <span>记住密码</span>
             </p>
-            <p>忘记密码</p>
+            <router-link to="/respwd">忘记密码</router-link>
           </div>
 <!--          <button class="login_btn" @click="LoginHandler">登录</button>-->
           <el-button :plain="true" @click="GetCapycha" class="login_btn">登录</el-button>
@@ -71,9 +71,13 @@ export default {
         if (this.remember){ // 永久保存
           sessionStorage.clear(); // 永久保存前先清空临时保存的数据
           localStorage.user_token = data.token;
+          localStorage.user_id = data.id;
+          localStorage.user_name = data.name;
         }else { // 临时保存
           localStorage.clear(); // 临时保存前先清空永久保存的数据
           sessionStorage.user_token = data.token;
+          sessionStorage.user_id = data.id;
+          sessionStorage.user_name = data.name;
         }
         this.$router.push('/'); // vue跳转页面功能
         this.$message({
@@ -93,6 +97,7 @@ export default {
 
       captchaObj.onSuccess(()=>{ // 实时监听滑动验证码
         var validate = captchaObj.getValidate();
+        console.log(validate)
         this.$axios.post(`${this.$settings.Host}/users/capycha/`,{
           geetest_challenge: validate.geetest_challenge,
           geetest_validate: validate.geetest_validate,

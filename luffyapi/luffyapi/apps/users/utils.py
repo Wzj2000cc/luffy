@@ -2,6 +2,7 @@ from django.contrib.auth.backends import ModelBackend
 from django.db.models import Q
 from . import models
 
+# 登录判断账号是否存在
 def get_user_by_account(username):
     try:
         user = models.User.objects.get(Q(username=username) | Q(mobile=username))
@@ -19,3 +20,26 @@ class UsernameMobileAuthBackend(ModelBackend):
         user = get_user_by_account(username)
         if user is not None and user.check_password(password):
             return user
+
+
+def jwt_response_payload_handler(token, user=None, request=None):
+    """
+    自定义jwt认证成功返回数据
+    """
+    return {
+        'token': token,
+        'id': user.id,
+        'username': user.username
+    }
+
+
+def get_user_by_email(email):
+    """
+    用于验证邮箱是否存在
+    """
+    try:
+        user = models.User.objects.get(email=email)
+    except models.User.DoesNotExist:
+        return None
+    else:
+        return user

@@ -1,11 +1,12 @@
 import re
 
+from django_redis import get_redis_connection
 from rest_framework import serializers
 from rest_framework_jwt.settings import api_settings
 from . import models
 from .utils import get_user_by_account
-
 from django.contrib.auth.hashers import make_password
+
 # 注册功能序列化器反序列化
 class UserModelSerializer(serializers.ModelSerializer):
 
@@ -23,7 +24,6 @@ class UserModelSerializer(serializers.ModelSerializer):
         }
 
     def validate(self, attrs):
-        print(attrs)
         """
         全局钩子
         """
@@ -35,16 +35,19 @@ class UserModelSerializer(serializers.ModelSerializer):
         if get_user_by_account(mobile):
             raise serializers.ValidationError('该手机号已被注册过！')
 
-        # todo：短信验证码是否正确
+        # todo：短信验证码是否正确(校验)
+        redis_conn = get_redis_connection('sms_code')
+        redis_sms_code = redis_conn.get(f'sms_{mobile}').decode()
+        if sms_code != redis_sms_code:
+            raise serializers.ValidationError('验证码输入有误')
         return attrs
+
 
     def create(self, validated_data):
         """
         我们要注册用户
         1. 前端传来的密码需要加密
         2. 随机生成用户名
-        :param validated_data:
-        :return:
         """
         mobile = validated_data.get('mobile')
         password = validated_data.get('password')
@@ -67,5 +70,50 @@ class UserModelSerializer(serializers.ModelSerializer):
         payload = jwt_payload_handler(user)
         token = jwt_encode_handler(payload)
         user.token = token
+        return user
 
+
+# 个人资料序列化器
+class AccountModelSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.User
+        fields = '__all__'
+
+
+# qq邮箱找回密码序列化器
+class UserRetrieveModelSerializer(serializers.ModelSerializer):
+
+    # 表中没有的字段
+    password2 = serializers.CharField(min_length=2, max_length=50, required=True, help_text='重复输入密码', write_only=True)
+    token = serializers.CharField(max_length=1024, help_text='token认证字符串', read_only=True)
+
+    class Meta:
+        model = models.User
+        fields = ['password','password2','token']
+        extra_kwargs = {
+            'password': {
+                'write_only': True,
+            },
+        }
+
+    def validate(self, attrs):
+        """全局钩子，判断两次输入密码是否相同"""
+        password = attrs.get('password')
+        password2 = attrs.get('password2')
+        if password != password2:
+            raise serializers.ValidationError('两次密码不正确')
+        return attrs
+
+    # put请求获取前端密码，修改数据库的密码
+    def update(self, instance, validated_data):
+        password = validated_data.get('password')
+        user = instance
+        hash_password = make_password(password)
+        models.User.objects.filter(id=instance.id).update(password=hash_password)
+
+        jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+        jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
+        payload = jwt_payload_handler(user)
+        token = jwt_encode_handler(payload)
+        user.token = token
         return user

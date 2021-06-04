@@ -61,13 +61,29 @@ class Course(BaseModel):
     price = models.DecimalField(max_digits=6,decimal_places=2, verbose_name="课程原价",default=0)
     teacher = models.ForeignKey("Teacher",on_delete=models.DO_NOTHING, null=True, blank=True,verbose_name="授课老师")
 
+
     class Meta:
         db_table = "ly_course"
-    verbose_name = "专题课程"
-    verbose_name_plural = "专题课程"
+        verbose_name = "专题课程"
+        verbose_name_plural = "专题课程"
 
     def __str__(self):
         return "%s" % self.name
+
+    def lesson_list(self):
+        chapter_list = self.coursechapters.filter(is_deleted=False, is_show=True)
+        lesson_list = []
+        for chapter in chapter_list:
+            lessons = chapter.coursesections.filter(is_deleted=False, is_show=True)
+            for lesson in lessons:
+                lesson_list.append({
+                    'id': lesson.id,
+                    'name': lesson.name,
+                    'lesson': lesson.lesson,
+                    'free_trail': lesson.free_trail
+                })
+        return lesson_list[:4]
+
 
 
 """ 讲师，导师表 """
@@ -93,6 +109,7 @@ class Teacher(BaseModel):
 
     def __str__(self):
         return "%s" % self.name
+
 
 
 """ 课程章节 """
@@ -129,6 +146,11 @@ class CourseLesson(BaseModel):
     duration = models.CharField(verbose_name="视频时长", blank=True, null=True, max_length=32)  # 仅在前端展示使用，所以直接让上传视频的用户直接填写时长进来就可以了。
     pub_date = models.DateTimeField(verbose_name="发布时间", auto_now_add=True)
     free_trail = models.BooleanField(verbose_name="是否可试看", default=False)
+
+    course = models.ForeignKey('Course', related_name='course_lesson', verbose_name='课程', on_delete=models.CASCADE,
+                               null=True, blank=True)
+    is_show_list = models.BooleanField(verbose_name='是否推荐到课程列表', default=False)
+    lesson = models.IntegerField(verbose_name='第几课时', default=1)
 
     class Meta:
         db_table = "ly_course_lesson"

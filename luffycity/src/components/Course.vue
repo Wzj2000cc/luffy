@@ -6,8 +6,8 @@
       <div class="condition">
         <ul class="cate-list">
           <li class="title">课程分类:</li>
-          <li class="this">全部</li>
-          <li v-for="(value,index) in category_list" :key="index">
+          <li :class="{this:category===0}" @click="category=0">全部</li>
+          <li v-for="(value,index) in category_list" :key="value.id" @click="category=value.id" :class="{this:category===value.id}">
             {{value.name}}
           </li>
         </ul>
@@ -15,9 +15,9 @@
         <div class="ordering">
           <ul>
             <li class="title">筛&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;选: </li>
-            <li class="default this">默认</li>
-            <li class="hot this">人气</li>
-            <li class="price this">价格</li>
+            <li class="default" @click="ChangeOrderType('id')" :class="ChangeOrderClass('id')">默认</li>
+            <li class="hot" @click="ChangeOrderType('students')" :class="ChangeOrderClass('students')">人气</li>
+            <li class="price" @click="ChangeOrderType('price')" :class="ChangeOrderClass('price')">价格</li>
           </ul>
           <p class="condition-result">共21个课程</p>
         </div>
@@ -25,86 +25,30 @@
       </div>
       <!-- 课程列表 -->
       <div class="course-list">
-        <div class="course-item">
+        <div class="course-item" v-for="(value,index) in course_list" :key="value.id">
           <div class="course-image">
-            <img src="@/assets/list01.png/" alt="">
+            <img :src="value.course_img" alt="">
           </div>
           <div class="course-info">
-            <h3><router-link to="/course/detail/1">Python开发21天入门</router-link> <span><img src="/static/image/avatar1.svg" alt="">100人已加入学习</span></h3>
-            <p class="teather-info">Alex 金角大王 老男孩Python教学总监 <span>共154课时/更新完成</span></p>
+            <h3>
+              <router-link to="/course/detail/1">{{value.name}}</router-link>
+              <span><img src="/static/image/avatar1.svg" alt="">{{value.students}}人已加入学习</span></h3>
+            <p class="teather-info">{{value.teacher.name}} {{value.teacher.signature}} {{value.teacher.title}}
+              <span>共{{value.lessons}}课时{{value.lessons === value.pub_lessons?`/更新完成`:`/已更新${value.pub_lessons}课时`}}</span>
+            </p>
             <ul class="lesson-list">
-              <li><span class="lesson-title">01 | 第1节：初识编码</span> <span class="free">免费</span></li>
-              <li><span class="lesson-title">01 | 第1节：初识编码初识编码</span> <span class="free">免费</span></li>
-              <li><span class="lesson-title">01 | 第1节：初识编码</span> <span class="free">免费</span></li>
-              <li><span class="lesson-title">01 | 第1节：初识编码初识编码初识编码初识编码</span> <span class="free">免费</span></li>
+              <li v-for="(value1,index) in value.lesson_list" :key=value1.id>
+                <span class="lesson-title">{{value1.lesson}} | 第{{value1.lesson}}节：{{value1.name}}</span>
+                <span class="free">{{value1.free_trail === true?`免费`:`付费`}}</span>
+              </li>
+<!--              <li><span class="lesson-title">01 | 第1节：初识编码初识编码</span> <span class="free">免费</span></li>-->
+<!--              <li><span class="lesson-title">01 | 第1节：初识编码</span> <span class="free">免费</span></li>-->
+<!--              <li><span class="lesson-title">01 | 第1节：初识编码初识编码初识编码初识编码</span> <span class="free">免费</span></li>-->
             </ul>
             <div class="pay-box">
               <span class="discount-type">限时免费</span>
               <span class="discount-price">￥0.00元</span>
-              <span class="original-price">原价：9.00元</span>
-              <span class="buy-now">立即购买</span>
-            </div>
-          </div>
-        </div>
-        <div class="course-item">
-          <div class="course-image">
-            <img src="@/assets/list01.png/" alt="">
-          </div>
-          <div class="course-info">
-            <h3>Python开发21天入门 <span><img src="/static/image/avatar1.svg" alt="">100人已加入学习</span></h3>
-            <p class="teather-info">Alex 金角大王 老男孩Python教学总监 <span>共154课时/更新完成</span></p>
-            <ul class="lesson-list">
-              <li><span class="lesson-title">01 | 第1节：初识编码</span> <span class="free">免费</span></li>
-              <li><span class="lesson-title">01 | 第1节：初识编码初识编码</span> <span class="free">免费</span></li>
-              <li><span class="lesson-title">01 | 第1节：初识编码</span> <span class="free">免费</span></li>
-              <li><span class="lesson-title">01 | 第1节：初识编码初识编码初识编码初识编码</span> <span class="free">免费</span></li>
-            </ul>
-            <div class="pay-box">
-              <span class="discount-type">限时免费</span>
-              <span class="discount-price">￥0.00元</span>
-              <span class="original-price">原价：9.00元</span>
-              <span class="buy-now">立即购买</span>
-            </div>
-          </div>
-        </div>
-        <div class="course-item">
-          <div class="course-image">
-            <img src="@/assets/list01.png/" alt="">
-          </div>
-          <div class="course-info">
-            <h3>Python开发21天入门 <span><img src="/static/image/avatar1.svg" alt="">100人已加入学习</span></h3>
-            <p class="teather-info">Alex 金角大王 老男孩Python教学总监 <span>共154课时/更新完成</span></p>
-            <ul class="lesson-list">
-              <li><span class="lesson-title">01 | 第1节：初识编码</span> <span class="free">免费</span></li>
-              <li><span class="lesson-title">01 | 第1节：初识编码初识编码</span> <span class="free">免费</span></li>
-              <li><span class="lesson-title">01 | 第1节：初识编码</span> <span class="free">免费</span></li>
-              <li><span class="lesson-title">01 | 第1节：初识编码初识编码初识编码初识编码</span> <span class="free">免费</span></li>
-            </ul>
-            <div class="pay-box">
-              <span class="discount-type">限时免费</span>
-              <span class="discount-price">￥0.00元</span>
-              <span class="original-price">原价：9.00元</span>
-              <span class="buy-now">立即购买</span>
-            </div>
-          </div>
-        </div>
-        <div class="course-item">
-          <div class="course-image">
-            <img src="@/assets/list01.png/" alt="">
-          </div>
-          <div class="course-info">
-            <h3>Python开发21天入门 <span><img src="/static/image/avatar1.svg" alt="">100人已加入学习</span></h3>
-            <p class="teather-info">Alex 金角大王 老男孩Python教学总监 <span>共154课时/更新完成</span></p>
-            <ul class="lesson-list">
-              <li><span class="lesson-title">01 | 第1节：初识编码</span> <span class="free">免费</span></li>
-              <li><span class="lesson-title">01 | 第1节：初识编码初识编码</span> <span class="free">免费</span></li>
-              <li><span class="lesson-title">01 | 第1节：初识编码</span> <span class="free">免费</span></li>
-              <li><span class="lesson-title">01 | 第1节：初识编码初识编码初识编码初识编码</span> <span class="free">免费</span></li>
-            </ul>
-            <div class="pay-box">
-              <span class="discount-type">限时免费</span>
-              <span class="discount-price">￥0.00元</span>
-              <span class="original-price">原价：9.00元</span>
+              <span class="original-price">原价：{{value.price}}元</span>
               <span class="buy-now">立即购买</span>
             </div>
           </div>
@@ -124,6 +68,11 @@ export default {
     return{
       category:0,
       category_list:[],
+      filters:{
+        type:'id', // 标记选中那哪标签
+        order:'desc', //
+      },
+      course_list:[],
     }
   },
   components:{
@@ -131,16 +80,53 @@ export default {
     Footer,
   },
   methods:{
+    // 课程列表
+    get_category(){
+      this.$axios.get(`${this.$settings.Host}/course/category/`).then(
+        res =>{
+          this.category_list = res.data
+        }
+      ).catch(error=>{
+        console.log(error)
+      })
+    },
+    get_course(){
+      this.$axios.get(`${this.$settings.Host}/course/list/`).then(
+        res =>{
+          console.log(res.data)
+          this.course_list = res.data
+          console.log(this.course_list)
+        }
+      ).catch(error=>{
+        console.log(error)
+      })
+    },
 
+    // 排序
+    ChangeOrderType(type){
+      if(this.filters.type !== type){
+        this.filters.type = type;
+      }else{
+        if(this.filters.order === 'asc'){
+          this.filters.order = 'desc'
+        }else {
+          this.filters.order = 'asc'
+        }
+      }
+    },
+    ChangeOrderClass(type){
+      if(this.filters.type === type && this.filters.order === 'desc'){
+        return 'this asc';
+      }else if(this.filters.type  === type && this.filters.order === 'asc'){
+        return 'this desc'
+      }else {
+        return ''
+      }
+    },
   },
   created() {
-    this.$axios.get(`${this.$settings.Host}/course/category`).then(
-      res =>{
-        this.category_list = res.data
-      }
-    ).catch(error=>{
-      console.log(error)
-    })
+    this.get_category();
+    this.get_course();
   }
 }
 </script>
@@ -240,8 +226,10 @@ export default {
 .course .ordering .price{
   position: relative;
 }
-.course .ordering .price::before,
-.course .ordering .price::after{
+
+
+.course .ordering .this::before,
+.course .ordering .this::after{
   cursor: pointer;
   content:"";
   display: block;
@@ -251,15 +239,22 @@ export default {
   position: absolute;
   right: 0;
 }
-.course .ordering .price::before{
+.course .ordering .this::before{
   border-bottom: 5px solid #aaa;
   margin-bottom: 2px;
   top: 2px;
 }
-.course .ordering .price::after{
+.course .ordering .this::after{
   border-top: 5px solid #aaa;
   bottom: 2px;
 }
+.course .ordering .desc::after{
+  border-top: 5px solid #f5a623;
+}
+.course .ordering .asc::before{
+  border-bottom: 5px solid #f5a623;
+}
+
 .course .course-item:hover{
   box-shadow: 4px 6px 16px rgba(0,0,0,.5);
 }

@@ -4921,3 +4921,2686 @@ struct.error: unpack requires a buffer of 4 bytes
 ERROR 2021-06-03 16:54:15,048 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120892
 INFO 2021-06-03 16:54:55,132 autoreload 597 Watching for file changes with StatReloader
 INFO 2021-06-03 19:23:12,228 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-03 19:23:19,547 basehttp 154 "GET /users/mailbox/2530065079@qq.com/ HTTP/1.1" 200 22
+INFO 2021-06-03 19:28:41,419 basehttp 154 "GET /course/category/ HTTP/1.1" 200 245
+INFO 2021-06-04 08:25:27,681 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-06-04 08:25:30,261 log 228 Bad Request: /users/mailbox/2530065079@qq.com/
+WARNING 2021-06-04 08:25:30,261 basehttp 154 "POST /users/mailbox/2530065079@qq.com/ HTTP/1.1" 400 107
+WARNING 2021-06-04 08:26:09,306 log 228 Bad Request: /users/mailbox/2530065079@qq.com/
+WARNING 2021-06-04 08:26:09,306 basehttp 154 "POST /users/mailbox/2530065079@qq.com/ HTTP/1.1" 400 28
+INFO 2021-06-04 08:27:50,521 basehttp 154 "GET /users/mailbox/2530065079@qq.com/ HTTP/1.1" 200 22
+WARNING 2021-06-04 08:28:04,839 log 228 Bad Request: /users/mailbox/2530065079@qq.com/
+WARNING 2021-06-04 08:28:04,839 basehttp 154 "POST /users/mailbox/2530065079@qq.com/ HTTP/1.1" 400 75
+WARNING 2021-06-04 08:28:18,792 log 228 Bad Request: /users/mailbox/2530065079@qq.com/
+WARNING 2021-06-04 08:28:18,793 basehttp 154 "POST /users/mailbox/2530065079@qq.com/ HTTP/1.1" 400 75
+WARNING 2021-06-04 08:28:27,160 log 228 Bad Request: /users/mailbox/2530065079@qq.com/
+WARNING 2021-06-04 08:28:27,161 basehttp 154 "POST /users/mailbox/2530065079@qq.com/ HTTP/1.1" 400 75
+WARNING 2021-06-04 08:28:56,947 log 228 Bad Request: /users/mailbox/2530065079@qq.com/
+WARNING 2021-06-04 08:28:56,947 basehttp 154 "POST /users/mailbox/2530065079@qq.com/ HTTP/1.1" 400 75
+WARNING 2021-06-04 08:29:28,041 log 228 Bad Request: /users/mailbox/2530065079@qq.com/
+WARNING 2021-06-04 08:29:28,041 basehttp 154 "POST /users/mailbox/2530065079@qq.com/ HTTP/1.1" 400 28
+WARNING 2021-06-04 08:29:33,447 log 228 Bad Request: /users/mailbox/2530065079@qq.com/
+WARNING 2021-06-04 08:29:33,448 basehttp 154 "POST /users/mailbox/2530065079@qq.com/ HTTP/1.1" 400 75
+WARNING 2021-06-04 08:30:39,267 log 228 Bad Request: /users/mailbox/2530065079@qq.com/
+WARNING 2021-06-04 08:30:39,267 basehttp 154 "POST /users/mailbox/2530065079@qq.com/ HTTP/1.1" 400 75
+WARNING 2021-06-04 08:30:44,754 log 228 Bad Request: /users/mailbox/2530065079@qq.com/
+WARNING 2021-06-04 08:30:44,754 basehttp 154 "POST /users/mailbox/2530065079@qq.com/ HTTP/1.1" 400 28
+WARNING 2021-06-04 08:33:51,407 log 228 Bad Request: /users/password/1/
+WARNING 2021-06-04 08:33:51,408 basehttp 154 "PUT /users/password/1/ HTTP/1.1" 400 107
+WARNING 2021-06-04 08:34:38,182 log 228 Bad Request: /users/password/1/
+WARNING 2021-06-04 08:34:38,182 basehttp 154 "PUT /users/password/1/ HTTP/1.1" 400 107
+INFO 2021-06-04 08:35:27,864 basehttp 154 "PUT /users/password/1/ HTTP/1.1" 200 197
+INFO 2021-06-04 09:06:34,579 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-06-04 09:06:39,007 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 09:06:39,008 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 09:06:39,012 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-04 09:06:39,060 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 09:06:39,061 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 09:06:39,077 basehttp 154 "GET /media/banner/banner1.png HTTP/1.1" 304 0
+INFO 2021-06-04 09:06:39,078 basehttp 154 "GET /media/banner/banner2.png HTTP/1.1" 304 0
+INFO 2021-06-04 09:06:47,069 basehttp 154 "GET /users/capycha/ HTTP/1.1" 200 105
+INFO 2021-06-04 09:06:52,395 basehttp 154 "OPTIONS /users/capycha/ HTTP/1.1" 200 0
+INFO 2021-06-04 09:06:52,487 basehttp 154 "POST /users/capycha/ HTTP/1.1" 200 20
+INFO 2021-06-04 09:06:52,490 basehttp 154 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-06-04 09:06:52,606 basehttp 154 "POST /users/login/ HTTP/1.1" 200 224
+INFO 2021-06-04 09:06:52,637 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-04 09:06:52,641 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-04 09:06:52,659 basehttp 154 "GET /media/avatar/shuaige.jpg HTTP/1.1" 304 0
+INFO 2021-06-04 09:06:52,660 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 09:06:52,662 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 09:06:55,597 basehttp 154 "GET /course/category/ HTTP/1.1" 200 245
+INFO 2021-06-04 09:06:55,622 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-04 09:06:55,625 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 09:06:55,625 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+WARNING 2021-06-04 09:07:07,154 log 228 Not Found: /
+WARNING 2021-06-04 09:07:07,155 basehttp 154 "GET / HTTP/1.1" 404 2479
+WARNING 2021-06-04 09:07:07,305 log 228 Not Found: /favicon.ico
+WARNING 2021-06-04 09:07:07,306 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 2530
+INFO 2021-06-04 09:07:09,843 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 4358
+INFO 2021-06-04 09:07:09,868 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4365
+INFO 2021-06-04 09:07:10,896 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 4358
+INFO 2021-06-04 09:07:10,927 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4365
+INFO 2021-06-04 09:07:17,545 basehttp 154 "POST /xadmin/ HTTP/1.1" 302 0
+INFO 2021-06-04 09:07:17,580 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 16110
+ERROR 2021-06-04 09:07:17,749 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 09:07:17,751 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120881
+INFO 2021-06-04 09:07:20,292 basehttp 154 "GET /xadmin/course/coursecategory/ HTTP/1.1" 200 37995
+ERROR 2021-06-04 09:07:20,349 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 09:07:20,351 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120903
+INFO 2021-06-04 09:07:22,204 basehttp 154 "GET /xadmin/course/coursecategory/9/update/ HTTP/1.1" 200 19131
+ERROR 2021-06-04 09:07:22,263 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 09:07:22,264 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120912
+INFO 2021-06-04 09:07:25,913 basehttp 154 "GET /xadmin/course/coursecategory/ HTTP/1.1" 200 37995
+ERROR 2021-06-04 09:07:25,962 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 09:07:25,963 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120903
+INFO 2021-06-04 09:07:27,043 basehttp 154 "GET /xadmin/course/coursecategory/ HTTP/1.1" 200 37995
+ERROR 2021-06-04 09:07:27,092 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 09:07:27,094 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120903
+INFO 2021-06-04 09:07:27,868 basehttp 154 "GET /xadmin/course/course/ HTTP/1.1" 200 27442
+ERROR 2021-06-04 09:07:27,926 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 09:07:27,927 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120895
+INFO 2021-06-04 09:07:29,046 basehttp 154 "GET /xadmin/course/teacher/ HTTP/1.1" 200 26305
+ERROR 2021-06-04 09:07:29,093 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 09:07:29,095 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120896
+INFO 2021-06-04 09:07:29,773 basehttp 154 "GET /xadmin/course/coursechapter/ HTTP/1.1" 200 26194
+ERROR 2021-06-04 09:07:29,833 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 09:07:29,834 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120902
+INFO 2021-06-04 09:07:30,380 basehttp 154 "GET /xadmin/course/courselesson/ HTTP/1.1" 200 26463
+ERROR 2021-06-04 09:07:30,435 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 09:07:30,436 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120901
+INFO 2021-06-04 09:07:30,951 basehttp 154 "GET /xadmin/course/teacher/ HTTP/1.1" 200 26305
+ERROR 2021-06-04 09:07:31,011 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 09:07:31,013 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120896
+INFO 2021-06-04 09:07:31,362 basehttp 154 "GET /xadmin/course/course/ HTTP/1.1" 200 27442
+ERROR 2021-06-04 09:07:31,420 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 09:07:31,422 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120895
+INFO 2021-06-04 09:07:31,666 basehttp 154 "GET /xadmin/course/coursecategory/ HTTP/1.1" 200 37995
+ERROR 2021-06-04 09:07:31,723 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 09:07:31,725 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120903
+INFO 2021-06-04 09:08:42,719 basehttp 154 "GET /xadmin/course/coursecategory/9/update/ HTTP/1.1" 200 19131
+ERROR 2021-06-04 09:08:42,783 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 09:08:42,786 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120912
+INFO 2021-06-04 09:08:44,285 basehttp 154 "POST /xadmin/course/coursecategory/9/update/ HTTP/1.1" 302 0
+INFO 2021-06-04 09:08:44,359 basehttp 154 "GET /xadmin/course/coursecategory/? HTTP/1.1" 200 38241
+ERROR 2021-06-04 09:08:44,435 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 09:08:44,436 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120904
+INFO 2021-06-04 09:08:48,329 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-04 09:08:48,330 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 09:08:48,350 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 09:08:48,355 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 09:11:52,591 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-04 09:11:52,599 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 09:11:52,601 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 09:11:52,602 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 09:26:32,482 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 09:26:46,992 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 09:26:48,543 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-04 09:26:48,545 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-04 09:26:48,546 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 09:26:48,548 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 09:26:53,028 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 09:27:44,796 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 09:27:44,796 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-04 09:27:44,799 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 09:27:44,800 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 09:29:49,952 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-04 09:29:49,953 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 09:29:49,954 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 09:30:45,520 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 09:30:45,523 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-04 09:30:45,527 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 09:30:45,528 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 10:01:54,457 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 10:01:54,459 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 10:01:54,461 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 10:01:54,461 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-04 10:06:28,352 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 10:06:28,354 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 10:06:28,355 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 10:06:28,356 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-04 10:06:31,157 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 10:06:31,164 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-04 10:06:31,165 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 10:06:31,167 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 10:13:48,151 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 10:13:48,154 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 10:13:48,155 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-04 10:13:48,155 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 10:13:50,465 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-04 10:13:50,481 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 10:13:50,484 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 10:13:50,485 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 10:32:30,419 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\course\serializers.py changed, reloading.
+INFO 2021-06-04 10:32:32,404 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 10:32:45,309 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\course\serializers.py changed, reloading.
+INFO 2021-06-04 10:32:47,073 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 10:35:08,793 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\course\urls.py changed, reloading.
+INFO 2021-06-04 10:35:10,203 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 10:36:37,471 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-04 10:36:37,472 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 10:36:37,472 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 10:36:37,473 basehttp 154 "GET /course/list/ HTTP/1.1" 200 2
+INFO 2021-06-04 10:36:37,474 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 10:37:04,899 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-06-04 10:37:06,471 log 228 Not Found: /
+WARNING 2021-06-04 10:37:06,472 basehttp 154 "GET / HTTP/1.1" 404 2479
+WARNING 2021-06-04 10:37:15,331 log 228 Not Found: /users/list
+WARNING 2021-06-04 10:37:15,332 basehttp 154 "GET /users/list HTTP/1.1" 404 3822
+WARNING 2021-06-04 10:37:22,340 log 228 Not Found: /users/list/
+WARNING 2021-06-04 10:37:22,341 basehttp 154 "GET /users/list/ HTTP/1.1" 404 3825
+INFO 2021-06-04 10:37:31,271 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5247
+INFO 2021-06-04 11:07:07,756 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\course\serializers.py changed, reloading.
+INFO 2021-06-04 11:07:09,421 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 11:08:48,512 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\course\serializers.py changed, reloading.
+INFO 2021-06-04 11:08:50,018 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 14:03:49,914 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\course\serializers.py changed, reloading.
+INFO 2021-06-04 14:03:52,154 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 14:08:08,354 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\course\serializers.py changed, reloading.
+INFO 2021-06-04 14:08:10,196 autoreload 597 Watching for file changes with StatReloader
+ERROR 2021-06-04 14:08:50,536 log 228 Internal Server Error: /course/list/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\envs\luffy\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\envs\luffy\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "E:\envs\luffy\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\rest_framework\generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "E:\envs\luffy\lib\site-packages\rest_framework\serializers.py", line 745, in data
+    ret = super().data
+  File "E:\envs\luffy\lib\site-packages\rest_framework\serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "E:\envs\luffy\lib\site-packages\rest_framework\serializers.py", line 664, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "E:\envs\luffy\lib\site-packages\rest_framework\serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "E:\envs\luffy\lib\site-packages\rest_framework\serializers.py", line 500, in to_representation
+    for field in fields:
+  File "E:\envs\luffy\lib\site-packages\rest_framework\serializers.py", line 361, in _readable_fields
+    for field in self.fields.values():
+  File "E:\envs\luffy\lib\site-packages\django\utils\functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "E:\envs\luffy\lib\site-packages\rest_framework\serializers.py", line 349, in fields
+    for key, value in self.get_fields().items():
+  File "E:\envs\luffy\lib\site-packages\rest_framework\serializers.py", line 1054, in get_fields
+    source, info, model, depth
+  File "E:\envs\luffy\lib\site-packages\rest_framework\serializers.py", line 1199, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "E:\envs\luffy\lib\site-packages\rest_framework\serializers.py", line 1319, in build_unknown_field
+    (field_name, model_class.__name__)
+django.core.exceptions.ImproperlyConfigured: Field name `pub_lesson` is not valid for model `Course`.
+ERROR 2021-06-04 14:08:50,540 basehttp 154 "GET /course/list/ HTTP/1.1" 500 21781
+INFO 2021-06-04 14:09:02,636 autoreload 597 Watching for file changes with StatReloader
+ERROR 2021-06-04 14:09:09,386 log 228 Internal Server Error: /course/list/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\envs\luffy\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\envs\luffy\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "E:\envs\luffy\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\rest_framework\generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "E:\envs\luffy\lib\site-packages\rest_framework\serializers.py", line 745, in data
+    ret = super().data
+  File "E:\envs\luffy\lib\site-packages\rest_framework\serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "E:\envs\luffy\lib\site-packages\rest_framework\serializers.py", line 664, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "E:\envs\luffy\lib\site-packages\rest_framework\serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "E:\envs\luffy\lib\site-packages\rest_framework\serializers.py", line 500, in to_representation
+    for field in fields:
+  File "E:\envs\luffy\lib\site-packages\rest_framework\serializers.py", line 361, in _readable_fields
+    for field in self.fields.values():
+  File "E:\envs\luffy\lib\site-packages\django\utils\functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "E:\envs\luffy\lib\site-packages\rest_framework\serializers.py", line 349, in fields
+    for key, value in self.get_fields().items():
+  File "E:\envs\luffy\lib\site-packages\rest_framework\serializers.py", line 1054, in get_fields
+    source, info, model, depth
+  File "E:\envs\luffy\lib\site-packages\rest_framework\serializers.py", line 1199, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "E:\envs\luffy\lib\site-packages\rest_framework\serializers.py", line 1319, in build_unknown_field
+    (field_name, model_class.__name__)
+django.core.exceptions.ImproperlyConfigured: Field name `pub_lesson` is not valid for model `Course`.
+ERROR 2021-06-04 14:09:09,389 basehttp 154 "GET /course/list/ HTTP/1.1" 500 21781
+INFO 2021-06-04 14:09:34,477 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\course\serializers.py changed, reloading.
+INFO 2021-06-04 14:09:35,956 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 14:09:40,245 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 14:09:40,661 basehttp 154 "GET /course/list/ HTTP/1.1" 200 2896
+WARNING 2021-06-04 14:09:56,280 log 228 Not Found: /
+WARNING 2021-06-04 14:09:56,281 basehttp 154 "GET / HTTP/1.1" 404 2479
+INFO 2021-06-04 14:09:58,994 basehttp 154 "GET /xadmin/course/coursecategory/? HTTP/1.1" 200 37995
+ERROR 2021-06-04 14:09:59,185 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 14:09:59,187 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120904
+INFO 2021-06-04 14:10:05,562 basehttp 154 "GET /course/list/ HTTP/1.1" 200 12810
+INFO 2021-06-04 14:10:08,179 basehttp 154 "GET /xadmin/course/coursecategory/? HTTP/1.1" 200 37995
+ERROR 2021-06-04 14:10:08,246 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 14:10:08,247 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120904
+INFO 2021-06-04 14:10:12,462 basehttp 154 "GET /xadmin/course/coursechapter/ HTTP/1.1" 200 26194
+ERROR 2021-06-04 14:10:12,521 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 14:10:12,523 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120902
+INFO 2021-06-04 14:10:14,604 basehttp 154 "GET /xadmin/course/coursecategory/ HTTP/1.1" 200 37995
+ERROR 2021-06-04 14:10:14,654 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 14:10:14,655 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120903
+INFO 2021-06-04 14:10:17,024 basehttp 154 "GET /xadmin/course/courselesson/ HTTP/1.1" 200 26463
+ERROR 2021-06-04 14:10:17,083 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 14:10:17,084 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120901
+INFO 2021-06-04 14:10:17,643 basehttp 154 "GET /xadmin/course/coursechapter/ HTTP/1.1" 200 26194
+ERROR 2021-06-04 14:10:17,706 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 14:10:17,707 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120902
+INFO 2021-06-04 14:10:19,916 basehttp 154 "GET /xadmin/course/teacher/ HTTP/1.1" 200 28749
+ERROR 2021-06-04 14:10:19,977 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 14:10:19,978 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120896
+INFO 2021-06-04 14:10:21,469 basehttp 154 "GET /xadmin/course/coursechapter/ HTTP/1.1" 200 26194
+ERROR 2021-06-04 14:10:21,527 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 14:10:21,528 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120902
+INFO 2021-06-04 14:10:22,645 basehttp 154 "GET /xadmin/course/coursecategory/ HTTP/1.1" 200 37995
+ERROR 2021-06-04 14:10:22,702 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 14:10:22,703 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120903
+INFO 2021-06-04 14:10:27,120 basehttp 154 "GET /xadmin/course/coursecategory/ HTTP/1.1" 200 37995
+ERROR 2021-06-04 14:10:27,169 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 14:10:27,170 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120903
+INFO 2021-06-04 14:10:31,785 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 16110
+ERROR 2021-06-04 14:10:31,858 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 14:10:31,859 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 121054
+INFO 2021-06-04 14:10:32,816 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 16110
+ERROR 2021-06-04 14:10:32,898 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 14:10:32,900 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120881
+INFO 2021-06-04 14:10:36,742 basehttp 154 "GET /xadmin/course/coursecategory/ HTTP/1.1" 200 37995
+ERROR 2021-06-04 14:10:36,799 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 14:10:36,799 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120903
+INFO 2021-06-04 14:10:39,550 basehttp 154 "GET /xadmin/course/teacher/ HTTP/1.1" 200 28749
+ERROR 2021-06-04 14:10:39,609 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 14:10:39,610 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120896
+INFO 2021-06-04 14:10:40,227 basehttp 154 "GET /xadmin/course/course/ HTTP/1.1" 200 46757
+ERROR 2021-06-04 14:10:40,283 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 14:10:40,284 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120895
+INFO 2021-06-04 14:10:42,662 basehttp 154 "GET /xadmin/course/course/1/update/ HTTP/1.1" 200 27707
+INFO 2021-06-04 14:10:42,682 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.bootstrap3.css HTTP/1.1" 200 10602
+INFO 2021-06-04 14:10:42,683 basehttp 154 "GET /static/xadmin/vendor/select2/select2.css HTTP/1.1" 200 19226
+INFO 2021-06-04 14:10:42,683 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.css HTTP/1.1" 200 8425
+INFO 2021-06-04 14:10:42,710 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.js HTTP/1.1" 200 98602
+ERROR 2021-06-04 14:10:42,737 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 14:10:42,741 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120904
+INFO 2021-06-04 14:10:42,743 basehttp 154 "GET /static/xadmin/vendor/select2/select2.js HTTP/1.1" 200 104906
+INFO 2021-06-04 14:10:42,752 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 200 694
+INFO 2021-06-04 14:10:42,753 basehttp 154 "GET /static/xadmin/js/xadmin.widget.select.js HTTP/1.1" 200 1344
+WARNING 2021-06-04 14:10:42,754 log 228 Not Found: /media/course/Loginbg.3377d0c.jpg
+WARNING 2021-06-04 14:10:42,754 basehttp 154 "GET /media/course/Loginbg.3377d0c.jpg HTTP/1.1" 404 1841
+INFO 2021-06-04 14:11:33,877 basehttp 154 "POST /xadmin/course/course/1/update/ HTTP/1.1" 302 0
+INFO 2021-06-04 14:11:33,978 basehttp 154 "GET /xadmin/course/course/? HTTP/1.1" 200 47002
+ERROR 2021-06-04 14:11:34,037 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 14:11:34,038 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120896
+WARNING 2021-06-04 14:16:54,809 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 14:16:54,810 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 14:16:54,816 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-04 14:16:54,860 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 14:16:54,860 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+WARNING 2021-06-04 14:16:55,878 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 14:16:55,880 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 14:16:55,885 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 14:16:55,887 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 14:16:55,888 basehttp 154 "GET /course/list/ HTTP/1.1" 200 2887
+INFO 2021-06-04 14:16:55,895 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 14:16:55,918 basehttp 154 "GET /media/course/list01.png HTTP/1.1" 200 111527
+WARNING 2021-06-04 14:16:55,920 log 228 Not Found: /media/course/course-cover.jpeg
+WARNING 2021-06-04 14:16:55,921 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 14:16:55,921 basehttp 154 "GET /media/course/course-cover.jpeg HTTP/1.1" 404 1835
+WARNING 2021-06-04 14:16:55,921 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+WARNING 2021-06-04 14:17:50,042 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 14:17:50,045 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 14:17:50,051 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 14:17:50,052 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 14:17:50,053 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 14:17:50,055 basehttp 154 "GET /course/list/ HTTP/1.1" 200 2887
+WARNING 2021-06-04 14:17:50,083 log 228 Not Found: /media/course/course-cover.jpeg
+WARNING 2021-06-04 14:17:50,083 basehttp 154 "GET /media/course/course-cover.jpeg HTTP/1.1" 404 1835
+WARNING 2021-06-04 14:17:50,085 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 14:17:50,086 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+INFO 2021-06-04 14:19:22,310 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\course\serializers.py changed, reloading.
+INFO 2021-06-04 14:19:23,847 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 14:21:19,022 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\course\serializers.py changed, reloading.
+INFO 2021-06-04 14:21:20,540 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 14:21:55,247 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\course\serializers.py changed, reloading.
+INFO 2021-06-04 14:21:56,700 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 14:22:43,463 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\course\serializers.py changed, reloading.
+INFO 2021-06-04 14:22:44,980 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 14:23:13,125 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\course\serializers.py changed, reloading.
+INFO 2021-06-04 14:23:14,697 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 14:23:15,782 basehttp 154 "GET /course/list/ HTTP/1.1" 200 3373
+INFO 2021-06-04 14:23:28,785 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\course\serializers.py changed, reloading.
+INFO 2021-06-04 14:23:30,283 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 14:25:24,467 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\course\serializers.py changed, reloading.
+INFO 2021-06-04 14:25:25,943 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 14:26:19,014 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\course\serializers.py changed, reloading.
+INFO 2021-06-04 14:26:20,523 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 14:32:42,342 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\course\serializers.py changed, reloading.
+INFO 2021-06-04 14:32:43,894 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 14:33:35,804 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\course\serializers.py changed, reloading.
+INFO 2021-06-04 14:33:37,299 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 14:33:54,543 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\course\serializers.py changed, reloading.
+INFO 2021-06-04 14:33:55,942 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 14:33:58,513 basehttp 154 "GET /course/list/ HTTP/1.1" 200 4435
+INFO 2021-06-04 14:35:25,618 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\course\models.py changed, reloading.
+INFO 2021-06-04 14:35:27,071 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 14:35:46,728 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\course\models.py changed, reloading.
+INFO 2021-06-04 14:35:48,310 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 14:35:55,947 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\course\models.py changed, reloading.
+INFO 2021-06-04 14:35:57,404 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 14:39:43,143 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\course\models.py changed, reloading.
+INFO 2021-06-04 14:39:44,581 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 14:39:53,306 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\course\models.py changed, reloading.
+INFO 2021-06-04 14:39:54,786 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 14:40:05,652 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\course\models.py changed, reloading.
+INFO 2021-06-04 14:40:07,087 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 14:40:46,400 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\course\models.py changed, reloading.
+INFO 2021-06-04 14:40:47,800 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 14:42:57,772 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\course\models.py changed, reloading.
+INFO 2021-06-04 14:42:59,205 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 14:45:24,360 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\course\models.py changed, reloading.
+INFO 2021-06-04 14:45:25,882 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 14:47:19,433 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 14:47:21,750 basehttp 154 "GET /course/list/ HTTP/1.1" 200 4435
+INFO 2021-06-04 14:48:46,948 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\course\serializers.py changed, reloading.
+INFO 2021-06-04 14:48:48,415 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 14:48:48,981 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5271
+WARNING 2021-06-04 14:50:42,070 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 14:50:42,072 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 14:50:42,081 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 14:50:42,084 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 14:50:42,085 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 14:50:42,150 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5271
+WARNING 2021-06-04 14:50:42,171 log 228 Not Found: /media/course/course-cover.jpeg
+WARNING 2021-06-04 14:50:42,172 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 14:50:42,173 basehttp 154 "GET /media/course/course-cover.jpeg HTTP/1.1" 404 1835
+WARNING 2021-06-04 14:50:42,173 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+WARNING 2021-06-04 14:50:44,326 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 14:50:44,327 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 14:50:44,345 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 14:50:44,352 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 14:50:44,354 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 14:50:44,414 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5271
+INFO 2021-06-04 14:50:44,422 basehttp 154 "GET /media/course/list01.png HTTP/1.1" 304 0
+WARNING 2021-06-04 14:50:44,451 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 14:50:44,452 log 228 Not Found: /media/course/course-cover.jpeg
+WARNING 2021-06-04 14:50:44,453 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+WARNING 2021-06-04 14:50:44,453 basehttp 154 "GET /media/course/course-cover.jpeg HTTP/1.1" 404 1835
+WARNING 2021-06-04 14:52:49,591 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 14:52:49,593 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 14:52:49,614 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 14:52:49,614 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 14:52:49,616 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 14:52:49,698 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5271
+WARNING 2021-06-04 14:52:49,734 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 14:52:49,735 log 228 Not Found: /media/course/course-cover.jpeg
+WARNING 2021-06-04 14:52:49,735 basehttp 154 "GET /media/course/course-cover.jpeg HTTP/1.1" 404 1835
+WARNING 2021-06-04 14:52:49,736 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+WARNING 2021-06-04 14:52:55,138 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 14:52:55,140 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 14:52:55,143 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 14:52:55,235 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 14:52:55,236 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 14:52:55,266 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5271
+WARNING 2021-06-04 14:52:55,293 log 228 Not Found: /media/course/course-cover.jpeg
+WARNING 2021-06-04 14:52:55,294 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 14:52:55,295 basehttp 154 "GET /media/course/course-cover.jpeg HTTP/1.1" 404 1835
+WARNING 2021-06-04 14:52:55,295 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+WARNING 2021-06-04 14:53:04,792 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 14:53:04,794 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 14:53:04,798 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 14:53:04,799 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-04 14:53:04,805 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+WARNING 2021-06-04 14:53:07,417 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 14:53:07,423 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 14:53:07,425 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 14:53:07,425 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 14:53:07,429 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 14:53:07,494 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5271
+WARNING 2021-06-04 14:53:07,527 log 228 Not Found: /media/course/course-cover.jpeg
+WARNING 2021-06-04 14:53:07,528 basehttp 154 "GET /media/course/course-cover.jpeg HTTP/1.1" 404 1835
+WARNING 2021-06-04 14:53:07,529 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 14:53:07,530 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+WARNING 2021-06-04 14:53:18,492 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 14:53:18,493 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 14:53:18,498 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 14:53:18,508 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 14:53:18,512 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 14:53:18,578 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5271
+WARNING 2021-06-04 14:53:18,605 log 228 Not Found: /media/course/course-cover.jpeg
+WARNING 2021-06-04 14:53:18,606 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 14:53:18,606 basehttp 154 "GET /media/course/course-cover.jpeg HTTP/1.1" 404 1835
+WARNING 2021-06-04 14:53:18,607 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+WARNING 2021-06-04 14:54:07,753 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 14:54:07,759 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 14:54:07,771 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 14:54:07,780 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 14:54:07,781 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 14:54:07,847 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5271
+WARNING 2021-06-04 14:54:07,874 log 228 Not Found: /media/course/course-cover.jpeg
+WARNING 2021-06-04 14:54:07,875 basehttp 154 "GET /media/course/course-cover.jpeg HTTP/1.1" 404 1835
+WARNING 2021-06-04 14:54:07,876 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 14:54:07,877 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+WARNING 2021-06-04 14:57:59,690 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 14:57:59,692 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 14:57:59,699 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 14:57:59,772 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 14:57:59,775 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 14:57:59,810 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5271
+INFO 2021-06-04 14:57:59,822 basehttp 154 "GET /media/course/list01.png HTTP/1.1" 304 0
+WARNING 2021-06-04 14:57:59,837 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 14:57:59,838 log 228 Not Found: /media/course/course-cover.jpeg
+WARNING 2021-06-04 14:57:59,839 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+WARNING 2021-06-04 14:57:59,840 basehttp 154 "GET /media/course/course-cover.jpeg HTTP/1.1" 404 1835
+WARNING 2021-06-04 15:01:13,418 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 15:01:13,422 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 15:01:13,443 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 15:01:13,449 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 15:01:13,450 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 15:01:13,536 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5271
+WARNING 2021-06-04 15:01:13,564 log 228 Not Found: /media/course/course-cover.jpeg
+WARNING 2021-06-04 15:01:13,564 basehttp 154 "GET /media/course/course-cover.jpeg HTTP/1.1" 404 1835
+WARNING 2021-06-04 15:01:13,565 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 15:01:13,566 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+WARNING 2021-06-04 15:03:04,521 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 15:03:04,524 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 15:03:04,540 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 15:03:04,598 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 15:03:04,599 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 15:03:04,644 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5271
+INFO 2021-06-04 15:03:04,655 basehttp 154 "GET /media/course/list01.png HTTP/1.1" 304 0
+WARNING 2021-06-04 15:03:04,668 log 228 Not Found: /media/course/course-cover.jpeg
+WARNING 2021-06-04 15:03:04,669 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 15:03:04,670 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+WARNING 2021-06-04 15:03:04,670 basehttp 154 "GET /media/course/course-cover.jpeg HTTP/1.1" 404 1835
+WARNING 2021-06-04 15:04:37,455 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 15:04:37,456 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 15:04:37,458 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 15:04:37,483 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 15:04:37,485 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 15:04:37,557 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5271
+WARNING 2021-06-04 15:04:37,583 log 228 Not Found: /media/course/course-cover.jpeg
+WARNING 2021-06-04 15:04:37,584 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 15:04:37,584 basehttp 154 "GET /media/course/course-cover.jpeg HTTP/1.1" 404 1835
+WARNING 2021-06-04 15:04:37,584 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+WARNING 2021-06-04 15:07:34,670 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 15:07:34,670 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 15:07:34,685 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 15:07:34,768 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 15:07:34,768 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 15:07:34,792 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5271
+WARNING 2021-06-04 15:07:34,830 log 228 Not Found: /media/course/course-cover.jpeg
+WARNING 2021-06-04 15:07:34,831 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 15:07:34,832 basehttp 154 "GET /media/course/course-cover.jpeg HTTP/1.1" 404 1835
+WARNING 2021-06-04 15:07:34,833 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+WARNING 2021-06-04 15:11:45,434 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 15:11:45,437 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 15:11:45,444 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 15:11:45,452 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 15:11:45,456 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 15:11:45,565 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5271
+WARNING 2021-06-04 15:11:45,607 log 228 Not Found: /media/course/course-cover.jpeg
+WARNING 2021-06-04 15:11:45,608 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 15:11:45,610 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+WARNING 2021-06-04 15:11:45,611 basehttp 154 "GET /media/course/course-cover.jpeg HTTP/1.1" 404 1835
+WARNING 2021-06-04 15:13:39,050 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 15:13:39,053 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 15:13:39,076 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 15:13:39,119 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 15:13:39,129 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 15:13:39,187 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5271
+WARNING 2021-06-04 15:14:00,013 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 15:14:00,021 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 15:14:00,037 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 15:14:00,038 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 15:14:00,046 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 15:14:00,097 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5271
+WARNING 2021-06-04 15:14:16,897 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 15:14:16,906 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 15:14:16,912 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 15:14:16,915 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 15:14:16,917 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 15:14:16,990 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5271
+WARNING 2021-06-04 15:14:31,937 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 15:14:31,939 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 15:14:31,941 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-04 15:14:32,002 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 15:14:32,003 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+WARNING 2021-06-04 15:14:32,952 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 15:14:32,955 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 15:14:32,957 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 15:14:32,965 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 15:14:32,968 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 15:14:33,021 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5271
+WARNING 2021-06-04 15:15:22,489 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 15:15:22,493 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 15:15:22,495 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 15:15:22,587 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 15:15:22,588 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 15:15:22,611 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5271
+WARNING 2021-06-04 15:15:46,766 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 15:15:46,772 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 15:15:46,786 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 15:15:46,793 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 15:15:46,794 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 15:15:46,853 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5271
+INFO 2021-06-04 15:15:46,880 basehttp 154 "GET /media/course/list01.png HTTP/1.1" 304 0
+WARNING 2021-06-04 15:15:46,884 log 228 Not Found: /media/course/course-cover.jpeg
+WARNING 2021-06-04 15:15:46,885 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 15:15:46,885 basehttp 154 "GET /media/course/course-cover.jpeg HTTP/1.1" 404 1835
+WARNING 2021-06-04 15:15:46,886 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+WARNING 2021-06-04 15:16:52,435 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 15:16:52,436 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 15:16:52,439 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 15:16:52,526 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 15:16:52,526 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 15:16:52,555 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5271
+WARNING 2021-06-04 15:17:00,901 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 15:17:00,903 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 15:17:00,906 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 15:17:00,906 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-04 15:17:00,908 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+WARNING 2021-06-04 15:17:02,477 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 15:17:02,479 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 15:17:02,487 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 15:17:02,487 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 15:17:02,490 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 15:17:02,573 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5271
+WARNING 2021-06-04 15:17:16,953 log 228 Not Found: /media/course/course-cover.jpeg
+WARNING 2021-06-04 15:17:16,955 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 15:17:16,955 basehttp 154 "GET /media/course/course-cover.jpeg HTTP/1.1" 404 1835
+WARNING 2021-06-04 15:17:16,956 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+WARNING 2021-06-04 15:17:18,363 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 15:17:18,367 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 15:17:18,375 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 15:17:18,456 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 15:17:18,458 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 15:17:18,478 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5271
+WARNING 2021-06-04 15:17:18,505 log 228 Not Found: /media/course/course-cover.jpeg
+WARNING 2021-06-04 15:17:18,507 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 15:17:18,508 basehttp 154 "GET /media/course/course-cover.jpeg HTTP/1.1" 404 1835
+WARNING 2021-06-04 15:17:18,509 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+WARNING 2021-06-04 15:19:52,270 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 15:19:52,271 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 15:19:52,273 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 15:19:52,371 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 15:19:52,384 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 15:19:52,394 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5271
+WARNING 2021-06-04 15:20:33,392 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 15:20:33,397 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 15:20:33,397 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 15:20:33,469 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5271
+INFO 2021-06-04 15:20:33,527 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 15:20:33,529 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+WARNING 2021-06-04 15:21:43,083 log 228 Not Found: /media/course/course-cover.jpeg
+WARNING 2021-06-04 15:21:43,083 basehttp 154 "GET /media/course/course-cover.jpeg HTTP/1.1" 404 1835
+WARNING 2021-06-04 15:21:43,085 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 15:21:43,087 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+WARNING 2021-06-04 15:22:18,723 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 15:22:18,727 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 15:22:18,729 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 15:22:18,807 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 15:22:18,813 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 15:22:18,844 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5271
+INFO 2021-06-04 15:22:18,856 basehttp 154 "GET /media/course/list01.png HTTP/1.1" 304 0
+WARNING 2021-06-04 15:22:18,872 log 228 Not Found: /media/course/course-cover.jpeg
+WARNING 2021-06-04 15:22:18,873 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 15:22:18,873 basehttp 154 "GET /media/course/course-cover.jpeg HTTP/1.1" 404 1835
+WARNING 2021-06-04 15:22:18,874 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+WARNING 2021-06-04 15:23:56,241 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 15:23:56,241 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 15:23:56,245 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 15:23:56,325 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 15:23:56,333 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 15:23:56,354 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5271
+WARNING 2021-06-04 15:23:56,389 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 15:23:56,390 log 228 Not Found: /media/course/course-cover.jpeg
+WARNING 2021-06-04 15:23:56,391 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+WARNING 2021-06-04 15:23:56,391 basehttp 154 "GET /media/course/course-cover.jpeg HTTP/1.1" 404 1835
+INFO 2021-06-04 15:31:09,236 basehttp 154 "GET /xadmin/course/course/2/update/ HTTP/1.1" 200 27723
+WARNING 2021-06-04 15:31:09,290 log 228 Not Found: /media/course/course-cover.jpeg
+WARNING 2021-06-04 15:31:09,291 basehttp 154 "GET /media/course/course-cover.jpeg HTTP/1.1" 404 1835
+ERROR 2021-06-04 15:31:09,427 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 15:31:09,430 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120904
+INFO 2021-06-04 15:31:18,942 basehttp 154 "POST /xadmin/course/course/2/update/ HTTP/1.1" 302 0
+INFO 2021-06-04 15:31:19,025 basehttp 154 "GET /xadmin/course/course/? HTTP/1.1" 200 52786
+ERROR 2021-06-04 15:31:19,103 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 15:31:19,105 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120896
+WARNING 2021-06-04 15:31:23,464 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 15:31:23,469 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 15:31:23,476 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 15:31:23,482 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 15:31:23,483 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 15:31:23,551 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5277
+INFO 2021-06-04 15:31:23,558 basehttp 154 "GET /media/course/list01.png HTTP/1.1" 304 0
+WARNING 2021-06-04 15:31:23,573 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 15:31:23,574 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+INFO 2021-06-04 15:31:23,575 basehttp 154 "GET /media/course/%E5%9F%8E%E5%B8%82.jpeg HTTP/1.1" 200 289899
+INFO 2021-06-04 15:34:18,485 basehttp 154 "GET /xadmin/course/course/3/update/ HTTP/1.1" 200 27701
+WARNING 2021-06-04 15:34:18,546 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 15:34:18,547 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+ERROR 2021-06-04 15:34:18,571 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 15:34:18,572 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120904
+INFO 2021-06-04 15:34:26,141 basehttp 154 "POST /xadmin/course/course/3/update/ HTTP/1.1" 302 0
+INFO 2021-06-04 15:34:26,231 basehttp 154 "GET /xadmin/course/course/? HTTP/1.1" 200 52786
+ERROR 2021-06-04 15:34:26,293 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 15:34:26,295 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120896
+WARNING 2021-06-04 15:34:29,716 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 15:34:29,721 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 15:34:29,729 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 15:34:29,734 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 15:34:29,742 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 15:34:29,800 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5312
+INFO 2021-06-04 15:34:29,810 basehttp 154 "GET /media/course/%E5%9F%8E%E5%B8%82.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 15:34:29,820 basehttp 154 "GET /media/course/%E5%B0%BD%E5%9C%A8%E6%8E%8C%E6%8F%A1.jpeg HTTP/1.1" 200 26175
+WARNING 2021-06-04 15:34:29,821 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 15:34:29,822 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+INFO 2021-06-04 15:34:41,567 basehttp 154 "GET /xadmin/course/course/2/update/ HTTP/1.1" 200 27735
+ERROR 2021-06-04 15:34:41,625 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 15:34:41,626 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120904
+INFO 2021-06-04 15:34:47,706 basehttp 154 "POST /xadmin/course/course/2/update/ HTTP/1.1" 302 0
+INFO 2021-06-04 15:34:47,787 basehttp 154 "GET /xadmin/course/course/? HTTP/1.1" 200 52786
+ERROR 2021-06-04 15:34:47,850 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 15:34:47,852 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120896
+INFO 2021-06-04 15:34:49,886 basehttp 154 "GET /xadmin/course/course/3/update/ HTTP/1.1" 200 27771
+INFO 2021-06-04 15:34:49,926 basehttp 154 "GET /media/course/%E5%B0%BD%E5%9C%A8%E6%8E%8C%E6%8F%A1.jpeg HTTP/1.1" 304 0
+ERROR 2021-06-04 15:34:49,951 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 15:34:49,952 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120904
+INFO 2021-06-04 15:34:56,349 basehttp 154 "POST /xadmin/course/course/3/update/ HTTP/1.1" 302 0
+INFO 2021-06-04 15:34:56,443 basehttp 154 "GET /xadmin/course/course/? HTTP/1.1" 200 52786
+ERROR 2021-06-04 15:34:56,496 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 15:34:56,497 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120896
+WARNING 2021-06-04 15:35:04,072 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 15:35:04,073 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 15:35:04,074 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 15:35:04,151 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 15:35:04,155 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 15:35:04,158 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5328
+INFO 2021-06-04 15:35:04,189 basehttp 154 "GET /media/course/%E5%B0%BD%E5%9C%A8%E6%8E%8C%E6%8F%A1_9XQEE5g.jpeg HTTP/1.1" 200 26175
+WARNING 2021-06-04 15:35:04,193 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 15:35:04,193 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+INFO 2021-06-04 15:35:04,196 basehttp 154 "GET /media/course/%E5%9F%8E%E5%B8%82_FWkgZOU.jpeg HTTP/1.1" 200 289899
+INFO 2021-06-04 15:38:09,104 basehttp 154 "GET /xadmin/course/course/1/update/ HTTP/1.1" 200 27710
+ERROR 2021-06-04 15:38:09,175 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 15:38:09,177 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120904
+INFO 2021-06-04 15:38:16,497 basehttp 154 "POST /xadmin/course/course/1/update/ HTTP/1.1" 302 0
+INFO 2021-06-04 15:38:16,586 basehttp 154 "GET /xadmin/course/course/? HTTP/1.1" 200 52785
+ERROR 2021-06-04 15:38:16,637 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 15:38:16,638 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120896
+INFO 2021-06-04 15:38:18,414 basehttp 154 "GET /xadmin/course/course/2/update/ HTTP/1.1" 200 27787
+INFO 2021-06-04 15:38:18,449 basehttp 154 "GET /media/course/%E5%B0%BD%E5%9C%A8%E6%8E%8C%E6%8F%A1_9XQEE5g.jpeg HTTP/1.1" 304 0
+ERROR 2021-06-04 15:38:18,475 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 15:38:18,477 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120904
+INFO 2021-06-04 15:38:40,363 basehttp 154 "POST /xadmin/course/course/2/update/ HTTP/1.1" 302 0
+INFO 2021-06-04 15:38:40,451 basehttp 154 "GET /xadmin/course/course/? HTTP/1.1" 200 52786
+ERROR 2021-06-04 15:38:40,502 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 15:38:40,504 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120896
+INFO 2021-06-04 15:38:43,178 basehttp 154 "GET /xadmin/course/course/3/update/ HTTP/1.1" 200 27751
+INFO 2021-06-04 15:38:43,196 basehttp 154 "GET /media/course/%E5%9F%8E%E5%B8%82_FWkgZOU.jpeg HTTP/1.1" 304 0
+ERROR 2021-06-04 15:38:43,227 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 15:38:43,228 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120904
+WARNING 2021-06-04 15:38:51,214 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 15:38:51,216 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 15:38:51,233 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 15:38:51,237 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 15:38:51,238 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 15:38:51,303 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5310
+INFO 2021-06-04 15:38:51,313 basehttp 154 "GET /media/course/%E5%9F%8E%E5%B8%82_FWkgZOU.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 15:38:51,325 basehttp 154 "GET /media/course/%E9%B8%BF%E8%92%99.jpeg HTTP/1.1" 200 42219
+INFO 2021-06-04 15:38:51,326 basehttp 154 "GET /media/course/list01_ZzoU1wF.png HTTP/1.1" 200 111527
+WARNING 2021-06-04 15:38:51,329 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 15:38:51,329 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+INFO 2021-06-04 15:39:04,624 basehttp 154 "GET /xadmin/course/course/ HTTP/1.1" 200 52534
+ERROR 2021-06-04 15:39:04,678 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 15:39:04,679 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120895
+INFO 2021-06-04 15:39:07,128 basehttp 154 "GET /xadmin/course/course/15/update/ HTTP/1.1" 200 27684
+WARNING 2021-06-04 15:39:07,148 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 15:39:07,148 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+ERROR 2021-06-04 15:39:07,196 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 15:39:07,198 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120905
+INFO 2021-06-04 15:39:25,066 basehttp 154 "POST /xadmin/course/course/15/update/ HTTP/1.1" 302 0
+INFO 2021-06-04 15:39:25,151 basehttp 154 "GET /xadmin/course/course/? HTTP/1.1" 200 52786
+ERROR 2021-06-04 15:39:25,211 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 15:39:25,213 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120896
+INFO 2021-06-04 15:39:30,253 basehttp 154 "GET /xadmin/course/course/16/update/ HTTP/1.1" 200 27680
+WARNING 2021-06-04 15:39:30,281 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 15:39:30,281 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+ERROR 2021-06-04 15:39:30,308 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 15:39:30,309 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120905
+INFO 2021-06-04 15:39:40,738 basehttp 154 "POST /xadmin/course/course/16/update/ HTTP/1.1" 302 0
+INFO 2021-06-04 15:39:40,816 basehttp 154 "GET /xadmin/course/course/? HTTP/1.1" 200 52785
+ERROR 2021-06-04 15:39:40,881 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 15:39:40,883 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120896
+INFO 2021-06-04 15:39:43,631 basehttp 154 "GET /xadmin/course/course/17/update/ HTTP/1.1" 200 27732
+WARNING 2021-06-04 15:39:43,655 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 15:39:43,656 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+ERROR 2021-06-04 15:39:43,685 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 15:39:43,686 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120905
+INFO 2021-06-04 15:39:48,404 basehttp 154 "POST /xadmin/course/course/17/update/ HTTP/1.1" 302 0
+INFO 2021-06-04 15:39:48,497 basehttp 154 "GET /xadmin/course/course/? HTTP/1.1" 200 52798
+ERROR 2021-06-04 15:39:48,568 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 15:39:48,569 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120896
+INFO 2021-06-04 15:39:53,333 basehttp 154 "GET /xadmin/course/course/18/update/ HTTP/1.1" 200 27685
+WARNING 2021-06-04 15:39:53,357 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 15:39:53,357 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+ERROR 2021-06-04 15:39:53,392 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 15:39:53,393 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120905
+INFO 2021-06-04 15:40:01,104 basehttp 154 "POST /xadmin/course/course/18/update/ HTTP/1.1" 302 0
+INFO 2021-06-04 15:40:01,196 basehttp 154 "GET /xadmin/course/course/? HTTP/1.1" 200 52786
+ERROR 2021-06-04 15:40:01,254 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 15:40:01,255 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120896
+INFO 2021-06-04 15:40:04,040 basehttp 154 "GET /xadmin/course/course/19/update/ HTTP/1.1" 200 27649
+WARNING 2021-06-04 15:40:04,083 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 15:40:04,083 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+ERROR 2021-06-04 15:40:04,107 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 15:40:04,108 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120905
+INFO 2021-06-04 15:40:14,612 basehttp 154 "POST /xadmin/course/course/19/update/ HTTP/1.1" 302 0
+INFO 2021-06-04 15:40:14,724 basehttp 154 "GET /xadmin/course/course/? HTTP/1.1" 200 52777
+ERROR 2021-06-04 15:40:14,773 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 15:40:14,775 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120896
+WARNING 2021-06-04 15:40:17,450 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 15:40:17,453 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 15:40:17,455 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 15:40:17,514 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 15:40:17,516 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 15:40:17,525 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5465
+INFO 2021-06-04 15:40:17,583 basehttp 154 "GET /media/course/%E5%9F%8E%E5%B8%82_FWkgZOU.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 15:40:17,584 basehttp 154 "GET /media/course/list01_ZzoU1wF.png HTTP/1.1" 304 0
+INFO 2021-06-04 15:40:17,584 basehttp 154 "GET /media/course/%E9%B8%BF%E8%92%99.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 15:40:17,626 basehttp 154 "GET /media/course/%E6%B1%89%E5%A0%A1%E5%97%9D%E5%84%BF.jpeg HTTP/1.1" 200 51176
+INFO 2021-06-04 15:40:17,626 basehttp 154 "GET /media/course/%E5%BD%92%E4%B9%A1.jpeg HTTP/1.1" 200 22996
+INFO 2021-06-04 15:40:17,648 basehttp 154 "GET /media/course/%E6%B1%89%E5%A0%A1%E5%97%9D%E5%84%BF_Ri2TCC8.jpeg HTTP/1.1" 200 51176
+INFO 2021-06-04 15:40:17,662 basehttp 154 "GET /media/course/%E5%A4%9C%E6%99%9A.jpeg HTTP/1.1" 200 53896
+INFO 2021-06-04 15:40:17,663 basehttp 154 "GET /media/course/%E5%B0%BD%E5%9C%A8%E6%8E%8C%E6%8F%A1_9PayTt7.jpeg HTTP/1.1" 200 26175
+WARNING 2021-06-04 15:40:17,665 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 15:40:17,666 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+INFO 2021-06-04 15:40:47,361 basehttp 154 "GET /xadmin/course/course/17/update/ HTTP/1.1" 200 27818
+INFO 2021-06-04 15:40:47,401 basehttp 154 "GET /media/course/%E6%B1%89%E5%A0%A1%E5%97%9D%E5%84%BF_Ri2TCC8.jpeg HTTP/1.1" 304 0
+ERROR 2021-06-04 15:40:47,424 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 15:40:47,425 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120905
+INFO 2021-06-04 15:41:08,356 basehttp 154 "POST /xadmin/course/course/17/update/ HTTP/1.1" 302 0
+INFO 2021-06-04 15:41:08,450 basehttp 154 "GET /xadmin/course/course/? HTTP/1.1" 200 52798
+ERROR 2021-06-04 15:41:08,503 log 228 Internal Server Error: /xadmin/jsi18n/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\xadmin\sites.py", line 350, in i18n_javascript
+    return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\i18n.py", line 201, in get
+    self.translation = DjangoTranslation(locale, domain=domain, localedirs=paths)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 151, in __init__
+    translation = self._new_gnu_trans(localedir)
+  File "E:\envs\luffy\lib\site-packages\django\utils\translation\trans_real.py", line 180, in _new_gnu_trans
+    fallback=use_null_fallback,
+  File "c:\python3.7\lib\gettext.py", line 533, in translation
+    t = _translations.setdefault(key, class_(fp))
+  File "c:\python3.7\lib\gettext.py", line 260, in __init__
+    self._parse(fp)
+  File "c:\python3.7\lib\gettext.py", line 353, in _parse
+    magic = unpack('<I', buf[:4])[0]
+struct.error: unpack requires a buffer of 4 bytes
+ERROR 2021-06-04 15:41:08,505 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 500 120896
+WARNING 2021-06-04 15:41:12,309 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 15:41:12,310 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 15:41:12,318 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 15:41:12,326 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 15:41:12,328 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 15:41:12,390 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5439
+INFO 2021-06-04 15:41:12,405 basehttp 154 "GET /media/course/%E9%B8%BF%E8%92%99.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 15:41:12,406 basehttp 154 "GET /media/course/%E6%B1%89%E5%A0%A1%E5%97%9D%E5%84%BF.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 15:41:12,407 basehttp 154 "GET /media/course/%E5%A4%9C%E6%99%9A.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 15:41:12,407 basehttp 154 "GET /media/course/list01_ZzoU1wF.png HTTP/1.1" 304 0
+INFO 2021-06-04 15:41:12,407 basehttp 154 "GET /media/course/%E5%9F%8E%E5%B8%82_FWkgZOU.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 15:41:12,407 basehttp 154 "GET /media/course/%E5%BD%92%E4%B9%A1.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 15:41:12,415 basehttp 154 "GET /media/course/%E5%B0%BD%E5%9C%A8%E6%8E%8C%E6%8F%A1_9PayTt7.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 15:41:12,417 basehttp 154 "GET /media/course/%E8%93%9D%E5%9B%BE.jpeg HTTP/1.1" 200 94839
+WARNING 2021-06-04 15:41:12,419 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 15:41:12,419 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+WARNING 2021-06-04 15:56:40,385 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 15:56:40,395 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 15:56:40,399 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 15:56:40,402 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 15:56:40,406 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 15:56:40,461 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5439
+INFO 2021-06-04 15:56:40,477 basehttp 154 "GET /media/course/%E9%B8%BF%E8%92%99.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 15:56:40,477 basehttp 154 "GET /media/course/%E5%9F%8E%E5%B8%82_FWkgZOU.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 15:56:40,478 basehttp 154 "GET /media/course/list01_ZzoU1wF.png HTTP/1.1" 304 0
+INFO 2021-06-04 15:56:40,478 basehttp 154 "GET /media/course/%E6%B1%89%E5%A0%A1%E5%97%9D%E5%84%BF.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 15:56:40,480 basehttp 154 "GET /media/course/%E5%BD%92%E4%B9%A1.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 15:56:40,481 basehttp 154 "GET /media/course/%E8%93%9D%E5%9B%BE.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 15:56:40,487 basehttp 154 "GET /media/course/%E5%B0%BD%E5%9C%A8%E6%8E%8C%E6%8F%A1_9PayTt7.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 15:56:40,488 basehttp 154 "GET /media/course/%E5%A4%9C%E6%99%9A.jpeg HTTP/1.1" 304 0
+WARNING 2021-06-04 15:56:40,490 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 15:56:40,490 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+INFO 2021-06-04 15:58:24,535 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+WARNING 2021-06-04 15:58:24,538 log 228 Not Found: /users/account/undefined/
+INFO 2021-06-04 15:58:24,541 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 15:58:24,544 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+WARNING 2021-06-04 15:58:24,545 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 15:58:24,603 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5439
+WARNING 2021-06-04 15:58:24,622 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 15:58:24,623 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+WARNING 2021-06-04 15:58:26,193 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 15:58:26,197 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 15:58:26,206 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 15:58:26,212 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 15:58:26,214 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 15:58:26,266 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5439
+INFO 2021-06-04 15:58:26,280 basehttp 154 "GET /media/course/%E6%B1%89%E5%A0%A1%E5%97%9D%E5%84%BF.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 15:58:26,281 basehttp 154 "GET /media/course/%E5%BD%92%E4%B9%A1.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 15:58:26,283 basehttp 154 "GET /media/course/%E5%A4%9C%E6%99%9A.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 15:58:26,283 basehttp 154 "GET /media/course/%E8%93%9D%E5%9B%BE.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 15:58:26,285 basehttp 154 "GET /media/course/%E5%B0%BD%E5%9C%A8%E6%8E%8C%E6%8F%A1_9PayTt7.jpeg HTTP/1.1" 304 0
+WARNING 2021-06-04 15:58:26,288 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 15:58:26,289 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+INFO 2021-06-04 16:34:22,993 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-06-04 16:34:53,139 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 16:34:53,140 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 16:34:53,153 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-04 16:34:53,195 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 16:34:53,206 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+WARNING 2021-06-04 16:34:58,788 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 16:34:58,797 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 16:34:58,804 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 16:34:58,807 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 16:34:58,809 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 16:34:58,860 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5439
+INFO 2021-06-04 16:34:58,889 basehttp 154 "GET /media/course/%E6%B1%89%E5%A0%A1%E5%97%9D%E5%84%BF.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 16:34:58,889 basehttp 154 "GET /media/course/%E9%B8%BF%E8%92%99.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 16:34:58,891 basehttp 154 "GET /media/course/%E5%BD%92%E4%B9%A1.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 16:34:58,892 basehttp 154 "GET /media/course/list01_ZzoU1wF.png HTTP/1.1" 304 0
+INFO 2021-06-04 16:34:58,893 basehttp 154 "GET /media/course/%E8%93%9D%E5%9B%BE.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 16:34:58,893 basehttp 154 "GET /media/course/%E5%9F%8E%E5%B8%82_FWkgZOU.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 16:34:58,899 basehttp 154 "GET /media/course/%E5%A4%9C%E6%99%9A.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 16:34:58,901 basehttp 154 "GET /media/course/%E5%B0%BD%E5%9C%A8%E6%8E%8C%E6%8F%A1_9PayTt7.jpeg HTTP/1.1" 304 0
+WARNING 2021-06-04 16:34:58,902 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 16:34:58,903 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+INFO 2021-06-04 16:38:14,235 basehttp 154 "GET /users/capycha/ HTTP/1.1" 200 105
+INFO 2021-06-04 16:38:20,203 basehttp 154 "OPTIONS /users/capycha/ HTTP/1.1" 200 0
+INFO 2021-06-04 16:38:20,290 basehttp 154 "POST /users/capycha/ HTTP/1.1" 200 20
+INFO 2021-06-04 16:38:20,293 basehttp 154 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-06-04 16:38:20,400 basehttp 154 "POST /users/login/ HTTP/1.1" 200 224
+INFO 2021-06-04 16:38:20,441 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-04 16:38:20,457 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-04 16:38:20,464 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 16:38:20,467 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 16:38:25,421 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-04 16:38:25,428 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 16:38:25,430 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 16:38:25,442 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-04 16:38:50,651 basehttp 154 "OPTIONS /users/account/1/ HTTP/1.1" 200 0
+INFO 2021-06-04 16:38:50,680 basehttp 154 "PUT /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-04 16:38:53,075 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-04 16:38:53,104 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-04 16:38:53,155 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 16:38:53,156 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 16:47:21,466 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 16:47:21,466 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 16:47:21,469 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-04 16:47:21,472 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 16:47:21,527 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5439
+INFO 2021-06-04 16:47:21,552 basehttp 154 "GET /media/course/%E6%B1%89%E5%A0%A1%E5%97%9D%E5%84%BF.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 16:47:21,553 basehttp 154 "GET /media/course/%E9%B8%BF%E8%92%99.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 16:47:21,553 basehttp 154 "GET /media/course/list01_ZzoU1wF.png HTTP/1.1" 304 0
+INFO 2021-06-04 16:47:21,554 basehttp 154 "GET /media/course/%E5%9F%8E%E5%B8%82_FWkgZOU.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 16:47:21,555 basehttp 154 "GET /media/course/%E8%93%9D%E5%9B%BE.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 16:47:21,556 basehttp 154 "GET /media/course/%E5%BD%92%E4%B9%A1.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 16:47:21,567 basehttp 154 "GET /media/course/%E5%A4%9C%E6%99%9A.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 16:47:21,567 basehttp 154 "GET /media/course/%E5%B0%BD%E5%9C%A8%E6%8E%8C%E6%8F%A1_9PayTt7.jpeg HTTP/1.1" 304 0
+WARNING 2021-06-04 16:47:21,571 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 16:47:21,572 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+INFO 2021-06-04 16:53:03,947 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 16:53:03,952 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-04 16:53:04,045 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 16:53:04,051 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 16:53:04,095 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5439
+WARNING 2021-06-04 16:53:04,128 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 16:53:04,128 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+INFO 2021-06-04 17:24:08,375 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 19:56:51,641 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 19:57:19,469 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-04 19:57:30,739 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 19:57:38,370 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5439
+WARNING 2021-06-04 20:06:55,019 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 20:06:55,025 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 20:06:55,051 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-04 20:06:55,103 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 20:06:55,103 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+WARNING 2021-06-04 20:07:01,809 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-04 20:07:01,812 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 3864
+INFO 2021-06-04 20:07:01,897 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-04 20:07:01,900 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-04 20:07:01,900 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-04 20:07:01,983 basehttp 154 "GET /course/list/ HTTP/1.1" 200 5439
+INFO 2021-06-04 20:07:04,104 basehttp 154 "GET /media/course/%E9%B8%BF%E8%92%99.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 20:07:04,107 basehttp 154 "GET /media/course/list01_ZzoU1wF.png HTTP/1.1" 304 0
+INFO 2021-06-04 20:07:04,108 basehttp 154 "GET /media/course/%E8%93%9D%E5%9B%BE.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 20:07:04,109 basehttp 154 "GET /media/course/%E5%9F%8E%E5%B8%82_FWkgZOU.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 20:07:04,109 basehttp 154 "GET /media/course/%E6%B1%89%E5%A0%A1%E5%97%9D%E5%84%BF.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 20:07:04,110 basehttp 154 "GET /media/course/%E5%BD%92%E4%B9%A1.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 20:07:04,237 basehttp 154 "GET /media/course/%E5%A4%9C%E6%99%9A.jpeg HTTP/1.1" 304 0
+INFO 2021-06-04 20:07:04,247 basehttp 154 "GET /media/course/%E5%B0%BD%E5%9C%A8%E6%8E%8C%E6%8F%A1_9PayTt7.jpeg HTTP/1.1" 304 0
+WARNING 2021-06-04 20:07:04,252 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-04 20:07:04,252 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802

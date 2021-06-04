@@ -10,3 +10,7 @@ class CourseCategoryAPIView(ListAPIView):
     queryset = models.CourseCategory.objects.filter(is_show=True, is_deleted=False).order_by('orders')
     serializer_class = serializers.CourseCategoryModelSerializer
 
+
+class CourseListAPIView(ListAPIView):
+    queryset = models.Course.objects.filter(is_show=True, is_deleted=False).order_by('orders')
+    serializer_class = serializers.CourseModelSerializer

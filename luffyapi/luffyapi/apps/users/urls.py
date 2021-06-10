@@ -5,7 +5,7 @@ from rest_framework_jwt.views import obtain_jwt_token
 
 
 urlpatterns = [
-    # 登录
+    # 登录JWT认证
     path(r'login/',obtain_jwt_token),
     # 登录极速验证滑动验证；
     path(r'capycha/', views.GeetestView.as_view()),

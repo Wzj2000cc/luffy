@@ -45,10 +45,14 @@ INSTALLED_APPS = [
     'xadmin',
     'crispy_forms',
     'reversion',
+    'django_filters',
+    'ckeditor', # 富文本编辑器
+    'ckeditor_uploader', # 富文本编辑器上传图片
 
     'home', # 飘黄，因为没在sys.path里面,上面已经配置
     'users',
     'course',
+    'cart',
 ]
 
 MIDDLEWARE = [
@@ -256,7 +260,14 @@ CACHES = {
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
-    }
+    },
+    "cart": {
+        "BACKEND": 'django_redis.cache.RedisCache',
+        "LOCATION": "redis://127.0.0.1:6379/3",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
 }
 
 # 设置xadmin用户登录时，登录信息session保存到redis
@@ -283,3 +294,14 @@ EMAIL_HOST = 'smtp.qq.com'
 EMAIL_PORT = 465     # 发件箱的SMTP服务器端口,默认
 EMAIL_HOST_USER = '2530065079@qq.com'    # 发送邮件的邮箱地址,
 EMAIL_HOST_PASSWORD = 'ehwesfqxqppkdhha'
+
+
+# 富文本编辑器ckeditor配置
+CKEDITOR_CONFIGS = {
+    'default':{
+        'toolbar':'full',
+        'height':300,    # 文本框高度
+        # 'width':
+    },
+}
+CKEDITOR_UPLOAD_PATH = ''

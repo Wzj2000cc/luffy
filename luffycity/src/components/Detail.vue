@@ -1,410 +1,119 @@
 <template>
   <div class="detail">
     <Header></Header>
-    <div class="routerView">
-      <div class="course-intro">
-        <div class="intro-top" style="background: rgb(95, 58, 72);">
-          <p class="return active">
-            <img src="@/assets/triangle.png" alt="">
-            返回免费课主页
+    <div class="main">
+      <div class="course-info">
+        <!--  视频video部分    -->
+        <div class="wrap-left">
+          <video-player class="video-player vjs-custom-skin"
+                        ref="videoPlayer"
+                        :playsinline="true"
+                        :options="playerOptions"
+                        @play="onPlayerPlay($event)"
+                        @pause="onPlayerPause($event)">
+          </video-player>
+        </div>
+        <div class="wrap-right">
+          <h3 class="course-name">{{course.name}}</h3>
+          <p class="data">{{course.students}}人在学&nbsp;&nbsp;&nbsp;&nbsp;课程总时长：{{course.pub_lessons}}课时/{{course.lessons}}课时&nbsp;&nbsp;&nbsp;&nbsp;
+            难度：{{course.get_level_display}}</p>
+          <div class="sale-time">
+            <p class="sale-type">限时免费</p>
+            <p class="expire">距离结束：仅剩 01天 04小时 33分 <span class="second">08</span> 秒</p>
+          </div>
+          <p class="course-price">
+            <span>活动价</span>
+            <span class="discount">¥0.00</span>
+            <span class="original">¥{{course.price}}</span>
           </p>
-          <div class="intro-data">
-            <h1>Python21天入门</h1>
-            <p>
-                <span>
-                  课程小节：
-                  <b>87</b>
-                  小节
-                </span>
-              <span>
-                  时长：
-                  <b>19</b>
-                  小时
-
-                </span>
-              <span>
-                  <b>78511</b>
-                  人在学
-                </span>
-            </p>
-          </div>
-          <div class="course-nav" style="background: rgb(95, 58, 72);">
-            <ul>
-              <li :class="{this:course_item_switch===0}" @click="course_item_switch=0">
-                <p>课程详情</p>
-              </li>
-              <li :class="{this:course_item_switch===1}" @click="course_item_switch=1">
-                <p>讨论提问</p>
-                <span>(236)</span>
-
-              </li>
-              <li :class="{this:course_item_switch===2}" @click="course_item_switch=2">
-                <p>课件下载</p>
-              </li>
-            </ul>
+          <div class="buy">
+            <div class="buy-btn">
+              <button class="buy-now">立即购买</button>
+              <button class="free">免费试学</button>
+            </div>
+            <div class="add-cart"><img src="@/assets/shopcart.png" alt="">加入购物车</div>
           </div>
         </div>
-        <div class="course-intro-item">
-          <div v-if="course_item_switch===0" class="intro-content">
-            <div class="course-item-box">
-              <div class="content-item">
-                <div class="title">介绍</div>
-                <article>
-                  即使之前你从未写过1行代码，也能在学完本课程后，达到Python入门水平，能开发300-500行代码的小程序，掌握基本的编程思维、软件设计方法。无论你日后想做人工智能、数据分析，还是WEB开发、爬虫、大数据等，都应该先把这部分基础掌握。
-                </article>
-                <div class="title">你将会学到的</div>
-                <ul>
-                  <li>
-                    <img src="@/assets/dui.png" alt="">
-                    <p>学会Python基础语法</p>
-                  </li>
-                  <li>
-                    <img src="@/assets/dui.png" alt="">
-                    <p>学会Python基础语法</p>
-                  </li>
-                  <li>
-                    <img src="@/assets/dui.png" alt="">
-                    <p>掌握Python字符编码&数据类型</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="course-outline">
-                <div class="title">
-                  <p class="title-name">
-                    课程大纲
-                  </p>
-                  <p class="title-side">
-                    <span>全部收起</span>
-                    <span>
-                        <b>87</b>
-                        小节
-                      </span>
-                    <span>
-                        18:31:54
-                      </span>
-                  </p>
-                </div>
-                <!--                  大纲部分-->
-                <ul class="outline-list">
-                  <li class="list-data">
-                    <div class="list-data-title" @click="hideShow(0)">
-                      <div class="list-name">
-                        <img class="open" src="@/assets/jiahao.png" alt="" v-show="status!==0">
-                        <img class="us" src="@/assets/jianhao.png" alt="" v-show="status===0">
-<!--                        <image class="us" src="@/assets/jianhao.png" alt="" v-show="status_dic[0]">-->
-<!--                        <image class="us" src="@/assets/jianhao.png" alt="" v-show="!status_dic[0]">-->
-                        <p>第1章·基本语法</p>
-                      </div>
-                      <div class="list-num">
-                          <span class="section-num hide">
-                            <b>28</b>小节
-                          </span>
-                        <span>
-                            4:42:34
-                          </span>
-                      </div>
-                    </div>
-                    <ul class="list-data-item" v-show="status===0">
-<!--                    <ul class="list-data-item" v-show="!status_dic[0]">-->
-                      <li class="login">
-                        <div class="data-item-name">
-                          <img src="@/assets/bofang1.png" alt="" class="img1">
-                          <img src="@/assets/bofang2.png" alt="" class="img2">
-                          <p>
-                            1
-                            .
-                            1
-                            编程语言是如何演变过来的
-                          </p>
-                        </div>
-                        <div class="data-item-num">
-                          <span class="type">预览</span>
-                          <span class="time">17:50</span>
-                        </div>
-                      </li>
-                      <li class="login">
-                        <div class="data-item-name">
-                          <img src="@/assets/bofang1.png" alt="" class="img1">
-                          <img src="@/assets/bofang2.png" alt="" class="img2">
-                          <p>
-                            1
-                            .
-                            1
-                            编程语言是如何演变过来的
-                          </p>
-                        </div>
-                        <div class="data-item-num">
-                          <span class="type">预览</span>
-                          <span class="time">17:50</span>
-                        </div>
-                      </li>
-                      <li class="login">
-                        <div class="data-item-name">
-                          <img src="@/assets/bofang1.png" alt="" class="img1">
-                          <img src="@/assets/bofang2.png" alt="" class="img2">
-                          <p>
-                            1
-                            .
-                            1
-                            编程语言是如何演变过来的
-                          </p>
-                        </div>
-                        <div class="data-item-num">
-                          <span class="type">预览</span>
-                          <span class="time">17:50</span>
-                        </div>
-                      </li>
-                      <li class="login">
-                        <div class="data-item-name">
-                          <img src="@/assets/bofang1.png" alt="" class="img1">
-                          <img src="@/assets/bofang2.png" alt="" class="img2">
-                          <p>
-                            1
-                            .
-                            1
-                            编程语言是如何演变过来的
-                          </p>
-                        </div>
-                        <div class="data-item-num">
-                          <span class="type">预览</span>
-                          <span class="time">17:50</span>
-                        </div>
-                      </li>
-                      <li class="login">
-                        <div class="data-item-name">
-                          <img src="@/assets/bofang1.png" alt="" class="img1">
-                          <img src="@/assets/bofang2.png" alt="" class="img2">
-                          <p>
-                            1
-                            .
-                            1
-                            编程语言是如何演变过来的
-                          </p>
-                        </div>
-                        <div class="data-item-num">
-                          <span class="type">预览</span>
-                          <span class="time">17:50</span>
-                        </div>
-                      </li>
-                      <li class="login">
-                        <div class="data-item-name">
-                          <img src="@/assets/bofang1.png" alt="" class="img1">
-                          <img src="@/assets/bofang2.png" alt="" class="img2">
-                          <p>
-                            1
-                            .
-                            1
-                            编程语言是如何演变过来的
-                          </p>
-                        </div>
-                        <div class="data-item-num">
-                          <span class="type">预览</span>
-                          <span class="time">17:50</span>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="list-data">
-                    <div class="list-data-title" @click="hideShow(1)">
-                      <div class="list-name">
-                        <img class="open" src="@/assets/jiahao.png" alt="" v-show="status!==1">
-                        <img class="us" src="@/assets/jianhao.png" alt="" v-show="status===1">
-<!--                        <image class="us" src="@/assets/jianhao.png" alt="" v-show="status_dic[1]">-->
-<!--                        <image class="us" src="@/assets/jianhao.png" alt="" v-show="!status_dic[1]">-->
-                        <p>第1章·基本语法</p>
-                      </div>
-                      <div class="list-num">
-                          <span class="section-num hide">
-                            <b>28</b>小节
-                          </span>
-                        <span>
-                            4:42:34
-                          </span>
-                      </div>
-                    </div>
-                    <ul class="list-data-item" v-show="status===1">
-                      <li class="login">
-                        <div class="data-item-name">
-                          <img src="@/assets/bofang1.png" alt="" class="img1">
-                          <img src="@/assets/bofang2.png" alt="" class="img2">
-                          <p>
-                            1
-                            .
-                            1
-                            编程语言是如何演变过来的
-                          </p>
-                        </div>
-                        <div class="data-item-num">
-                          <span class="type">预览</span>
-                          <span class="time">17:50</span>
-                        </div>
-                      </li>
-                      <li class="login">
-                        <div class="data-item-name">
-                          <img src="@/assets/bofang1.png" alt="" class="img1">
-                          <img src="@/assets/bofang2.png" alt="" class="img2">
-                          <p>
-                            1
-                            .
-                            1
-                            编程语言是如何演变过来的
-                          </p>
-                        </div>
-                        <div class="data-item-num">
-                          <span class="type">预览</span>
-                          <span class="time">17:50</span>
-                        </div>
-                      </li>
-                      <li class="login">
-                        <div class="data-item-name">
-                          <img src="@/assets/bofang1.png" alt="" class="img1">
-                          <img src="@/assets/bofang2.png" alt="" class="img2">
-                          <p>
-                            1
-                            .
-                            1
-                            编程语言是如何演变过来的
-                          </p>
-                        </div>
-                        <div class="data-item-num">
-                          <span class="type">预览</span>
-                          <span class="time">17:50</span>
-                        </div>
-                      </li>
-                      <li class="login">
-                        <div class="data-item-name">
-                          <img src="@/assets/bofang1.png" alt="" class="img1">
-                          <img src="@/assets/bofang2.png" alt="" class="img2">
-                          <p>
-                            1
-                            .
-                            1
-                            编程语言是如何演变过来的
-                          </p>
-                        </div>
-                        <div class="data-item-num">
-                          <span class="type">预览</span>
-                          <span class="time">17:50</span>
-                        </div>
-                      </li>
-                      <li class="login">
-                        <div class="data-item-name">
-                          <img src="@/assets/bofang1.png" alt="" class="img1">
-                          <img src="@/assets/bofang2.png" alt="" class="img2">
-                          <p>
-                            1
-                            .
-                            1
-                            编程语言是如何演变过来的
-                          </p>
-                        </div>
-                        <div class="data-item-num">
-                          <span class="type">预览</span>
-                          <span class="time">17:50</span>
-                        </div>
-                      </li>
-                      <li class="login">
-                        <div class="data-item-name">
-                          <img src="@/assets/bofang1.png" alt="" class="img1">
-                          <img src="@/assets/bofang2.png" alt="" class="img2">
-                          <p>
-                            1
-                            .
-                            1
-                            编程语言是如何演变过来的
-                          </p>
-                        </div>
-                        <div class="data-item-num">
-                          <span class="type">预览</span>
-                          <span class="time">17:50</span>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-
-                </ul>
-              </div>
+      </div>
+      <div class="course-tab">
+        <ul class="tab-list">
+          <li :class="tabIndex==1?'active':''" @click="tabIndex=1">详情介绍</li>
+          <li :class="tabIndex==2?'active':''" @click="tabIndex=2">课程章节 <span :class="tabIndex!=2?'free':''">(试学)</span>
+          </li>
+          <li :class="tabIndex==3?'active':''" @click="tabIndex=3">用户评论 (42)</li>
+          <li :class="tabIndex==4?'active':''" @click="tabIndex=4">常见问题</li>
+        </ul>
+      </div>
+      <div class="course-content">
+        <div class="course-tab-list">
+          <!--  课程详情  -->
+          <div class="tab-item" v-if="tabIndex==1">
+            <div v-html="course.brief_html"></div>
+          </div>
+          <!--  课程章节   -->
+          <div class="tab-item" v-if="tabIndex==2">
+            <div class="tab-item-title">
+              <p class="chapter">课程章节</p>
+              <p class="chapter-length">共11章 147个课时</p>
+            </div>
+            <div class="chapter-item" v-for="(value1,index1) in course.chapter_list" :key="value1.id" @click="hideShow(index1)">
+              <p class="chapter-title"><img src="@/assets/jiahao.png" alt="" v-show="status_dic!==index1"><img src="@/assets/jianhao.png" alt="" v-show="status_dic===index1">
+                {{value1.name}}</p>
+              <ul class="lesson-list" v-for="(value,index) in value1.lesson_list" :key="value.id" v-show="status_dic===index1">
+                <li class="lesson-item">
+                  <p class="name"><span class="index">{{index1+1}}-{{value.lesson}}</span> {{value.name}}<span class="free">{{value.free_trail === true?`免费`:`付费`}}</span></p>
+                  <p class="time">07:30 <img src="@/assets/ziliao.png"></p>
+                  <button class="try">立即试学</button>
+                </li>
+              </ul>
             </div>
           </div>
-          <div v-if="course_item_switch===1">
-            讨论问题部分
+          <div class="tab-item" v-if="tabIndex==3">
+            用户评论
           </div>
-          <div v-if="course_item_switch===2">
-            课件下载部分
-          </div>
-          <!--            右侧边栏-->
-          <div class="course-side">
-            <div class="side-video">
-              <div class="video-box">
-
-                <video-player class="video-player vjs-custom-skin"
-                              ref="videoPlayer"
-                              :playsinline="true"
-                              :options="playerOptions"
-                              @play="onPlayerPlay($event)"
-                              @pause="onPlayerPause($event)"
-                >
-                </video-player>
-                <!--                <image src="@/assets/PY1.png" alt="">-->
-                <!--                <p>-->
-                <!--                  <image src="@/assets/triangle_1.svg" alt="">-->
-                <!--                </p>-->
-              </div>
-              <div class="student-prower">
-                <div class="title">
-                  学霸团专属权益
-                </div>
-                <ul>
-                  <li>
-                    <img style="width: 18px;height: 20px" src="@/assets/ziliao.png" alt="">
-                    <p>课件下载</p>
-                  </li>
-                  <li>
-                    <img style="width: 17px;height: 17px" src="@/assets/gongkaike.png" alt="">
-                    <p>定期公开课</p>
-                  </li>
-                  <li>
-                    <img style="width: 21px;height: 18px" src="@/assets/jiaoliu.png" alt="">
-                    <p>
-                      学员交流
-                      <br>
-                      QQ群：
-                      701031800
-                    </p>
-                  </li>
-                  <li>
-                    <img style="width: 18px;height: 18px" src="@/assets/answer.png" alt="">
-                    <p>导师答疑</p>
-                  </li>
-                </ul>
-                <p class="btns start-study">继续学习</p>
-                <a target="_blank" class="btns add-team" href="https://jq.qq.com/?_wv=1027&k=5XfBMXm">加入学霸团</a>
-
-              </div>
-            </div>
-            <div class="side-video"></div>
+          <div class="tab-item" v-if="tabIndex==4">
+            常见问题
           </div>
         </div>
-        <div class="preview-video beyond"></div>
+        <div class="course-side">
+        <!--    老师详情框      -->
+          <div class="teacher-info">
+            <h4 class="side-title"><span>授课老师</span></h4>
+            <div class="teacher-content">
+              <div class="cont1">
+                <img :src="course.teacher.image">
+                <div class="name">
+                  <p class="teacher-name">{{course.teacher.name}}</p>
+                  <p class="teacher-title">{{course.teacher.title}}</p>
+                </div>
+              </div>
+              <p class="narrative">{{course.teacher.brief}}</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <Footer></Footer>
+    <Footer/>
   </div>
 </template>
 
 <script>
-import Header from "./common/Header";
-import Footer from "./common/Footer";
-import {videoPlayer} from 'vue-video-player';
+import Header from "./common/Header"
+import Footer from "./common/Footer"
+import {videoPlayer} from 'vue-video-player'
 
 export default {
   name: "Detail",
   data() {
     return {
-      course_item_switch: 0,
-      course_chapter_swith: 0,
-      status: null,
-      // status_dic : {0: true, 1: true},
+      status_dic : '', // 点击章节展开调用hideShow赋值index
+      tabIndex: 2,
+      course_id: 0,  // 课程id
+      // 课程章节课时数据
+      course: {
+        teacher: {},
+      },
+      // video视频播放
       playerOptions: {
         playbackRates: [0.7, 1.0, 1.5, 2.0], // 播放速度
         autoplay: false, //如果true,则自动播放
@@ -416,7 +125,8 @@ export default {
         fluid: true, // 当true时，Video.js player将拥有流体大小。换句话说，它将按比例缩放以适应其容器。
         sources: [{
           type: "video/mp4",//还可以配置其他格式
-          src: "http://img.ksbbs.com/asset/Mon_1703/05cacb4e02f9d9e.mp4" //你的视频地址（必填）
+          // src: "http://img.ksbbs.com/asset/Mon_1703/05cacb4e02f9d9e.mp4" //你的视频地址（必填）
+          src: "http://mirror.aarnet.edu.au/pub/TED-talks/911Mothers_2010W-480p.mp4" //你的视频地址（必填）
         },
           // 上一个视频的格式不支持，执行下一个。
           //   {
@@ -431,516 +141,462 @@ export default {
       }
     }
   },
-  components: {
-    Header,
-    Footer,
+  created() {
+    this.get_course_id();
+    this.get_course_detail();
   },
   methods: {
-    /*
-    后端的数据：
-      [
-      {"chapter": '基本语法章','section': [{'name': '变量常量','time': '12:30'},{'name': '循环','time': '12:30'}.....],
-      {"chapter": '函数章','section': [{'name': '函数基础','time': '12:30'},{'name': '作用域','time': '12:30'}.....],
-      ]
-      后端获取到这个数据之后，构建一个status_dic
-      status_dic = {0:true,1:true,2:true......}
+    // 获取当前课程的id（使用VUE中的$route.params.id方法）
+    get_course_id() {
+      let course_id = this.$route.params.id;
+      // alert(typeof course_id);
+      course_id = parseInt(course_id);
+      console.log(this.course.id)
+      // 对id进行限制（防止恶意修改id值，例如：-100，aaa）
+      if (course_id > 0) {  // id参数的审核有问题
+        this.course_id = course_id;
+      } else {
+        let self = this;
+        this.$alert('参数有误！', '别乱搞！！！', {
+          callback() {
+            // self.$router.go(-1); // 返回上一页面
+            location.href = 'http://www.luffycity.cn:8080/#/course'
+          }
+        })
+      }
+    },
 
-    */
+    // 通过课程id获取该课程的章节和课时
+    get_course_detail() {
+      this.$axios.get(`${this.$settings.Host}/course/detail/${this.course_id}/`)
+        .then(res => {
+          console.log(res.data.course_img)
+          this.course = res.data;
+          // 后端获取的课程视频路径赋值到video值里
+          this.playerOptions.sources[0].src=res.data.course_video;
+          this.playerOptions.poster=res.data.course_img;
+          }
+        ).catch(error => {
+          console.log(error.response);
+        })
+    },
+
+    // 点击章节展开调用
     hideShow(index){
-      this.status=index
-      // this.status_dic[index] = !this.status_dic[index];
+      this.status_dic=index
+    },
+
+    // 视频播放调用
+    player() {
+      return this.$refs.videoPlayer.player
     },
     // 视频播放中，播放广告，这就是事件。
     onPlayerPlay(player) {
       alert("点击确定开始播放");
     },
     onPlayerPause(player) {
-      alert("暂停一下，点击确定重新播放");
+      alert("暂停一下，点击确定开始播放");
     },
-    player() {
-      return this.$refs.videoPlayer.player
-    }
+  },
+  // 挂载
+  components: {
+    Header,
+    Footer,
   }
-
 }
 </script>
 
 <style scoped>
-.hide {
-  display: none;
-}
-
-.active {
-  display: inline-block;
-}
-
-.course-intro-item .course-side {
-  width: 374px;
-  height: auto;
-  margin-top: -260px;
-  float: right;
-  z-index: 2;
-  position: relative;
-}
-
-.course-intro-item .course-side .side-video {
-  width: 100%;
-  height: auto;
+.main {
   background: #fff;
-  border-radius: 6px;
-  box-shadow: 0 2px 4px 0 #f3f3f3;
-  border: 1px solid #e8e8e8;
+  padding-top: 30px;
 }
 
-.course-intro-item .course-side .side-video .video-box {
-  width: 100%;
-  height: auto;
-  position: relative;
-  padding: 5px 4px 27px;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-
-.course-intro-item .course-side .side-video .video-box img {
-  width: 100%;
-  height: auto;
-}
-
-.course-intro-item .course-side .side-video .video-box p {
-  width: 104px;
-  height: 104px;
-  border-radius: 100%;
-  background: hsla(0, 0%, 100%, .2);
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: -52px;
-  margin-top: -62px;
-  text-align: center;
-  line-height: 104px;
-}
-
-.course-intro-item .course-side .side-video .video-box p img {
-  width: 46px;
-  height: auto;
-  margin-left: 12px;
-}
-
-.course-intro-item .course-side .side-video .student-prower {
-  padding: 0 31px 30px;
-  box-sizing: border-box;
-}
-
-.course-intro-item .course-side .side-video .student-prower .title {
-  color: #000;
-  font-size: 15px;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-
-.course-intro-item .course-side .side-video .student-prower ul {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.course-intro-item .course-side .side-video .student-prower ul li {
-  margin-bottom: 18px;
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
-}
-
-.course-intro-item .course-side .side-video .student-prower ul li img {
-  margin-right: 6px;
-}
-
-.course-intro-item .course-side .side-video .student-prower ul li p {
-  width: 119px;
-  font-size: 12px;
-  color: #4a4a4a;
+.course-info {
+  width: 1200px;
+  margin: 0 auto;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
-.course-intro-item .course-side .side-video .student-prower .start-study {
+.wrap-left {
+  float: left;
+  width: 690px;
+  height: 388px;
+}
+
+.wrap-right {
+  float: left;
+  position: relative;
+  height: 388px;
+}
+
+.course-name {
+  font-size: 20px;
+  color: #333;
+  padding: 10px 23px;
+  letter-spacing: .45px;
+}
+
+.data {
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-bottom: 16px;
+  font-size: 14px;
+  color: #9b9b9b;
+}
+
+.sale-time {
+  width: 464px;
+  background: #fa6240;
+  font-size: 14px;
+  color: #4a4a4a;
+  padding: 10px 23px;
+  overflow: hidden;
+}
+
+.sale-type {
+  font-size: 16px;
   color: #fff;
-  margin-top: 27px;
-  margin-bottom: 12px;
-  background: #ffc210;
-}
-
-.course-intro-item .course-side .side-video .student-prower .btns {
-  width: 100%;
-  height: 52px;
-  line-height: 52px;
-  border-radius: 2px;
-  font-size: 18px;
-  font-weight: 500;
-  padding-left: 111px;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: block;
-  text-decoration: none;
-}
-
-.course-intro-item .course-side .side-video .student-prower .add-team {
-  color: #f5a623;
-  border: 1px solid #f5a623;
-  box-sizing: border-box;
-}
-
-
-.course-intro-item .intro-content {
-  width: 780px;
+  letter-spacing: .36px;
   float: left;
 }
 
-.intro-content .course-item-box {
-  width: 100%;
-  height: auto;
-}
-
-.course-item-box .content-item {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-  padding: 30px 20px 15px;
-  background: #f3f3f3;
-  box-sizing: border-box;
-  box-shadow: 0 2px 4px 0 #f3f3f3;
-}
-
-.content-item .title {
-  color: #000;
-  font-size: 22px;
-}
-
-.content-item article {
+.sale-time .expire {
   font-size: 14px;
+  color: #fff;
+  float: right;
+}
+
+.sale-time .expire .second {
+  width: 24px;
+  display: inline-block;
+  background: #fafafa;
   color: #5e5e5e;
-  margin-top: 10px;
-  line-height: 28px;
-  margin-bottom: 50px;
+  padding: 6px 0;
+  text-align: center;
 }
 
-.content-item ul {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 17px;
-}
-
-.content-item ul li {
-  display: flex;
-  align-items: center;
-  margin-right: 36px;
-  margin-bottom: 15px;
-}
-
-.content-item ul li img {
-  width: 18px;
-  height: 18px;
-  margin-right: 12px;
-}
-
-.content-item ul li p {
-  width: 303px;
-  font-size: 14px;
-  color: #5e5e5e;
-}
-
-.course-item-box .course-outline {
-  width: 100%;
-}
-
-.course-outline .title {
-  margin-top: 50px;
-  margin-bottom: 13px;
-  padding-left: 17px;
-  padding-right: 20px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  box-sizing: border-box;
-}
-
-.course-outline .title .title-name {
-  color: #000;
-  font-size: 22px;
-}
-
-.course-outline .title .title-side {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-}
-
-.course-outline .title .title-side span:first-of-type {
-  color: #2a2a2a;
-  margin-right: 39px;
-  cursor: pointer;
-  min-width: 52px;
-}
-
-.course-outline .title .title-side span:nth-of-type(2) {
-  min-width: 52px;
-  text-align: right;
-  color: #4a4a4a;
-  display: inline-block;
-}
-
-.course-outline .title .title-side span:nth-of-type(3) {
-  width: 80px;
-  color: #4a4a4a;
-  margin-left: 17px;
-  text-align: right;
-  display: inline-block;
-}
-
-.course-outline .outline-list {
-  width: 100%;
-  height: auto;
-}
-
-.course-outline .outline-list .list-data {
-  width: 780px;
-  height: auto;
-  margin-bottom: 2px;
-}
-
-.course-outline .outline-list .list-data .list-data-title {
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #f9f9f9;
-  padding-left: 26px;
-  padding-right: 20px;
-  border-radius: 2px;
-  box-sizing: border-box;
-  margin-bottom: 1px;
-  cursor: pointer;
-}
-
-.outline-list .list-data .list-data-title .list-name {
-  display: flex;
-  align-items: center;
-}
-
-.list-data .list-data-title .list-name img {
-  width: 10px;
-  height: auto;
-  margin-right: 15px;
-}
-
-.list-data .list-data-title .list-name p {
-  width: 546px;
-  font-size: 15px;
-  color: #5e5e5e;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.list-data .list-data-title .list-num {
-  display: flex;
-  align-items: center;
-}
-
-.list-data .list-data-title .list-num span:first-of-type {
-  min-width: 52px;
-  text-align: right;
-  color: #4a4a4a;
-  display: inline-block;
-}
-
-.list-data .list-data-title .list-num span:nth-of-type(2) {
-  width: 80px;
-  color: #4a4a4a;
-  margin-left: 17px;
-  text-align: right;
-  display: inline-block;
-}
-
-
-.outline-list .list-data .list-data-item {
-  width: 100%;
-  height: auto;
-  margin-bottom: 4px;
-  border-top: 1px solid #dadada;
-}
-
-.outline-list .list-data .list-data-item li {
-  cursor: pointer;
-  width: 100%;
-  height: 48px;
+.course-price {
   background: #fff;
-  border-radius: 2px;
-  border: 1px solid #dadada;
-  border-top: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 50px;
-  padding-right: 20px;
-  box-sizing: border-box;
-  color: #6ca4c5;
-}
-
-.outline-list .list-data .list-data-item li .data-item-name {
-  display: flex;
-  align-items: center;
-}
-
-.outline-list .list-data .list-data-item li .data-item-name img {
-  width: 16px;
-  height: 16px;
-  margin-right: 9px;
-}
-
-.outline-list .list-data .list-data-item li .data-item-name .img2 {
-  display: none;
-}
-
-.outline-list .list-data .list-data-item li .data-item-name p {
-  width: 430px;
   font-size: 14px;
+  color: #4a4a4a;
+  padding: 5px 23px;
 }
 
-.outline-list .list-data .list-data-item li .data-item-num {
-  display: flex;
-  align-items: center;
-}
-
-.outline-list .list-data .list-data-item li .data-item-num .type {
-  min-width: 43px;
-  text-align: right;
+.discount {
+  font-size: 26px;
+  color: #fa6240;
+  margin-left: 10px;
   display: inline-block;
+  margin-bottom: -5px;
 }
 
-.outline-list .list-data .list-data-item li .data-item-num .time {
-  width: 80px;
-  margin-left: 17px;
-  text-align: right;
-  display: inline-block;
+.original {
+  font-size: 14px;
+  color: #9b9b9b;
+  margin-left: 10px;
+  text-decoration: line-through;
 }
 
-.course-intro {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: auto;
-  /*padding-bottom: 40px;*/
-}
-
-.intro-top {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 300px;
-  position: relative;
-}
-
-.intro-top .return {
-  color: #fff;
-  width: 1200px;
-  font-size: 16px;
-  font-weight: 500;
-  margin-top: 30px;
-  margin-bottom: 38px;
-  display: flex;
-  cursor: pointer;
-  align-items: center;
-}
-
-.intro-top .return img {
-  width: 6px;
-  height: 11px;
-  margin-right: 6px;
-}
-
-.intro-top .intro-data {
-  width: 1200px;
-  padding-left: 23px;
-}
-
-.intro-data h1 {
-  width: 780px;
-  font-size: 36px;
-  color: #fff;
-  font-weight: 400;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.intro-data p {
-  width: 780px;
-  color: #fff;
-  font-size: 16px;
-  margin-top: 8px;
-}
-
-.intro-data p span {
-  margin-right: 26px;
-}
-
-.intro-top .course-nav {
-  width: 100%;
-  height: 72px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.buy {
+  width: 464px;
+  padding: 0px 23px;
   position: absolute;
   left: 0;
-  top: 228px;
+  bottom: 20px;
+  overflow: hidden;
 }
 
-.course-nav ul {
-  width: 1200px;
-  display: flex;
-  align-items: center;
-  padding-left: 23px;
-  box-sizing: border-box;
+.buy .buy-btn {
+  float: left;
 }
 
-.course-nav ul .this {
+.buy .buy-now {
+  width: 125px;
+  height: 40px;
+  border: 0;
+  background: #ffc210;
+  border-radius: 4px;
   color: #fff;
-  font-weight: 500;
+  cursor: pointer;
+  margin-right: 15px;
+  outline: none;
 }
 
-.course-nav ul li {
-  font-size: 16px;
-  margin-top: 14px;
-  color: #e9e9e9;
-  margin-right: 26px;
-  display: flex;
+.buy .free {
+  width: 125px;
+  height: 40px;
+  border-radius: 4px;
   cursor: pointer;
+  margin-right: 15px;
+  background: #fff;
+  color: #ffc210;
+  border: 1px solid #ffc210;
+}
+
+.add-cart {
+  float: right;
+  font-size: 14px;
+  color: #ffc210;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.add-cart img {
+  width: 20px;
+  height: 18px;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
+.course-tab {
+  width: 100%;
+  background: #fff;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px 0 #f0f0f0;
+
+}
+
+.course-tab .tab-list {
+  width: 1200px;
+  margin: auto;
+  color: #4a4a4a;
+  overflow: hidden;
+}
+
+.tab-list li {
+  float: left;
+  margin-right: 15px;
+  padding: 26px 20px 16px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.tab-list .active {
+  color: #ffc210;
+  border-bottom: 2px solid #ffc210;
+}
+
+.tab-list .free {
+  color: #fb7c55;
+}
+
+.course-content {
+  width: 1200px;
+  margin: 0 auto;
+  background: #FAFAFA;
+  overflow: hidden;
+  padding-bottom: 40px;
+}
+
+.course-tab-list {
+  width: 880px;
+  height: auto;
+  padding: 20px;
+  background: #fff;
+  float: left;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 2px 4px 0 #f0f0f0;
+}
+
+.tab-item {
+  width: 880px;
+  background: #fff;
+  padding-bottom: 20px;
+  box-shadow: 0 2px 4px 0 #f0f0f0;
+}
+
+.tab-item-title {
+  justify-content: space-between;
+  padding: 25px 20px 11px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #333;
+  border-bottom-color: rgba(51, 51, 51, .05);
+  overflow: hidden;
+}
+
+.chapter {
+  font-size: 17px;
+  color: #4a4a4a;
+  float: left;
+}
+
+.chapter-length {
+  float: right;
+  font-size: 14px;
+  color: #9b9b9b;
+  letter-spacing: .19px;
+}
+
+.chapter-title {
+  font-size: 16px;
+  color: #4a4a4a;
+  letter-spacing: .26px;
+  padding: 12px;
+  background: #eee;
+  border-radius: 2px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.chapter-title img {
+  width: 18px;
+  height: 18px;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
+.lesson-list {
+  padding: 0 20px;
+}
+
+.lesson-list .lesson-item {
+  padding: 15px 20px 15px 36px;
+  cursor: pointer;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.lesson-item .name {
+  font-size: 14px;
+  color: #666;
+  float: left;
+}
+
+.lesson-item .index {
+  margin-right: 5px;
+}
+
+.lesson-item .free {
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: .19px;
+  background: #ffc210;
+  border-radius: 100px;
+  padding: 1px 9px;
+  margin-left: 10px;
+}
+
+.lesson-item .time {
+  font-size: 14px;
+  color: #666;
+  letter-spacing: .23px;
+  opacity: 1;
+  transition: all .15s ease-in-out;
+  float: right;
+}
+
+.lesson-item .time img {
+  width: 18px;
+  height: 18px;
+  margin-left: 15px;
+  vertical-align: text-bottom;
+}
+
+.lesson-item .try {
+  width: 86px;
+  height: 28px;
+  background: #ffc210;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #fff;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  opacity: 0;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.lesson-item:hover {
+  background: #fcf7ef;
+  box-shadow: 0 0 0 0 #f3f3f3;
+}
+
+.lesson-item:hover .name {
+  color: #333;
+}
+
+.lesson-item:hover .try {
+  opacity: 1;
+}
+
+.course-side {
+  width: 300px;
+  height: auto;
+  margin-left: 20px;
+  float: right;
+}
+
+.teacher-info {
+  background: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px 0 #f0f0f0;
+}
+
+.side-title {
+  font-weight: normal;
+  font-size: 17px;
+  color: #4a4a4a;
+  padding: 18px 14px;
+  border-bottom: 1px solid #333;
+  border-bottom-color: rgba(51, 51, 51, .05);
+}
+
+.side-title span {
+  display: inline-block;
+  border-left: 2px solid #ffc210;
+  padding-left: 12px;
+}
+
+.teacher-content {
+  padding: 30px 20px;
   box-sizing: border-box;
 }
 
-.course-nav ul li p {
+.teacher-content .cont1 {
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.teacher-content .cont1 img {
+  width: 54px;
+  height: 54px;
+  margin-right: 12px;
+  float: left;
+}
+
+.teacher-content .cont1 .name {
+  float: right;
+}
+
+.teacher-content .cont1 .teacher-name {
+  width: 188px;
+  font-size: 16px;
+  color: #4a4a4a;
   padding-bottom: 4px;
 }
 
-.course-nav ul .this p {
-  box-shadow: 0 2px 0 0 #fff;
+.teacher-content .cont1 .teacher-title {
+  width: 188px;
+  font-size: 13px;
+  color: #9b9b9b;
+  white-space: nowrap;
 }
 
-.course-nav ul li span {
-  padding-bottom: 4px;
-  /*padding-top: 16px;*/
+.teacher-content .narrative {
+  font-size: 14px;
+  color: #666;
+  line-height: 24px;
 }
-
-.course-intro-item {
-  width: 1200px;
-  margin-top: 24px;
-}
-
-
 </style>
+

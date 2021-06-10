@@ -36,4 +36,8 @@ urlpatterns = [
     # 课程详情页面
     path(r'course/',include('course.urls')),
 
+    path(r'cart/',include('cart.urls')),
+
+    re_path(r'^ckeditor',include('ckeditor_uploader.urls')),
+
 ]

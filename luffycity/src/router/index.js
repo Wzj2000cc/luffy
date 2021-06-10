@@ -1,14 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// import HelloWorld from '@/components/HelloWorld'
 import Home from "../components/Home";
-import Course from "../components/Course";
 import Detail from "../components/Detail";
 import Cart from "../components/Cart";
 import Login from "../components/Login";
 import Register from "../components/Register";
 import Account from "../components/Account";
 import Respwd from "../components/Respwd";
+import Course from "../components/Course";
 
 Vue.use(Router)
 
@@ -25,8 +24,7 @@ export default new Router({
       component:Course
     },
     {
-      path:'/detail/',
-      name:'Detail',
+      path:'/course/detail/:id',
       component:Detail
     },
     {

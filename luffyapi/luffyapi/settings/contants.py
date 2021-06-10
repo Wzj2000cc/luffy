@@ -8,3 +8,6 @@ HEADER_NAV_LENGTH = 6
 SMS_EXPIRE_TIME = 60*5
 
 SMS_INTERVAL_TIME = 60
+
+
+SERVER_HOST = 'http://api.luffycity.cn:8001'

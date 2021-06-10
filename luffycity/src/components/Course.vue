@@ -14,7 +14,7 @@
 
         <div class="ordering">
           <ul>
-            <li class="title">筛&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;选: </li>
+            <li class="title">筛&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;选:</li>
             <li class="default" @click="ChangeOrderType('id')" :class="ChangeOrderClass('id')">默认</li>
             <li class="hot" @click="ChangeOrderType('students')" :class="ChangeOrderClass('students')">人气</li>
             <li class="price" @click="ChangeOrderType('price')" :class="ChangeOrderClass('price')">价格</li>
@@ -31,19 +31,18 @@
           </div>
           <div class="course-info">
             <h3>
-              <router-link to="/course/detail/1">{{value.name}}</router-link>
+              <router-link :to="'/course/detail/'+ value.id+'/'">{{value.name}}</router-link>
               <span><img src="/static/image/avatar1.svg" alt="">{{value.students}}人已加入学习</span></h3>
             <p class="teather-info">{{value.teacher.name}} {{value.teacher.signature}} {{value.teacher.title}}
               <span>共{{value.lessons}}课时{{value.lessons === value.pub_lessons?`/更新完成`:`/已更新${value.pub_lessons}课时`}}</span>
             </p>
             <ul class="lesson-list">
               <li v-for="(value1,index) in value.lesson_list" :key=value1.id>
-                <span class="lesson-title">{{value1.lesson}} | 第{{value1.lesson}}节：{{value1.name}}</span>
-                <span class="free">{{value1.free_trail === true?`免费`:`付费`}}</span>
+                <span class="lesson-title">0{{index+1}} | 第{{value1.lesson}}节：{{value1.name}}</span>
+<!--                <span class="free">{{value1.free_trail === true?`免费`:`付费`}}</span>-->
+                <span class="free" v-if="value1.free_trail">免费</span>
+                <span class="free" v-else-if ="!value1.free_trail">付费</span>
               </li>
-<!--              <li><span class="lesson-title">01 | 第1节：初识编码初识编码</span> <span class="free">免费</span></li>-->
-<!--              <li><span class="lesson-title">01 | 第1节：初识编码</span> <span class="free">免费</span></li>-->
-<!--              <li><span class="lesson-title">01 | 第1节：初识编码初识编码初识编码初识编码</span> <span class="free">免费</span></li>-->
             </ul>
             <div class="pay-box">
               <span class="discount-type">限时免费</span>
@@ -55,6 +54,15 @@
         </div>
       </div>
     </div>
+    <el-pagination
+      background
+      layout="prev, pager, next, sizes"
+      :page-size="filters.size"
+      :page-sizes="[2,3,5,10]"
+      :total="total"
+      @current-change="HandlerCurrentChange"
+      @size-change = "HandlerSizeChange">
+    </el-pagination>
     <Footer></Footer>
   </div>
 </template>
@@ -62,6 +70,7 @@
 <script>
 import Header from "./common/Header"
 import Footer from "./common/Footer"
+
 export default {
   name: "Course",
   data(){
@@ -70,9 +79,13 @@ export default {
       category_list:[],
       filters:{
         type:'id', // 标记选中那哪标签
-        order:'desc', //
+        order:'asc', // 默认正序排列
+        page:1,  // 默认获取第一页数据
+        size:5,  // 分页默认每页5条
       },
-      course_list:[],
+      course_list:[],  // 课程所有章节
+      total:0,   // 每次请求获取数据总条数
+      size:5,
     }
   },
   components:{
@@ -90,22 +103,49 @@ export default {
         console.log(error)
       })
     },
+
+    // 课程章节
     get_course(){
-      this.$axios.get(`${this.$settings.Host}/course/list/`).then(
-        res =>{
-          console.log(res.data)
-          this.course_list = res.data
-          console.log(this.course_list)
+      let filter = {
+        page:this.filters.page,
+        size:this.filters.size,
+      };
+      if(this.category > 0){
+        filter.course_category = this.category;  // 生成课程键值对（通过课程id获取对应的章节）
+      }
+      if(this.filters.order === 'desc'){
+        filter.ordering = '-' + this.filters.type;
+      }else {
+        filter.ordering = this.filters.type;
+      }
+      this.$axios.get(`${this.$settings.Host}/course/list/`,{
+        params: filter
+      }).then(res =>
+        {
+          // console.log(res.data)
+          this.course_list = res.data.results
+          this.total = res.data.count
         }
       ).catch(error=>{
         console.log(error)
       })
     },
 
+    // 分页(课程章节)
+    HandlerCurrentChange(page){
+      this.filters.page = page
+      this.get_course()
+    },
+    HandlerSizeChange(size){
+      this.filters.size = size
+      this.get_course()
+    },
+
     // 排序
     ChangeOrderType(type){
       if(this.filters.type !== type){
         this.filters.type = type;
+        this.filters.order = "asc"
       }else{
         if(this.filters.order === 'asc'){
           this.filters.order = 'desc'
@@ -113,6 +153,7 @@ export default {
           this.filters.order = 'asc'
         }
       }
+      this.get_course()
     },
     ChangeOrderClass(type){
       if(this.filters.type === type && this.filters.order === 'desc'){
@@ -123,6 +164,11 @@ export default {
         return ''
       }
     },
+  },
+  watch:{
+    category(){
+      this.get_course()
+    }
   },
   created() {
     this.get_category();
@@ -233,8 +279,8 @@ export default {
   cursor: pointer;
   content:"";
   display: block;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border: 5px solid transparent;
   position: absolute;
   right: 0;
@@ -328,7 +374,7 @@ export default {
   color: #666;
   padding-left: 22px;
   /* background: url("路径") 是否平铺 x轴位置 y轴位置 */
-  background: url("/static/image/play-icon-gray.svg") no-repeat left 4px;
+  /*background: url("/static/image/play-icon-gray.svg") no-repeat left 4px;*/
   margin-bottom: 15px;
 }
 .course-item .lesson-list li .lesson-title{
@@ -340,7 +386,7 @@ export default {
   max-width: 200px;
 }
 .course-item .lesson-list li:hover{
-  background-image: url("/static/image/play-icon-yellow.svg");
+  /*background-image: url("/static/image/play-icon-yellow.svg");*/
   color: #ffc210;
 }
 .course-item .lesson-list li .free{

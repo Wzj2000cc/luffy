@@ -8,11 +8,12 @@ class CourseCategoryModelSerializer(serializers.ModelSerializer):
         model = models.CourseCategory
         fields = ['id', 'name']
 
+
 # 老师表序列化器
 class TeacherModelSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Teacher
-        fields = ['name', 'title', 'signature']
+        fields = ['id','name','role','image','brief','title', 'signature']
 
 
 """
@@ -32,4 +33,21 @@ class CourseModelSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = models.Course
-        fields = ["id", "name", "course_img", "students", "lessons", "pub_lessons", "price",'teacher','lesson_list']
+        fields = ["id", "name", "course_img", "students", "lessons", "pub_lessons", "price",'teacher','lesson_list',]
+
+
+"""
+点击课程章节查看详情
+"""
+class CourseDetailSerializer(serializers.ModelSerializer):
+
+    teacher=  TeacherModelSerializer()
+
+    class Meta:
+        model = models.Course
+        fields = ["id", "name", "course_img", "students", "lessons", "pub_lessons", "price",'teacher','brief_html','get_level_display','chapter_list','course_video']
+
+
+
+
+

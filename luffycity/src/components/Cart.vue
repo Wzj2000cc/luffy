@@ -1,260 +1,214 @@
 <template>
   <div class="cart">
     <Header></Header>
-    <div class="main">
-      <div class="shopping-cart-wrap">
-        <h3 class="shopping-cart-tit">
-          我的购物车
-          <small>
-            共
-            <span>2</span>
-            门课程
-          </small>
-        </h3>
-        <h1>{{form.region}}</h1>
-        <div class="content">
-          <template>
-            <el-table
-              ref="multipleTable"
-              :data="tableData"
-              tooltip-effect="dark"
-              style="width: 100%"
-              @selection-change="handleSelectionChange">
-              <!--      每行第一个选择框        -->
-              <el-table-column
-                type="selection"
-                width="55">
-              </el-table-column>
-              <el-table-column
-                prop="title"
-                label="课程"
-                width="540">
-                <template slot-scope="scope">
-                  <div class="content-img">
-                    <img :src="scope.row.img_src" alt="">
-                    <span>{{scope.row.desc}}</span>
-                  </div>
-                </template>
-              </el-table-column>
-              <el-table-column
-                prop="name"
-                label="有效期"
-                width="200">
-                <template slot-scope="scope">
-                  <div class="cc">
-                    <el-form ref="form" :model="form" label-width="180px">
-                      <el-form-item>
-                        <el-select v-model="form.region" placeholder="请选择有效期">
-                          <el-option v-for="(value,index) in expire_list" :label="value.title" :value="value.id"
-                                     :key="value.id"></el-option>
-                        </el-select>
-                      </el-form-item>
-                    </el-form>
-                  </div>
-                </template>
-
-              </el-table-column>
-              <el-table-column
-                prop="price"
-                label="价格"
-                width="200">
-              </el-table-column>
-              <el-table-column
-                label="操作"
-                width="200"
-                type="index"
-                show-overflow-tooltip>
-                <router-link to="/" class="do-btn">删除</router-link>
-              </el-table-column>
-            </el-table>
-            <!--            <div style="margin-top: 20px">-->
-            <!--              <el-button @click="toggleSelection([tableData[1], tableData[2]])">切换第二、第三行的选中状态</el-button>-->
-            <!--              <el-button @click="toggleSelection()">取消选择</el-button>-->
-            <!--            </div>-->
-          </template>
+    <div class="cart_info">
+      <div class="cart_title">
+        <span class="text">我的购物车</span>
+        <span class="total">共4门课程</span>
+      </div>
+      <div class="cart_table">
+        <div class="cart_head_row">
+          <span class="doing_row"></span>
+          <span class="course_row">课程</span>
+          <span class="expire_row">有效期</span>
+          <span class="price_row">单价</span>
+          <span class="do_more">操作</span>
         </div>
-        <Add></Add>
-        <ul class="pas-left">
-          <li class="charge-list">
-            <input type="checkbox" class="select_all" id="color-input-red" width="20px" height="20px">
-            <span class="shopping-cart-bot-font" style="margin-left: 15px; cursor: pointer">全选</span>
-          </li>
-          <li class="charge-list" style="margin-left: 58px;">
-            <!--            <image alt="" width="18" height="auto" src="@/assets/delete.png">-->
-            <span class="shopping-cart-bot-font" style="margin-left: 15px; cursor: pointer; border: 0;">删除</span>
-          </li>
-          <li class="charge-list" style="margin-left: auto">
-            <span class="shopping-cart-bot-font" style="margin-right: 62px">总计: <b>0.0</b>￥</span>
-            <button class="go-charge-btn">去结算</button>
-          </li>
-
-        </ul>
+        <div class="cart_course_list">
+          <CartItem v-for="(value,index) in cart_list" :key="value.id" :cart="value"></CartItem>
+        </div>
+        <div class="cart_footer_row">
+          <span class="cart_select"><label> <el-checkbox v-model="checked"></el-checkbox><span>全选</span></label></span>
+          <span class="cart_delete"><i class="el-icon-delete"></i> <span>删除</span></span>
+          <span class="goto_pay">去结算</span>
+          <span class="cart_total">总计：¥0.0</span>
+        </div>
       </div>
     </div>
+    <Add></Add>
     <Footer></Footer>
   </div>
 </template>
 
 <script>
-  import Header from "./common/Header";
-  import Footer from "./common/Footer";
-  import Add from "./common/Add";
+import Header from "./common/Header"
+import Footer from "./common/Footer"
+import CartItem from "./common/CartItem"
+import Add from "./common/Add";
 
-  export default {
-    name: "Cart",
-    data() {
-      return {
-        expire: '1个月有效',
-        token: true,
-        form: {
-          region: '',
-        },
-        expire_list: [  // 后端获取的数据
-          {id: 1, title: '1个月有效'},
-          {id: 2, title: '3个月有效'},
-          {id: 3, title: '6个月有效'},
-          {id: 4, title: '永久有效'},
-        ],
-        tableData: [  // 后端获取的数据
-          {
-            index:1,
-            title: 'vue的核心操作课程',
-            expire: '三个月过期',
-            img_src: require('@/assets/shopcarshow.jpeg'),
-            // addr: '/cart',
-            desc: '傻逼alex',
-            price: '1',
-          },
-          {
-            index:2,
-            title: '太白教你学vue',
-            expire: '三个月过期',
-            img_src: require('@/assets/shopcarshow.jpeg'),
-            // addr: '/cart',
-            desc: '傻逼alex',
-            price: '2',
-          },
-        ]
-      }
-    },
-    components: {
-      Header,
-      Footer,
-      Add,
-    },
-    methods: {
-      handleSelectionChange(val) {
-        this.multipleSelection = val;
-      }
+export default {
+  name: "Cart",
+  data() {
+    return {
+      checked: false,
+      cart_list: [],
     }
+  },
+  methods: {
+    check_user_login() {
+      let token = localStorage.user_token || sessionStorage.user_token;
+      if (!token) {
+        let self = this;
+        this.$confirm('对不起，您尚未登录！请先登录在添加购物车', '路飞学城', {
+          confirmButtonText: '确定',
+          cancelButtonText: '取消',
+        }).then(() => {
+          self.$router.push('/login/');
+        });
+        return false
+      }
+      return token;
+    },
+
+    // 先要验证用户是否登录
+    get_cart_data() {
+      let token = this.check_user_login();
+
+      // 将课程id发送到后端
+      if (!token) {  // 如果token为false，AddCart函数不执行
+        return false;
+      }
+
+      // 请求获取购物车数据
+      this.$axios.get(`${this.$settings.Host}/cart/`,{
+        headers: {
+          'Authorization': 'jwt ' + token,
+        }
+      }).then(res => {
+        // console.log(res.data.course_len);
+        this.cart_list = res.data.msg;
+      }).catch(error => {
+        console.log(error.response);
+      })
+    }
+  },
+  created() {
+    this.get_cart_data()
+  },
+  components: {
+    Add,
+    Header,
+    Footer,
+    CartItem,
   }
+}
 </script>
 
 <style scoped>
+.cart_info {
+  width: 1200px;
+  margin: 0 auto 50px;
+}
 
-  .main {
-    width: 100%;
-    /*flex: 1;*/
-    /*flex-grow: 1;*/
-    /*flex-direction: column;*/
-  }
+.cart_title {
+  margin: 25px 0;
+}
 
-  .shopping-cart-wrap {
-    width: 1200px;
-    margin: 0 auto;
-  }
+.cart_title .text {
+  font-size: 18px;
+  color: #666;
+}
 
-  .shopping-cart-tit {
-    font-size: 18px;
-    color: #666;
-    margin: 25px 0;
-    font-family: PingFangSC-Regular;
-  }
+.cart_title .total {
+  font-size: 12px;
+  color: #d0d0d0;
+}
 
-  .shopping-cart-tit small {
-    font-size: 12px;
-    color: #d0d0d0;
-    display: inline-block;
-    font-family: PingFangSC-Regular;
-  }
+.cart_table {
+  width: 1170px;
+}
 
-  .content {
-    width: 100%;
-  }
+.cart_table .cart_head_row {
+  background: #F7F7F7;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  padding-right: 30px;
+}
 
-  .content .content-img {
-    display: flex;
-    align-items: center;
-  }
+.cart_table .cart_head_row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
-  .content img {
-    width: 175px;
-    height: auto;
-    margin-right: 35px;
-  }
+.cart_table .cart_head_row .doing_row,
+.cart_table .cart_head_row .course_row,
+.cart_table .cart_head_row .expire_row,
+.cart_table .cart_head_row .price_row,
+.cart_table .cart_head_row .do_more {
+  padding-left: 10px;
+  height: 80px;
+  float: left;
+}
 
-  .do-btn {
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 14px;
-    color: #ffc210;
-    margin-right: 15px;
-    font-family: PingFangSC-Regular;
-  }
+.cart_table .cart_head_row .doing_row {
+  width: 78px;
+}
 
-  /*.c1 /deep/ .el-form-item__content{*/
-  /*  !*注意：element-ui中的标签都是自动生成的，这些标签其实并不是我们自己在文档中写的，
-  所以我们直接使用它翻译出来的标签的class类值来找对应的标签进行修改是找不到，
-  所以如果希望scoped 样式中的选择器“深入”，也就是修改当前组件的element-ui插件的样式，
-  即影响子组件，则可以使用 >>> 组合器，但是需要我们确保使用的element-ui标签外层有一个我们自己写的父级标签，
-  举个例子：比如我写的父级标签的class类值为a，里面的element-ui的标签类值为el-form-item，
-  我想修改el-form-item的样式，那么就要这么写选择器：.a >>> .el-form-item{color:'red';},这就可以了，
-  但是官方文档中的方法说某些预处理器（如Sass）可能无法对>>>符号正确解析。在这些情况下，
-  你可以使用 /deep/ 组合器 和 >>>符号完全相同。例如.a /deep/ .el-form-item{color:'red';}，
-  当然，我们还可以直接在APP这个全局组件中直接进行样式修改，但是如果进行全局样式修改会污染其他组件中使用了这个插件的样式，
-  所以不建议在全局修改样式*!*/
-  /*  margin-top: 20px;*/
-  /*  width: 120px;*/
-  /*}*/
-  .cc /deep/ .el-form-item__content {
-    width: 140px;
-    margin-left: 0!important;
-  }
+.cart_table .cart_head_row .course_row {
+  width: 530px;
+}
 
+.cart_table .cart_head_row .expire_row {
+  width: 188px;
+}
 
-  .shopping-cart-wrap .pas-left {
-    width: 100%;
-    height: 80px;
-    background: #F7F7F7;
-    margin-bottom: 100px;
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    padding-left: 25px !important;
-  }
+.cart_table .cart_head_row .price_row {
+  width: 162px;
+}
 
-  .charge-list {
-    display: flex;
-    align-items: center;
-    list-style: none;
-  }
+.cart_table .cart_head_row .do_more {
+  width: 162px;
+}
 
-  .charge-list .shopping-cart-bot-font {
-    font-size: 18px;
-    color: #666;
-    font-family: PingFangSC-Regular;
-  }
+.cart_footer_row {
+  padding-left: 36px;
+  background: #F7F7F7;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+}
 
-  .charge-list .go-charge-btn {
-    width: 159px;
-    height: 80px;
-    outline: none;
-    border: none;
-    background: #ffc210;
-    font-size: 18px;
-    color: #fff;
-    font-family: PingFangSC-Regular;
-  }
+.cart_footer_row .cart_select span {
+  margin-left: 14px;
+  font-size: 18px;
+  color: #666;
+}
 
+.cart_footer_row .cart_delete {
+  margin-left: 58px;
+}
+
+.cart_delete .el-icon-delete {
+  font-size: 18px;
+}
+
+.cart_delete span {
+  margin-left: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #666;
+}
+
+.cart_total {
+  float: right;
+  margin-right: 62px;
+  font-size: 18px;
+  color: #666;
+}
+
+.goto_pay {
+  float: right;
+  width: 159px;
+  height: 80px;
+  outline: none;
+  border: none;
+  background: #ffc210;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
 </style>
+

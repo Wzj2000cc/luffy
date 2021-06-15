@@ -18,6 +18,7 @@ import 'vue-video-player/src/custom-theme.css';
 // require('vue-video-player/src/custom-theme.css'); 与上一句等同。
 import VideoPlayer from 'vue-video-player';
 
+import store from './store'
 
 Vue.use(VideoPlayer);
 Vue.use(ElementUI);
@@ -30,6 +31,7 @@ Vue.prototype.$settings = settings; /* 封装settings */
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

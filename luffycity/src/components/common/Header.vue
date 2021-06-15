@@ -49,7 +49,7 @@
               </div>
               <div class="shop-car" v-show="token">
                 <router-link to="/cart">
-                  <!--                  <b>6</b>-->
+                  <b>{{$store.state.cart.cart_length}}</b>
                   <img src="@/assets/shopcart.png" alt="">
                   <span>购物车 </span>
                 </router-link>
@@ -97,25 +97,16 @@
                         <img src="https://hcdn1.luffycity.com/static/frontend/activity/back_1568185800.821227.svg"
                              alt="">
                       </li>
-
                     </ul>
                   </div>
-
                 </div>
-
               </div>
-
-
             </el-col>
           </el-row>
-
         </el-header>
       </el-container>
-
     </div>
   </div>
-
-
 </template>
 
 <script>
@@ -174,15 +165,53 @@ export default {
       sessionStorage.removeItem('id');
       sessionStorage.removeItem('username');
       this.check_login_status()
+    },
+
+    account_user_id(){
+      let user_id = sessionStorage.user_id || localStorage.user_id
+      this.$axios.get(`${this.$settings.Host}/users/account/`+ user_id + '/').then((res) => {
+        this.user.src = res.data.avatar
+      })
+    },
+
+    // 验证用户是否登录
+    check_user_login() {
+      let token = localStorage.user_token || sessionStorage.user_token;
+      if (!token) {
+        return false
+      }
+      return token;
+    },
+
+    // 先要验证用户是否登录
+    get_cart_data() {
+      let token = this.check_user_login();
+
+      // 将课程id发送到后端
+      if (!token) {  // 如果token为false，AddCart函数不执行
+        return false;
+      }
+
+      // 请求获取购物车数据
+      this.$axios.get(`${this.$settings.Host}/cart/`,{
+        headers: {
+          'Authorization': 'jwt ' + token,
+        }
+      }).then(res => {
+        // console.log(res.data)
+        // this.$message.success(res.data.msg)
+        let cart_len = res.data.course_len;
+        this.$store.commit('add_cart',cart_len)
+      }).catch(error => {
+        console.log(error.response)
+      })
     }
   },
   created() {
     this.get_nav_data();
     this.check_login_status();
-    let user_id = sessionStorage.user_id || localStorage.user_id
-    this.$axios.get(`${this.$settings.Host}/users/account/`+ user_id + '/').then((res) => {
-      this.user.src = res.data.avatar
-    })
+    this.account_user_id();
+    this.get_cart_data();
   }
 }
 

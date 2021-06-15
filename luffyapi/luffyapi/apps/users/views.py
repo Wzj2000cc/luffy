@@ -23,7 +23,7 @@ from .utils import get_user_by_account, get_user_by_email
 # 实例化日志对象
 logger = logging.getLogger('django')
 
-# todo 极速验证实现登录验证码功能的接口类
+# todo 极速验证实现登录短信验证码功能的接口类
 class GeetestView(APIView):
 
     captcha_id = "5e876edb2bda195c265416b70e7389a7"

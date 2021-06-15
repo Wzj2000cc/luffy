@@ -12064,3 +12064,738 @@ INFO 2021-06-10 11:33:12,563 autoreload 597 Watching for file changes with StatR
 INFO 2021-06-10 11:33:33,899 autoreload 597 Watching for file changes with StatReloader
 INFO 2021-06-10 11:35:07,765 basehttp 154 "POST /cart/ HTTP/1.1" 201 28
 INFO 2021-06-10 14:07:40,053 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-10 14:08:38,705 basehttp 154 "POST /cart/ HTTP/1.1" 201 28
+INFO 2021-06-10 14:15:14,764 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-10 14:15:14,767 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-10 14:15:14,771 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-10 14:15:14,779 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-10 14:15:19,493 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-10 14:15:19,496 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-10 14:15:19,497 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-10 14:15:19,499 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-10 14:15:22,800 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-10 14:15:22,804 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-10 14:15:22,807 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-10 14:15:22,809 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-10 14:15:22,835 basehttp 154 "GET /course/list/?page=1&size=5&ordering=id HTTP/1.1" 200 2646
+INFO 2021-06-10 14:15:23,916 basehttp 154 "GET /course/detail/1/ HTTP/1.1" 200 1392
+INFO 2021-06-10 14:15:23,936 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-10 14:15:23,939 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-10 14:15:23,939 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-10 14:15:23,946 basehttp 154 "GET /media/teacher/alex.png HTTP/1.1" 304 0
+INFO 2021-06-10 14:15:23,994 basehttp 154 "GET /media/video/goodgirl.mp4 HTTP/1.1" 304 0
+INFO 2021-06-10 14:15:26,263 basehttp 154 "GET /media/2021/06/09/list01.png HTTP/1.1" 304 0
+INFO 2021-06-10 14:17:19,865 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-10 14:17:19,869 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-10 14:17:19,871 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-10 14:17:19,880 basehttp 154 "GET /course/detail/1/ HTTP/1.1" 200 1392
+INFO 2021-06-10 14:21:17,730 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-10 14:21:17,734 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-10 14:21:17,745 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-10 14:21:17,763 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-10 14:21:30,674 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-10 14:21:34,566 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-10 14:39:16,574 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-10 14:39:16,581 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-10 14:39:16,583 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-10 14:39:16,586 basehttp 154 "GET /course/detail/1/ HTTP/1.1" 200 1392
+INFO 2021-06-10 14:39:17,845 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-10 14:39:17,848 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-10 14:39:17,850 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-10 14:39:17,851 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-10 14:39:17,880 basehttp 154 "GET /course/list/?page=1&size=5&ordering=id HTTP/1.1" 200 2646
+INFO 2021-06-10 14:39:18,259 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-10 14:39:18,261 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-10 14:39:18,261 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-10 14:39:18,261 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-10 15:06:55,214 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\home\urls.py changed, reloading.
+INFO 2021-06-10 15:06:57,245 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-11 09:35:36,106 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-11 09:36:01,726 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+WARNING 2021-06-11 09:36:01,728 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-11 09:36:01,729 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 4078
+INFO 2021-06-11 09:36:01,794 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 09:36:01,794 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 09:36:01,805 basehttp 154 "GET /media/banner/banner2.png HTTP/1.1" 304 0
+INFO 2021-06-11 09:36:01,806 basehttp 154 "GET /media/banner/banner1.png HTTP/1.1" 304 0
+WARNING 2021-06-11 09:36:04,043 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-11 09:36:04,044 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 4078
+INFO 2021-06-11 09:36:04,055 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-11 09:36:04,061 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 09:36:04,062 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 09:36:04,092 basehttp 154 "GET /course/list/?page=1&size=5&ordering=id HTTP/1.1" 200 2646
+INFO 2021-06-11 09:36:04,113 basehttp 154 "GET /media/course/%E9%B8%BF%E8%92%99.jpeg HTTP/1.1" 304 0
+INFO 2021-06-11 09:36:04,115 basehttp 154 "GET /media/course/%E6%B1%89%E5%A0%A1%E5%97%9D%E5%84%BF.jpeg HTTP/1.1" 304 0
+INFO 2021-06-11 09:36:04,115 basehttp 154 "GET /media/course/list01_ZzoU1wF.png HTTP/1.1" 304 0
+INFO 2021-06-11 09:36:04,115 basehttp 154 "GET /media/course/%E5%9F%8E%E5%B8%82_FWkgZOU.jpeg HTTP/1.1" 304 0
+INFO 2021-06-11 09:36:04,117 basehttp 154 "GET /media/course/%E5%BD%92%E4%B9%A1.jpeg HTTP/1.1" 304 0
+WARNING 2021-06-11 09:36:09,083 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-11 09:36:09,091 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 4078
+INFO 2021-06-11 09:36:09,101 basehttp 154 "GET /course/detail/1/ HTTP/1.1" 200 1392
+INFO 2021-06-11 09:36:09,105 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 09:36:09,107 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 09:36:09,134 basehttp 154 "GET /media/teacher/alex.png HTTP/1.1" 304 0
+INFO 2021-06-11 09:36:09,171 basehttp 154 "GET /media/video/goodgirl.mp4 HTTP/1.1" 304 0
+WARNING 2021-06-11 09:36:25,812 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-11 09:36:25,815 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 4078
+INFO 2021-06-11 09:36:25,816 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 09:36:25,819 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-11 09:36:25,820 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 09:36:25,848 basehttp 154 "GET /course/list/?page=1&size=5&ordering=id HTTP/1.1" 200 2646
+WARNING 2021-06-11 09:36:28,400 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-11 09:36:28,403 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 4078
+INFO 2021-06-11 09:36:28,418 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 09:36:28,418 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 09:36:28,421 basehttp 154 "GET /course/detail/1/ HTTP/1.1" 200 1392
+WARNING 2021-06-11 09:37:44,919 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-11 09:37:44,923 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 4078
+INFO 2021-06-11 09:37:44,938 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 09:37:44,947 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 09:37:44,952 basehttp 154 "GET /course/detail/1/ HTTP/1.1" 200 1392
+WARNING 2021-06-11 09:41:15,240 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-11 09:41:15,242 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 4078
+INFO 2021-06-11 09:41:15,253 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 09:41:15,253 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 09:41:15,270 basehttp 154 "GET /course/detail/1/ HTTP/1.1" 200 1392
+INFO 2021-06-11 09:41:33,039 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\cart\views.py changed, reloading.
+INFO 2021-06-11 09:41:35,025 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-06-11 09:43:46,431 log 228 Not Found: /users/account/undefined/
+INFO 2021-06-11 09:43:46,434 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 09:43:46,434 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+WARNING 2021-06-11 09:43:46,435 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 4078
+INFO 2021-06-11 09:43:46,442 basehttp 154 "GET /course/detail/1/ HTTP/1.1" 200 1392
+WARNING 2021-06-11 09:45:45,974 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-11 09:45:45,975 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 4078
+INFO 2021-06-11 09:45:45,984 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 09:45:45,985 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 09:45:45,987 basehttp 154 "GET /course/detail/1/ HTTP/1.1" 200 1392
+WARNING 2021-06-11 09:45:53,957 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-11 09:45:53,968 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 4078
+INFO 2021-06-11 09:45:53,996 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 09:45:54,005 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 09:45:54,015 basehttp 154 "GET /course/detail/1/ HTTP/1.1" 200 1392
+INFO 2021-06-11 10:01:38,445 basehttp 154 "GET /users/capycha/ HTTP/1.1" 200 105
+INFO 2021-06-11 10:01:43,643 basehttp 154 "OPTIONS /users/capycha/ HTTP/1.1" 200 0
+INFO 2021-06-11 10:01:43,775 basehttp 154 "POST /users/capycha/ HTTP/1.1" 200 20
+INFO 2021-06-11 10:01:43,778 basehttp 154 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-06-11 10:01:43,877 basehttp 154 "POST /users/login/ HTTP/1.1" 200 224
+INFO 2021-06-11 10:01:43,966 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 10:01:43,972 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-11 10:01:43,977 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 10:01:43,979 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 10:01:43,980 basehttp 154 "GET /media/avatar/shuaige.jpg HTTP/1.1" 304 0
+INFO 2021-06-11 10:01:45,869 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 10:01:45,873 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-11 10:01:45,874 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 10:01:45,879 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 10:01:45,902 basehttp 154 "GET /course/list/?page=1&size=5&ordering=id HTTP/1.1" 200 2646
+INFO 2021-06-11 10:01:47,248 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 10:01:47,255 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 10:01:47,259 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 10:01:47,268 basehttp 154 "GET /course/detail/1/ HTTP/1.1" 200 1392
+INFO 2021-06-11 10:01:48,898 basehttp 154 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2021-06-11 10:01:48,913 basehttp 154 "POST /cart/ HTTP/1.1" 201 28
+INFO 2021-06-11 10:02:05,942 basehttp 154 "POST /cart/ HTTP/1.1" 201 28
+INFO 2021-06-11 10:02:35,736 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 10:02:35,739 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 10:02:35,742 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 10:02:35,746 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-11 10:02:35,773 basehttp 154 "GET /course/list/?page=1&size=5&ordering=id HTTP/1.1" 200 2646
+INFO 2021-06-11 10:02:36,958 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 10:02:36,961 basehttp 154 "GET /course/detail/2/ HTTP/1.1" 200 466
+INFO 2021-06-11 10:02:36,961 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 10:02:36,962 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 10:02:44,187 basehttp 154 "POST /cart/ HTTP/1.1" 201 28
+INFO 2021-06-11 10:11:04,544 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 10:11:04,547 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 10:11:04,549 basehttp 154 "GET /course/detail/2/ HTTP/1.1" 200 466
+INFO 2021-06-11 10:11:04,550 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 10:11:09,885 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 10:11:09,889 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-11 10:11:09,896 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 10:11:09,909 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 10:11:09,931 basehttp 154 "GET /course/list/?page=1&size=5&ordering=id HTTP/1.1" 200 2646
+INFO 2021-06-11 11:05:17,192 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-06-11 11:05:19,817 log 228 Not Found: /
+WARNING 2021-06-11 11:05:19,818 basehttp 154 "GET / HTTP/1.1" 404 2693
+WARNING 2021-06-11 11:05:20,014 log 228 Not Found: /favicon.ico
+WARNING 2021-06-11 11:05:20,015 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 2744
+WARNING 2021-06-11 11:05:42,570 log 228 Not Found: /
+WARNING 2021-06-11 11:05:42,571 basehttp 154 "GET / HTTP/1.1" 404 2693
+INFO 2021-06-11 11:05:42,797 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\cart\views.py changed, reloading.
+INFO 2021-06-11 11:05:44,408 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-06-11 11:05:44,977 log 228 Not Found: /favicon.ico
+WARNING 2021-06-11 11:05:44,977 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 2744
+ERROR 2021-06-11 11:05:51,539 log 228 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\rest_framework\views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\rest_framework\views.py", line 426, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2021-06-11 11:05:51,541 basehttp 154 "GET /cart/ HTTP/1.1" 500 88854
+INFO 2021-06-11 11:15:08,890 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-06-11 11:15:11,285 log 228 Not Found: /
+WARNING 2021-06-11 11:15:11,286 basehttp 154 "GET / HTTP/1.1" 404 2693
+WARNING 2021-06-11 11:15:11,562 log 228 Not Found: /favicon.ico
+WARNING 2021-06-11 11:15:11,563 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 2744
+INFO 2021-06-11 11:15:15,033 basehttp 154 "GET /cart HTTP/1.1" 301 0
+ERROR 2021-06-11 11:15:15,194 log 228 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\luffy\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\luffy\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\rest_framework\views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "E:\envs\luffy\lib\site-packages\rest_framework\views.py", line 426, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2021-06-11 11:15:15,195 basehttp 154 "GET /cart/ HTTP/1.1" 500 88854
+INFO 2021-06-11 11:16:50,902 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-06-11 11:16:52,791 log 228 Not Found: /
+WARNING 2021-06-11 11:16:52,791 basehttp 154 "GET / HTTP/1.1" 404 2693
+WARNING 2021-06-11 11:16:52,990 log 228 Not Found: /favicon.ico
+WARNING 2021-06-11 11:16:52,991 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 2744
+INFO 2021-06-11 11:16:57,225 basehttp 154 "GET /cart/ HTTP/1.1" 200 7737
+INFO 2021-06-11 14:10:14,046 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-06-11 14:33:41,975 log 228 Not Found: /users/account/undefined/
+INFO 2021-06-11 14:33:41,981 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 14:33:41,982 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+WARNING 2021-06-11 14:33:41,983 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 4078
+INFO 2021-06-11 14:33:41,983 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+WARNING 2021-06-11 14:33:48,829 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-11 14:33:48,832 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 4078
+INFO 2021-06-11 14:33:48,835 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 14:33:48,836 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 14:33:48,837 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-11 14:33:57,588 basehttp 154 "GET /users/capycha/ HTTP/1.1" 200 105
+INFO 2021-06-11 14:34:02,801 basehttp 154 "OPTIONS /users/capycha/ HTTP/1.1" 200 0
+INFO 2021-06-11 14:34:02,893 basehttp 154 "POST /users/capycha/ HTTP/1.1" 200 20
+INFO 2021-06-11 14:34:02,897 basehttp 154 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-06-11 14:34:02,992 basehttp 154 "POST /users/login/ HTTP/1.1" 200 224
+INFO 2021-06-11 14:34:03,042 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-11 14:34:03,047 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 14:34:03,047 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 14:34:03,048 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 14:34:04,216 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 14:34:04,220 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 14:34:04,221 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 14:38:40,262 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 14:38:40,263 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 14:38:40,266 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 14:39:06,185 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 14:39:06,186 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 14:39:06,195 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+WARNING 2021-06-11 14:45:57,984 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-11 14:45:57,988 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 4078
+INFO 2021-06-11 14:45:57,991 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-11 14:45:58,019 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 14:45:58,029 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 14:47:26,045 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 14:47:26,046 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 14:48:21,587 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 14:48:21,588 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 14:48:21,590 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 14:49:19,774 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\cart\views.py changed, reloading.
+INFO 2021-06-11 14:49:21,734 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-11 14:50:59,312 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 14:50:59,314 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 14:50:59,315 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 14:51:32,235 basehttp 154 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2021-06-11 14:51:32,259 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 14:51:32,260 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 14:51:32,270 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 14:51:32,277 basehttp 154 "GET /cart/ HTTP/1.1" 200 332
+INFO 2021-06-11 14:52:41,490 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 14:52:41,492 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 14:52:41,493 basehttp 154 "GET /cart/ HTTP/1.1" 200 332
+INFO 2021-06-11 14:52:41,495 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+WARNING 2021-06-11 14:52:57,745 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-11 14:52:57,746 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 4078
+INFO 2021-06-11 14:52:57,750 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-11 14:52:57,793 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 14:52:57,793 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 14:53:01,697 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 14:53:01,699 basehttp 154 "GET /cart/ HTTP/1.1" 200 332
+INFO 2021-06-11 14:53:01,760 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 14:53:01,760 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:30:09,421 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:30:09,422 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:30:09,422 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:30:09,429 basehttp 154 "GET /cart/ HTTP/1.1" 200 332
+INFO 2021-06-11 15:34:11,119 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:34:11,124 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:34:11,124 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:34:11,129 basehttp 154 "GET /cart/ HTTP/1.1" 200 332
+INFO 2021-06-11 15:34:19,824 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:34:19,827 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:34:19,829 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-11 15:34:19,833 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:34:29,192 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:34:29,194 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:34:29,195 basehttp 154 "GET /cart/ HTTP/1.1" 200 332
+INFO 2021-06-11 15:34:29,197 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:34:31,312 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:34:31,313 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-11 15:34:31,314 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:34:31,318 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:34:32,032 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:34:32,033 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:34:32,040 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-11 15:34:32,041 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:34:32,076 basehttp 154 "GET /course/list/?page=1&size=5&ordering=id HTTP/1.1" 200 2646
+INFO 2021-06-11 15:34:36,225 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:34:36,244 basehttp 154 "GET /course/detail/2/ HTTP/1.1" 200 466
+INFO 2021-06-11 15:34:36,245 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:34:36,246 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:34:36,264 basehttp 154 "GET /media/teacher/alex.png HTTP/1.1" 304 0
+INFO 2021-06-11 15:34:38,673 basehttp 154 "POST /cart/ HTTP/1.1" 201 28
+INFO 2021-06-11 15:34:44,384 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:34:44,386 basehttp 154 "GET /cart/ HTTP/1.1" 200 332
+INFO 2021-06-11 15:34:44,393 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:34:44,393 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:34:47,549 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:34:47,549 basehttp 154 "GET /course/detail/2/ HTTP/1.1" 200 466
+INFO 2021-06-11 15:34:47,551 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:34:47,551 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:34:48,970 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:34:48,970 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:34:48,975 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:34:48,977 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-11 15:34:49,017 basehttp 154 "GET /course/list/?page=1&size=5&ordering=id HTTP/1.1" 200 2646
+INFO 2021-06-11 15:34:51,618 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:34:51,618 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:34:51,620 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:34:51,624 basehttp 154 "GET /course/detail/3/ HTTP/1.1" 200 1167
+INFO 2021-06-11 15:34:53,419 basehttp 154 "POST /cart/ HTTP/1.1" 201 28
+INFO 2021-06-11 15:34:56,604 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:34:56,607 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:34:56,608 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:34:56,609 basehttp 154 "GET /cart/ HTTP/1.1" 200 504
+WARNING 2021-06-11 15:35:46,739 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-11 15:35:46,740 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 4078
+INFO 2021-06-11 15:35:46,752 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-11 15:35:46,809 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:35:46,823 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:35:57,157 basehttp 154 "GET /users/capycha/ HTTP/1.1" 200 105
+INFO 2021-06-11 15:36:01,998 basehttp 154 "POST /users/capycha/ HTTP/1.1" 200 20
+INFO 2021-06-11 15:36:02,099 basehttp 154 "POST /users/login/ HTTP/1.1" 200 224
+INFO 2021-06-11 15:36:02,128 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:36:02,130 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-11 15:36:02,163 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:36:02,167 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:36:03,212 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:36:03,214 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:36:03,215 basehttp 154 "GET /cart/ HTTP/1.1" 200 504
+INFO 2021-06-11 15:36:03,216 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:36:05,807 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-11 15:36:05,808 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:36:05,818 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:36:05,818 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:39:02,590 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\cart\views.py changed, reloading.
+INFO 2021-06-11 15:39:04,555 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-11 15:42:48,945 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\cart\views.py changed, reloading.
+INFO 2021-06-11 15:42:50,768 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-06-11 15:43:02,771 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-11 15:43:02,772 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 4078
+INFO 2021-06-11 15:43:02,777 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-11 15:43:02,832 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:43:02,833 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:43:21,763 basehttp 154 "GET /users/capycha/ HTTP/1.1" 200 105
+INFO 2021-06-11 15:43:26,659 basehttp 154 "POST /users/capycha/ HTTP/1.1" 200 20
+WARNING 2021-06-11 15:43:26,680 log 228 Bad Request: /users/login/
+WARNING 2021-06-11 15:43:26,680 basehttp 154 "POST /users/login/ HTTP/1.1" 400 68
+INFO 2021-06-11 15:43:31,596 basehttp 154 "GET /users/capycha/ HTTP/1.1" 200 105
+INFO 2021-06-11 15:43:36,224 basehttp 154 "POST /users/capycha/ HTTP/1.1" 200 20
+INFO 2021-06-11 15:43:36,335 basehttp 154 "POST /users/login/ HTTP/1.1" 200 224
+INFO 2021-06-11 15:43:36,381 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-11 15:43:36,386 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:43:36,389 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:43:36,403 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:43:38,036 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:43:38,037 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:43:38,039 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:43:38,040 basehttp 154 "GET /cart/ HTTP/1.1" 200 504
+INFO 2021-06-11 15:43:41,555 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:43:41,556 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-11 15:43:41,557 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:43:41,558 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:43:42,200 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:43:42,203 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-11 15:43:42,204 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:43:42,210 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:43:42,233 basehttp 154 "GET /course/list/?page=1&size=5&ordering=id HTTP/1.1" 200 2646
+INFO 2021-06-11 15:43:45,103 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:43:45,106 basehttp 154 "GET /course/detail/15/ HTTP/1.1" 200 483
+INFO 2021-06-11 15:43:45,107 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:43:45,109 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:43:47,174 basehttp 154 "POST /cart/ HTTP/1.1" 201 41
+INFO 2021-06-11 15:43:48,623 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:43:48,631 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:43:48,632 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:43:48,637 basehttp 154 "GET /cart/ HTTP/1.1" 200 687
+INFO 2021-06-11 15:44:12,244 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\cart\views.py changed, reloading.
+INFO 2021-06-11 15:44:14,003 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-11 15:47:43,844 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:47:43,845 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:47:43,845 basehttp 154 "GET /cart/ HTTP/1.1" 200 687
+INFO 2021-06-11 15:47:43,845 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:50:06,427 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:50:06,430 basehttp 154 "GET /cart/ HTTP/1.1" 200 687
+INFO 2021-06-11 15:50:06,485 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:50:06,485 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:50:10,896 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-11 15:50:10,897 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:50:10,897 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:50:10,898 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:50:10,924 basehttp 154 "GET /course/list/?page=1&size=5&ordering=id HTTP/1.1" 200 2646
+INFO 2021-06-11 15:50:13,844 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:50:13,847 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:50:13,848 basehttp 154 "GET /course/detail/16/ HTTP/1.1" 200 464
+INFO 2021-06-11 15:50:13,849 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:50:15,593 basehttp 154 "POST /cart/ HTTP/1.1" 201 43
+INFO 2021-06-11 15:50:20,755 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:50:20,755 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-11 15:50:20,756 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:50:20,761 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:50:20,791 basehttp 154 "GET /course/list/?page=1&size=5&ordering=id HTTP/1.1" 200 2646
+INFO 2021-06-11 15:50:22,010 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:50:22,011 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:50:22,013 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:50:22,017 basehttp 154 "GET /cart/ HTTP/1.1" 200 851
+INFO 2021-06-11 15:50:34,348 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:50:34,351 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:50:34,364 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:50:34,367 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:50:39,513 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:50:39,536 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-11 15:50:39,539 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:50:39,542 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:50:39,556 basehttp 154 "GET /course/list/?page=1&size=5&ordering=id HTTP/1.1" 200 2646
+INFO 2021-06-11 15:50:41,678 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-11 15:50:41,699 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:50:41,700 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:50:41,703 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:50:50,846 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:50:50,847 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-11 15:50:50,848 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:50:50,866 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:50:50,883 basehttp 154 "GET /course/list/?page=1&size=5&ordering=id HTTP/1.1" 200 2646
+INFO 2021-06-11 15:51:01,056 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 15:51:01,058 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 15:51:01,061 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 15:51:01,066 basehttp 154 "GET /cart/ HTTP/1.1" 200 851
+INFO 2021-06-11 16:17:03,788 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 16:17:03,789 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 16:17:03,791 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 16:17:03,794 basehttp 154 "GET /cart/ HTTP/1.1" 200 851
+INFO 2021-06-11 16:30:58,815 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\cart\views.py changed, reloading.
+INFO 2021-06-11 16:31:00,748 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-11 16:32:41,822 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\cart\views.py changed, reloading.
+INFO 2021-06-11 16:32:43,291 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-11 16:41:23,331 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 16:41:23,334 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 16:41:23,335 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 16:41:23,336 basehttp 154 "GET /cart/ HTTP/1.1" 200 851
+INFO 2021-06-11 16:42:35,515 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 16:42:35,517 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 16:42:35,522 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 16:42:35,528 basehttp 154 "GET /cart/ HTTP/1.1" 200 851
+INFO 2021-06-11 16:42:37,275 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 16:42:37,278 basehttp 154 "GET /cart/ HTTP/1.1" 200 851
+INFO 2021-06-11 16:42:37,343 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 16:42:37,351 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 16:46:20,674 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\cart\views.py changed, reloading.
+INFO 2021-06-11 16:46:22,550 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-11 16:46:31,206 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-11 16:46:36,306 basehttp 154 "GET /cart/ HTTP/1.1" 200 846
+INFO 2021-06-11 16:46:36,307 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 16:46:36,375 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 16:46:36,375 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 16:47:06,824 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 16:47:06,826 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 16:47:06,827 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 16:47:06,834 basehttp 154 "GET /cart/ HTTP/1.1" 200 846
+INFO 2021-06-11 16:49:05,737 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\cart\views.py changed, reloading.
+INFO 2021-06-11 16:49:07,385 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-11 16:49:08,876 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 16:49:08,877 basehttp 154 "GET /cart/ HTTP/1.1" 200 846
+INFO 2021-06-11 16:49:08,877 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 16:49:08,878 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 16:54:00,058 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\cart\views.py changed, reloading.
+INFO 2021-06-11 16:54:01,689 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-11 16:54:08,741 basehttp 154 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2021-06-11 16:54:08,785 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 16:54:08,787 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 16:54:08,791 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 16:54:08,800 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-11 16:57:50,768 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 16:57:50,769 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 16:57:50,780 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 16:57:50,791 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-11 16:57:59,577 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-11 16:57:59,579 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 16:57:59,580 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 16:57:59,582 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 16:58:00,835 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 16:58:00,837 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 16:58:00,838 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 16:58:00,846 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-11 16:59:06,873 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 16:59:06,878 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+WARNING 2021-06-11 16:59:06,899 log 228 Unauthorized: /cart/
+WARNING 2021-06-11 16:59:06,900 basehttp 154 "GET /cart/ HTTP/1.1" 401 58
+INFO 2021-06-11 16:59:06,952 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 16:59:06,953 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 16:59:57,594 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 16:59:57,596 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 17:00:02,336 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 17:00:02,345 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 17:00:02,348 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 17:00:02,353 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-11 17:00:04,328 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-11 17:00:04,329 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 17:00:04,335 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 17:00:04,335 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 17:00:04,360 basehttp 154 "GET /course/list/?page=1&size=5&ordering=id HTTP/1.1" 200 2646
+INFO 2021-06-11 17:00:06,251 basehttp 154 "GET /course/list/?page=1&size=5&course_category=2&ordering=id HTTP/1.1" 200 1201
+WARNING 2021-06-11 17:00:06,271 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-11 17:00:06,271 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+INFO 2021-06-11 17:00:07,348 basehttp 154 "GET /course/list/?page=1&size=5&course_category=2&ordering=-id HTTP/1.1" 200 1201
+INFO 2021-06-11 17:00:08,225 basehttp 154 "GET /course/list/?page=1&size=5&ordering=-id HTTP/1.1" 200 2021
+WARNING 2021-06-11 17:00:08,236 log 228 Not Found: /media/course/2.jpeg
+WARNING 2021-06-11 17:00:08,237 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 404 1802
+INFO 2021-06-11 17:00:10,642 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 17:00:10,646 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 17:00:10,657 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 17:00:10,659 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-11 19:15:47,265 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-06-11 19:15:58,714 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-11 19:15:58,718 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 4078
+INFO 2021-06-11 19:15:58,730 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-11 19:15:58,794 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 19:15:58,794 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 19:16:12,960 basehttp 154 "GET /users/capycha/ HTTP/1.1" 200 105
+INFO 2021-06-11 19:16:18,617 basehttp 154 "OPTIONS /users/capycha/ HTTP/1.1" 200 0
+INFO 2021-06-11 19:16:18,732 basehttp 154 "POST /users/capycha/ HTTP/1.1" 200 20
+INFO 2021-06-11 19:16:18,736 basehttp 154 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-06-11 19:16:18,844 basehttp 154 "POST /users/login/ HTTP/1.1" 200 224
+INFO 2021-06-11 19:16:18,881 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 19:16:18,891 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-11 19:16:18,909 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 19:16:18,912 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 19:16:20,167 basehttp 154 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2021-06-11 19:16:20,193 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-11 19:16:20,195 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-11 19:16:20,197 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-11 19:16:20,212 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-12 10:58:56,081 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-06-12 10:59:14,144 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-12 10:59:14,145 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 4078
+INFO 2021-06-12 10:59:14,148 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-12 10:59:14,179 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-12 10:59:14,179 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+WARNING 2021-06-12 10:59:26,085 log 228 Bad Request: /users/mobile/17732917777/
+WARNING 2021-06-12 10:59:26,085 basehttp 154 "GET /users/mobile/17732917777/ HTTP/1.1" 400 43
+INFO 2021-06-12 10:59:30,443 basehttp 154 "GET /users/mobile/17732917776/ HTTP/1.1" 200 49
+INFO 2021-06-12 10:59:36,110 basehttp 154 "GET /users/sms/17732917776/ HTTP/1.1" 200 52
+INFO 2021-06-12 11:02:06,799 basehttp 154 "GET /users/mobile/17732917776/ HTTP/1.1" 200 49
+INFO 2021-06-12 11:02:12,984 basehttp 154 "GET /users/mobile/17732917776/ HTTP/1.1" 200 49
+INFO 2021-06-12 11:02:31,651 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-12 11:02:39,256 basehttp 154 "GET /users/sms/17732917776/ HTTP/1.1" 200 52
+INFO 2021-06-12 11:03:41,882 basehttp 154 "GET /users/sms/17732917776/ HTTP/1.1" 200 52
+INFO 2021-06-12 11:04:42,815 basehttp 154 "OPTIONS /users/register/ HTTP/1.1" 200 0
+INFO 2021-06-12 11:04:42,924 basehttp 154 "POST /users/register/ HTTP/1.1" 201 225
+WARNING 2021-06-12 11:04:44,505 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-12 11:04:44,505 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 4078
+INFO 2021-06-12 11:04:44,539 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-12 11:04:44,563 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-12 11:04:44,575 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+ERROR 2021-06-12 11:10:31,692 tasks 17 17732917776短信发送失败
+ERROR 2021-06-12 11:10:31,722 tasks 17 17732917776短信发送失败
+INFO 2021-06-12 11:10:39,696 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-14 08:13:38,986 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-06-14 08:13:56,084 basehttp 154 "GET /home/btmnav HTTP/1.1" 301 0
+INFO 2021-06-14 08:13:56,084 basehttp 154 "GET /home/nav HTTP/1.1" 301 0
+WARNING 2021-06-14 08:13:56,088 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-14 08:13:56,088 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 4078
+INFO 2021-06-14 08:13:56,098 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-14 08:13:56,157 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-14 08:13:56,170 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-14 08:13:56,172 basehttp 154 "GET /media/banner/banner2.png HTTP/1.1" 200 111031
+INFO 2021-06-14 08:13:56,174 basehttp 154 "GET /media/banner/banner1.png HTTP/1.1" 200 264105
+INFO 2021-06-14 08:14:08,650 basehttp 154 "GET /users/capycha/ HTTP/1.1" 200 105
+INFO 2021-06-14 08:14:14,145 basehttp 154 "OPTIONS /users/capycha/ HTTP/1.1" 200 0
+INFO 2021-06-14 08:14:14,260 basehttp 154 "POST /users/capycha/ HTTP/1.1" 200 20
+INFO 2021-06-14 08:14:14,263 basehttp 154 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-06-14 08:14:14,376 basehttp 154 "POST /users/login/ HTTP/1.1" 200 224
+INFO 2021-06-14 08:14:14,412 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-14 08:14:14,427 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-14 08:14:14,444 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-14 08:14:14,444 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-14 08:14:14,448 basehttp 154 "GET /media/avatar/shuaige.jpg HTTP/1.1" 200 14266
+INFO 2021-06-14 08:14:15,986 basehttp 154 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2021-06-14 08:14:16,012 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-14 08:14:16,014 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-14 08:14:16,020 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-14 08:14:16,034 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-14 08:14:16,090 basehttp 154 "GET /media/course/%E9%B8%BF%E8%92%99.jpeg HTTP/1.1" 200 42219
+INFO 2021-06-14 08:14:16,091 basehttp 154 "GET /media/course/%E5%BD%92%E4%B9%A1.jpeg HTTP/1.1" 200 22996
+INFO 2021-06-14 08:14:16,092 basehttp 154 "GET /media/course/list01_ZzoU1wF.png HTTP/1.1" 200 111527
+INFO 2021-06-14 08:14:16,092 basehttp 154 "GET /media/course/%E6%B1%89%E5%A0%A1%E5%97%9D%E5%84%BF.jpeg HTTP/1.1" 200 51176
+INFO 2021-06-14 08:14:16,094 basehttp 154 "GET /media/course/%E5%9F%8E%E5%B8%82_FWkgZOU.jpeg HTTP/1.1" 200 289899
+WARNING 2021-06-14 08:17:59,438 log 228 Unauthorized: /cart/
+WARNING 2021-06-14 08:17:59,452 basehttp 154 "GET /cart/ HTTP/1.1" 401 58
+INFO 2021-06-14 08:17:59,455 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-14 08:17:59,470 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+WARNING 2021-06-14 08:18:24,491 log 228 Unauthorized: /cart/
+WARNING 2021-06-14 08:18:24,491 basehttp 154 "GET /cart/ HTTP/1.1" 401 58
+INFO 2021-06-14 08:18:24,509 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-14 08:18:24,529 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-14 08:18:31,927 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-14 08:18:31,945 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+WARNING 2021-06-14 08:18:31,952 log 228 Unauthorized: /cart/
+WARNING 2021-06-14 08:18:31,954 basehttp 154 "GET /cart/ HTTP/1.1" 401 58
+INFO 2021-06-14 08:18:31,967 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-14 08:18:31,967 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+WARNING 2021-06-14 08:18:34,330 log 228 Unauthorized: /cart/
+WARNING 2021-06-14 08:18:34,339 basehttp 154 "GET /cart/ HTTP/1.1" 401 58
+INFO 2021-06-14 08:18:34,355 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-14 08:18:34,358 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-14 08:18:34,368 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-14 08:18:34,370 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-14 08:18:49,696 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-14 08:18:49,699 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-14 08:18:49,699 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-14 08:18:49,709 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+WARNING 2021-06-14 08:18:49,712 log 228 Unauthorized: /cart/
+WARNING 2021-06-14 08:18:49,713 basehttp 154 "GET /cart/ HTTP/1.1" 401 58
+INFO 2021-06-14 08:21:33,303 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-14 08:21:33,305 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+WARNING 2021-06-14 08:23:31,963 log 228 Not Found: /users/account/undefined/
+WARNING 2021-06-14 08:23:31,963 basehttp 154 "GET /users/account/undefined/ HTTP/1.1" 404 4078
+INFO 2021-06-14 08:23:31,977 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-14 08:23:32,001 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-14 08:23:32,001 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-14 08:23:43,916 basehttp 154 "GET /users/capycha/ HTTP/1.1" 200 105
+INFO 2021-06-14 08:23:51,952 basehttp 154 "OPTIONS /users/capycha/ HTTP/1.1" 200 0
+INFO 2021-06-14 08:23:52,038 basehttp 154 "POST /users/capycha/ HTTP/1.1" 200 20
+INFO 2021-06-14 08:23:52,040 basehttp 154 "OPTIONS /users/login/ HTTP/1.1" 200 0
+WARNING 2021-06-14 08:23:52,061 log 228 Bad Request: /users/login/
+WARNING 2021-06-14 08:23:52,061 basehttp 154 "POST /users/login/ HTTP/1.1" 400 68
+INFO 2021-06-14 08:23:57,581 basehttp 154 "GET /users/capycha/ HTTP/1.1" 200 105
+INFO 2021-06-14 08:24:01,800 basehttp 154 "POST /users/capycha/ HTTP/1.1" 200 20
+INFO 2021-06-14 08:24:01,892 basehttp 154 "POST /users/login/ HTTP/1.1" 200 224
+INFO 2021-06-14 08:24:01,920 basehttp 154 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2021-06-14 08:24:01,964 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-14 08:24:01,966 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-14 08:24:01,971 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-14 08:24:01,973 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-14 08:24:01,980 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-14 08:25:53,017 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-14 08:25:53,021 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-14 08:25:53,036 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-14 08:26:29,491 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-14 08:26:29,499 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-14 08:26:29,500 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-14 08:26:29,570 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-14 08:26:29,571 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-14 08:26:34,018 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-14 08:26:34,018 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-14 08:26:34,022 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-14 08:26:34,026 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-14 08:26:34,045 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-14 08:26:37,401 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-14 08:26:37,413 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-14 08:26:37,413 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-14 08:26:37,421 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-14 08:26:37,446 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-14 08:29:13,729 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-14 08:29:13,760 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-14 08:29:13,783 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-14 08:29:16,427 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-14 08:29:16,428 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-14 08:29:16,429 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-14 08:29:16,431 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-14 08:29:16,457 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-14 08:29:18,278 basehttp 154 "GET /course/category/ HTTP/1.1" 200 220
+INFO 2021-06-14 08:29:18,284 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-14 08:29:18,289 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-14 08:29:18,299 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-14 08:29:18,322 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-14 08:29:18,334 basehttp 154 "GET /course/list/?page=1&size=5&ordering=id HTTP/1.1" 200 2646
+INFO 2021-06-14 08:29:23,067 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-14 08:29:23,074 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-14 08:29:23,075 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-14 08:29:23,078 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-14 08:29:23,083 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-14 08:29:31,301 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-14 08:29:31,316 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-14 08:29:31,318 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-14 08:29:31,320 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-14 08:29:39,559 basehttp 154 "GET /users/capycha/ HTTP/1.1" 200 105
+INFO 2021-06-14 08:29:44,405 basehttp 154 "POST /users/capycha/ HTTP/1.1" 200 20
+INFO 2021-06-14 08:29:44,496 basehttp 154 "POST /users/login/ HTTP/1.1" 200 224
+INFO 2021-06-14 08:29:44,536 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-14 08:29:44,537 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-14 08:29:44,552 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-14 08:29:44,559 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-14 08:29:44,562 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-14 08:29:46,157 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-14 08:29:46,161 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-14 08:29:46,162 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-14 08:29:46,164 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-14 08:29:46,189 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-14 08:30:48,604 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-14 08:30:48,611 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-14 08:30:48,616 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-14 08:30:48,621 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-14 08:30:48,646 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-14 08:30:54,613 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-14 08:30:54,616 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-14 08:30:54,649 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-14 08:30:54,688 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-14 08:30:54,689 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-14 08:36:09,759 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-14 08:36:09,760 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-14 08:36:09,764 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-14 08:36:09,764 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-14 08:36:09,770 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-14 08:36:14,692 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-14 08:36:14,696 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-14 08:36:14,700 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-14 08:36:14,753 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-14 08:36:14,754 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-14 08:36:25,643 basehttp 154 "GET /users/capycha/ HTTP/1.1" 200 105
+INFO 2021-06-14 08:36:34,354 basehttp 154 "POST /users/capycha/ HTTP/1.1" 200 20
+INFO 2021-06-14 08:36:34,456 basehttp 154 "POST /users/login/ HTTP/1.1" 200 224
+INFO 2021-06-14 08:36:34,517 basehttp 154 "GET /home/banner/ HTTP/1.1" 200 291
+INFO 2021-06-14 08:36:34,523 basehttp 154 "GET /home/btmnav/ HTTP/1.1" 200 192
+INFO 2021-06-14 08:36:34,524 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-14 08:36:34,529 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-14 08:36:34,533 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-14 08:38:01,105 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-14 08:38:01,109 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-14 08:38:01,118 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-14 08:40:54,687 basehttp 154 "GET /home/nav/ HTTP/1.1" 200 430
+INFO 2021-06-14 08:40:54,688 basehttp 154 "GET /users/account/1/ HTTP/1.1" 200 618
+INFO 2021-06-14 08:40:54,697 basehttp 154 "GET /cart/ HTTP/1.1" 200 861
+INFO 2021-06-14 08:42:02,715 autoreload 217 E:\luffy\luffyapi\luffyapi\apps\cart\views.py changed, reloading.
+INFO 2021-06-14 08:42:04,717 autoreload 597 Watching for file changes with StatReloader

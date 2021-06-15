@@ -31,7 +31,7 @@
               <button class="buy-now">立即购买</button>
               <button class="free">免费试学</button>
             </div>
-            <div class="add-cart"><img src="@/assets/shopcart.png" alt="">加入购物车</div>
+            <div class="add-cart" @click="AddCart"><img src="@/assets/gouwuche.png" alt="">加入购物车</div>
           </div>
         </div>
       </div>
@@ -93,7 +93,7 @@
         </div>
       </div>
     </div>
-    <Footer/>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -196,6 +196,42 @@ export default {
     },
     onPlayerPause(player) {
       alert("暂停一下，点击确定开始播放");
+    },
+
+    check_user_login() {
+      let token = localStorage.user_token || sessionStorage.user_token;
+      if (!token) {
+        let self = this;
+        this.$confirm('对不起，您尚未登陆,请先登录再添加购物车', '路飞', {
+          confirmButtonText: '确定',
+          cancelButtonClass: '取消',
+        }).then(() => {
+          self.$router.push('/login/')
+        });
+        return false
+      }
+      return token
+    },
+    AddCart() {
+      //先要验证用户是否登录
+      let token = this.check_user_login();
+      //将课程id发送到后端
+      if (!token) {  //如果token魏false函数不执行
+        return false
+      }
+      this.$axios.post(`${this.$settings.Host}/cart/`, {
+          course_id: this.course_id,
+        }, {
+          headers: {
+            'Authorization': 'jwt ' + token,
+          }
+        }
+      ).then(res => {
+        this.$message.success(res.data.msg)
+      }).catch(error => {
+        console.log(error.response)
+      })
+
     },
   },
   // 挂载

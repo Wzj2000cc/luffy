@@ -9,14 +9,13 @@
     </div>
     <div class="cart_column column_3">
       <el-select v-model="cart.expire_id" size="mini" placeholder="请选择购买有效期" class="my_el_select">
-        <el-option label="1个月有效" value="30" key="30"></el-option>
-        <el-option label="2个月有效" value="60" key="60"></el-option>
-        <el-option label="3个月有效" value="90" key="90"></el-option>
-        <el-option label="永久有效" value="0" key="0"></el-option>
+        <el-option v-for="(value,index) in cart.expire_list" :label="value.expire_text" :value="value.id"
+                   :key="value.id"></el-option>
       </el-select>
     </div>
-    <div class="cart_column column_4">¥{{cart.price}}</div>
-    <div class="cart_column column_4">删除</div>
+    <div class="cart_column column_4">¥{{cart.real_price}}</div>
+<!--    <div class="cart_column column_4" @click="delete_course">删除</div>-->
+    <el-button type="danger" class="cart_row" @click="delete_course">删除</el-button>
   </div>
 </template>
 
@@ -27,9 +26,127 @@ export default {
     return {
       checked: false,
       expire: "1个月有效",
+
     }
   },
-  props: ['cart'],
+  props: ['cart','check'],
+  watch:{
+    "cart.is_selected":function (){
+      this.change_course_selected()
+    },
+    "cart.expire_id":function (){
+      this.change_expire()
+    },
+    // 监听父组件全选按钮的状态
+    'check':function (){
+      if (this.check===true){
+        this.cart.is_selected = true
+      }else {
+        this.cart.is_selected = false
+      }
+    }
+
+
+  },
+  methods:{
+    check_user_login() {
+      let token = localStorage.user_token || sessionStorage.user_token;
+      if (!token) {
+        let self = this;
+        this.$confirm('对不起，您尚未登录！请先登录在添加购物车', '路飞学城', {
+          confirmButtonText: '确定',
+          cancelButtonText: '取消',
+        }).then(() => {
+          self.$router.push('/login/');
+        });
+        return false
+      }
+      return token;
+    },
+
+    // 实时监听课程勾选状态，发送patch请求修改redis数据库
+    change_course_selected(){
+      let token = this.check_user_login();
+
+      // 将课程id发送到后端
+      if (!token) {  // 如果token为false，AddCart函数不执行
+        return false;
+      }
+
+      // 请求获取购物车数据
+      this.$axios.patch(`${this.$settings.Host}/cart/`,{
+        is_selected:this.cart.is_selected,
+        course_id:this.cart.id,
+        },
+        {headers: {
+          'Authorization': 'jwt ' + token,}
+      }).then(res=>{
+        this.$message.success(res.data.msg)
+        this.$emit('change_expire_handler')
+      }).catch(error=>{
+        this.$message.error(error.response.msg);
+        this.cart.is_selected = !this.cart.is_selected
+      })
+    },
+
+    // 实时监听课程有效期更改状态，发送put请求修改redis数据库
+    change_expire(){
+      let token = this.check_user_login()
+
+      // 将课程id发送到后端
+      if (!token) {  // 如果token为false，AddCart函数不执行
+        return false;
+      }
+
+      this.$axios.put(`${this.$settings.Host}/cart/`,{
+        expire_id:this.cart.expire_id,
+        course_id:this.cart.id
+      },{
+        headers:{
+          'Authorization': 'jwt ' + token
+        }
+      }).then(res=>{
+        this.$message.success(res.data.msg)
+        this.cart.real_price = res.data.real_price
+        this.$emit('change_expire_handler')
+      }).catch(error=>{
+        this.$message.error(error.response.msg)
+      })
+    },
+
+    // delete请求删除商品信息
+    delete_course(){
+      let token = this.check_user_login();
+
+      // 将课程id发送到后端
+      if (!token) {  // 如果token为false，AddCart函数不执行
+        return false;
+      }
+      // 点击删除 弹框
+      this.$confirm('亲！此操作将删除该课程, 是否继续?', '提示', {
+        confirmButtonText: '确定',
+        cancelButtonText: '取消',
+        type: 'warning'
+      }).then(() => {
+        // 请求删除
+        this.$axios.delete(`${this.$settings.Host}/cart/?course_id=${this.cart.id}`,{
+          headers: {
+            'Authorization': 'jwt ' + token,
+          }
+        }).then(res =>{
+          this.$message.success('删除商品成功')
+          this.$emit('del_course')
+        }).catch(error =>{
+          this.$message.error(error.response.data.msg)
+        })
+      }).catch(() => {
+        this.$message({
+          type: 'error',
+          message: '已取消删除',
+        });
+      });
+    }
+  },
 }
 </script>
 
@@ -95,10 +212,12 @@ export default {
 }
 
 .cart_item .column_4 {
-  /*padding: 67px 10px;*/
+  padding: 0 17.5px;
   /*height: 116px;*/
   width: 142px;
   /*line-height: 116px;*/
 }
-
+.cart_row{
+  margin-top: 58px;
+}
 </style>

@@ -4,7 +4,7 @@
     <div class="cart_info">
       <div class="cart_title">
         <span class="text">我的购物车</span>
-        <span class="total">共4门课程</span>
+        <span class="total">共{{ $store.state.cart.cart_length }}门课程</span>
       </div>
       <div class="cart_table">
         <div class="cart_head_row">
@@ -15,17 +15,22 @@
           <span class="do_more">操作</span>
         </div>
         <div class="cart_course_list">
-          <CartItem v-for="(value,index) in cart_list" :key="value.id" :cart="value"></CartItem>
+          <CartItem v-for="(value,index) in cart_list" :key="value.id"
+                    :cart="value" :check="checked"
+                    @change_expire_handler="calc_price" @del_course="del_course(index)">
+          </CartItem>
         </div>
         <div class="cart_footer_row">
           <span class="cart_select"><label> <el-checkbox v-model="checked"></el-checkbox><span>全选</span></label></span>
-          <span class="cart_delete"><i class="el-icon-delete"></i> <span>删除</span></span>
+          <span class="cart_delete"><i class="el-icon-delete"></i>
+            <el-button type="danger" @click="delete_select" style="height: 30px;line-height: 5px">删除选中</el-button>
+            <!--            <span @click="delete_select">全部删除</span>-->
+          </span>
           <span class="goto_pay">去结算</span>
-          <span class="cart_total">总计：¥0.0</span>
+          <span class="cart_total">总计：¥{{ total_price.toFixed(2) }}</span>
         </div>
       </div>
     </div>
-    <Add></Add>
     <Footer></Footer>
   </div>
 </template>
@@ -34,17 +39,18 @@
 import Header from "./common/Header"
 import Footer from "./common/Footer"
 import CartItem from "./common/CartItem"
-import Add from "./common/Add";
 
 export default {
   name: "Cart",
   data() {
     return {
-      checked: false,
+      checked: true,
       cart_list: [],
+      total_price: 0,
     }
   },
   methods: {
+    // 用户登录验证
     check_user_login() {
       let token = localStorage.user_token || sessionStorage.user_token;
       if (!token) {
@@ -60,33 +66,95 @@ export default {
       return token;
     },
 
-    // 先要验证用户是否登录
+    // 获取购物车所需的数据
     get_cart_data() {
       let token = this.check_user_login();
 
-      // 将课程id发送到后端
       if (!token) {  // 如果token为false，AddCart函数不执行
         return false;
       }
 
-      // 请求获取购物车数据
-      this.$axios.get(`${this.$settings.Host}/cart/`,{
+      // get请求获取购物车数据
+      this.$axios.get(`${this.$settings.Host}/cart/`, {
         headers: {
           'Authorization': 'jwt ' + token,
         }
       }).then(res => {
-        // console.log(res.data.course_len);
         this.cart_list = res.data.msg;
+        this.calc_price()
+        let cart_len = res.data.course_len;
+        this.$store.commit('add_cart', cart_len)
       }).catch(error => {
         console.log(error.response);
       })
-    }
+    },
+
+    // 计算总价
+    calc_price() {
+      let total = 0
+      this.cart_list.forEach(function (value, index) {
+        if (value.is_selected) {
+          total += parseFloat(value.real_price)
+        }
+      })
+      this.total_price = total
+    },
+
+    // 删除前端单个的cart_list中的课程信息
+    del_course(index) {
+      this.cart_list.splice(index, 1)
+      this.calc_price()
+    },
+
+    // 删除前端全部的cart_list里课程信息
+    del_all(index) {
+      let that = this;
+      index.forEach(function (value, index) {
+        that.cart_list.splice(value, 1);
+      });
+      this.calc_price();
+      location.reload()
+    },
+
+    // 点击全部删除
+    delete_select() {
+      let token = this.check_user_login();
+      if (!token) {
+        return false
+      }
+      let del_list = [];
+      let del_index = [];
+
+      this.cart_list.forEach(function (value, index) {
+        if (value.is_selected) {
+          del_list.splice(-1, 0, value.id);
+          del_index.splice(-1, 0, index);
+        }
+      });
+      this.$confirm('亲！此操作将会删除全部选中课程, 确定继续吗? 嘤嘤嘤', '提示', {
+        confirmButtonText: '确定',
+        cancelButtonText: '取消',
+        type: 'warning'
+      }).then(() => {
+        this.$axios.delete(`${this.$settings.Host}/cart/?course_list=${del_list}`,
+          {
+            headers: {
+              'Authorization': 'jwt ' + token
+            }
+          }).then(res => {
+          this.$message.success('勾选商品删除成功');
+          this.del_all(del_index)
+        }).catch(error => {
+          this.$message.error(error.response.data.msg)
+        })
+      })
+    },
   },
+
   created() {
     this.get_cart_data()
   },
   components: {
-    Add,
     Header,
     Footer,
     CartItem,

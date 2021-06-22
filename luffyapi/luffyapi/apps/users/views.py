@@ -8,10 +8,9 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.viewsets import ModelViewSet
 from .geetest import GeetestLib
-from django.shortcuts import render,HttpResponse
+from django.shortcuts import HttpResponse
 from django_redis import get_redis_connection
 from luffyapi.settings import contants
-from luffyapi.libs.rly.SendMessage import send_message
 
 from luffyapi.settings import dev
 from . import models
@@ -120,6 +119,7 @@ class SMSAPIView(APIView):
 
             """
             4. 通过celery异步处理请求容联云服务端，主线程不受子线程IO影响
+            执行celery异步命令：celery -A mycelery.main worker --loglevel=info -P eventlet
             """
             from mycelery.sms.tasks import send_sms1
             send_sms1.delay(mobile,sms_code)

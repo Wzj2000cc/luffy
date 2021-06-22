@@ -1,7 +1,8 @@
 from django.db import models
 
+""" 公共模型 """
 class BaseModel(models.Model):
-    """ 公共模型 """
+
     # 轮播图会实时更新更换，加一个状态，控制轮播图是否显示
     is_show = models.BooleanField(default=False,verbose_name='是否显示')
 

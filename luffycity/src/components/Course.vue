@@ -7,8 +7,9 @@
         <ul class="cate-list">
           <li class="title">课程分类:</li>
           <li :class="{this:category===0}" @click="category=0">全部</li>
-          <li v-for="(value,index) in category_list" :key="value.id" @click="category=value.id" :class="{this:category===value.id}">
-            {{value.name}}
+          <li v-for="(value,index) in category_list" :key="value.id" @click="category=value.id"
+              :class="{this:category===value.id}">
+            {{ value.name }}
           </li>
         </ul>
 
@@ -31,23 +32,23 @@
           </div>
           <div class="course-info">
             <h3>
-              <router-link :to="'/course/detail/'+ value.id+'/'">{{value.name}}</router-link>
-              <span><img src="/static/image/avatar1.svg" alt="">{{value.students}}人已加入学习</span></h3>
-            <p class="teather-info">{{value.teacher.name}} {{value.teacher.signature}} {{value.teacher.title}}
-              <span>共{{value.lessons}}课时{{value.lessons === value.pub_lessons?`/更新完成`:`/已更新${value.pub_lessons}课时`}}</span>
+              <router-link :to="'/course/detail/'+ value.id+'/'">{{ value.name }}</router-link>
+              <span><img src="/static/image/avatar1.svg" alt="">{{ value.students }}人已加入学习</span></h3>
+            <p class="teather-info">{{ value.teacher.name }} {{ value.teacher.signature }} {{ value.teacher.title }}
+              <span>共{{ value.lessons }}课时{{ value.lessons === value.pub_lessons ? `/更新完成` : `/已更新${value.pub_lessons}课时` }}</span>
             </p>
             <ul class="lesson-list">
               <li v-for="(value1,index) in value.lesson_list" :key=value1.id>
-                <span class="lesson-title">0{{index+1}} | 第{{value1.lesson}}节：{{value1.name}}</span>
-<!--                <span class="free">{{value1.free_trail === true?`免费`:`付费`}}</span>-->
+                <span class="lesson-title">0{{ index + 1 }} | 第{{ value1.lesson }}节：{{ value1.name }}</span>
+                <!--                <span class="free">{{value1.free_trail === true?`免费`:`付费`}}</span>-->
                 <span class="free" v-if="value1.free_trail">免费</span>
-                <span class="free" v-else-if ="!value1.free_trail">付费</span>
+                <span class="free" v-else-if="!value1.free_trail">付费</span>
               </li>
             </ul>
             <div class="pay-box">
-              <span class="discount-type">限时免费</span>
-              <span class="discount-price">￥0.00元</span>
-              <span class="original-price">原价：{{value.price}}元</span>
+              <span class="discount-type" v-if="value.discount_name">{{ value.discount_name }}</span>
+              <span class="discount-price">￥{{ value.active_real_price }}元</span>
+              <span class="original-price" v-if="value.discount_name">原价：{{ value.price }}元</span>
               <span class="buy-now">立即购买</span>
             </div>
           </div>
@@ -61,7 +62,7 @@
       :page-sizes="[2,3,5,10]"
       :total="total"
       @current-change="HandlerCurrentChange"
-      @size-change = "HandlerSizeChange">
+      @size-change="HandlerSizeChange">
     </el-pagination>
     <Footer></Footer>
   </div>
@@ -73,100 +74,99 @@ import Footer from "./common/Footer"
 
 export default {
   name: "Course",
-  data(){
-    return{
-      category:0,
-      category_list:[],
-      filters:{
-        type:'id', // 标记选中那哪标签
-        order:'asc', // 默认正序排列
-        page:1,  // 默认获取第一页数据
-        size:5,  // 分页默认每页5条
+  data() {
+    return {
+      category: 0,
+      category_list: [],
+      filters: {
+        type: 'id', // 标记选中那哪标签
+        order: 'asc', // 默认正序排列
+        page: 1,  // 默认获取第一页数据
+        size: 5,  // 分页默认每页5条
       },
-      course_list:[],  // 课程所有章节
-      total:0,   // 每次请求获取数据总条数
-      size:5,
+      course_list: [],  // 课程所有章节
+      total: 0,   // 每次请求获取数据总条数
+      size: 5,
     }
   },
-  components:{
+  components: {
     Header,
     Footer,
   },
-  methods:{
+  methods: {
     // 课程列表
-    get_category(){
+    get_category() {
       this.$axios.get(`${this.$settings.Host}/course/category/`).then(
-        res =>{
+        res => {
           this.category_list = res.data
         }
-      ).catch(error=>{
+      ).catch(error => {
         console.log(error)
       })
     },
 
     // 课程章节
-    get_course(){
+    get_course() {
       let filter = {
-        page:this.filters.page,
-        size:this.filters.size,
+        page: this.filters.page,
+        size: this.filters.size,
       };
-      if(this.category > 0){
+      if (this.category > 0) {
         filter.course_category = this.category;  // 生成课程键值对（通过课程id获取对应的章节）
       }
-      if(this.filters.order === 'desc'){
+      if (this.filters.order === 'desc') {
         filter.ordering = '-' + this.filters.type;
-      }else {
+      } else {
         filter.ordering = this.filters.type;
       }
-      this.$axios.get(`${this.$settings.Host}/course/list/`,{
+      this.$axios.get(`${this.$settings.Host}/course/list/`, {
         params: filter
-      }).then(res =>
-        {
+      }).then(res => {
           // console.log(res.data)
           this.course_list = res.data.results
           this.total = res.data.count
         }
-      ).catch(error=>{
+      ).catch(error => {
         console.log(error)
       })
     },
 
     // 分页(课程章节)
-    HandlerCurrentChange(page){
+    HandlerCurrentChange(page) {
       this.filters.page = page
       this.get_course()
     },
-    HandlerSizeChange(size){
+    HandlerSizeChange(size) {
       this.filters.size = size
       this.get_course()
     },
 
     // 排序
-    ChangeOrderType(type){
-      if(this.filters.type !== type){
+    ChangeOrderType(type) {
+      if (this.filters.type !== type) {
         this.filters.type = type;
         this.filters.order = "asc"
-      }else{
-        if(this.filters.order === 'asc'){
+      } else {
+        if (this.filters.order === 'asc') {
           this.filters.order = 'desc'
-        }else {
+        } else {
           this.filters.order = 'asc'
         }
       }
       this.get_course()
     },
-    ChangeOrderClass(type){
-      if(this.filters.type === type && this.filters.order === 'desc'){
+    ChangeOrderClass(type) {
+      if (this.filters.type === type && this.filters.order === 'desc') {
         return 'this asc';
-      }else if(this.filters.type  === type && this.filters.order === 'asc'){
+      } else if (this.filters.type === type && this.filters.order === 'asc') {
         return 'this desc'
-      }else {
+      } else {
         return ''
       }
     },
   },
-  watch:{
-    category(){
+  watch: {
+    category() {
       this.get_course()
     }
   },
@@ -178,34 +178,38 @@ export default {
 </script>
 
 
-
 <style scoped>
-.course{
+.course {
   background: #f6f6f6;
 }
-.course .main{
+
+.course .main {
   width: 1100px;
   margin: 35px auto 0;
 }
-.course .condition{
+
+.course .condition {
   margin-bottom: 35px;
   padding: 25px 30px 25px 20px;
   background: #fff;
   border-radius: 4px;
   box-shadow: 0 2px 4px 0 #f0f0f0;
 }
-.course .cate-list{
+
+.course .cate-list {
   border-bottom: 1px solid #333;
-  border-bottom-color: rgba(51,51,51,.05);
+  border-bottom-color: rgba(51, 51, 51, .05);
   padding-bottom: 18px;
   margin-bottom: 17px;
 }
-.course .cate-list::after{
-  content:"";
+
+.course .cate-list::after {
+  content: "";
   display: block;
   clear: both;
 }
-.course .cate-list li{
+
+.course .cate-list li {
   float: left;
   font-size: 16px;
   padding: 6px 15px;
@@ -217,38 +221,45 @@ export default {
   color: #4a4a4a;
   border: 1px solid transparent; /* transparent 透明 */
 }
-.course .cate-list .title{
+
+.course .cate-list .title {
   color: #888;
   margin-left: 0;
   letter-spacing: .36px;
   padding: 0;
   line-height: 28px;
 }
-.course .cate-list .this{
+
+.course .cate-list .this {
   color: #ffc210;
-  border: 1px solid #ffc210!important;
+  border: 1px solid #ffc210 !important;
   border-radius: 30px;
 }
-.course .ordering::after{
-  content:"";
+
+.course .ordering::after {
+  content: "";
   display: block;
   clear: both;
 }
-.course .ordering ul{
+
+.course .ordering ul {
   float: left;
 }
-.course .ordering ul::after{
-  content:"";
+
+.course .ordering ul::after {
+  content: "";
   display: block;
   clear: both;
 }
-.course .ordering .condition-result{
+
+.course .ordering .condition-result {
   float: right;
   font-size: 14px;
   color: #9b9b9b;
   line-height: 28px;
 }
-.course .ordering ul li{
+
+.course .ordering ul li {
   float: left;
   padding: 6px 15px;
   line-height: 16px;
@@ -258,26 +269,29 @@ export default {
   cursor: pointer;
   color: #4a4a4a;
 }
-.course .ordering .title{
+
+.course .ordering .title {
   font-size: 16px;
   color: #888;
   letter-spacing: .36px;
   margin-left: 0;
-  padding:0;
+  padding: 0;
   line-height: 28px;
 }
-.course .ordering .this{
+
+.course .ordering .this {
   color: #ffc210;
 }
-.course .ordering .price{
+
+.course .ordering .price {
   position: relative;
 }
 
 
 .course .ordering .this::before,
-.course .ordering .this::after{
+.course .ordering .this::after {
   cursor: pointer;
-  content:"";
+  content: "";
   display: block;
   width: 0;
   height: 0;
@@ -285,88 +299,104 @@ export default {
   position: absolute;
   right: 0;
 }
-.course .ordering .this::before{
+
+.course .ordering .this::before {
   border-bottom: 5px solid #aaa;
   margin-bottom: 2px;
   top: 2px;
 }
-.course .ordering .this::after{
+
+.course .ordering .this::after {
   border-top: 5px solid #aaa;
   bottom: 2px;
 }
-.course .ordering .desc::after{
+
+.course .ordering .desc::after {
   border-top: 5px solid #f5a623;
 }
-.course .ordering .asc::before{
+
+.course .ordering .asc::before {
   border-bottom: 5px solid #f5a623;
 }
 
-.course .course-item:hover{
-  box-shadow: 4px 6px 16px rgba(0,0,0,.5);
+.course .course-item:hover {
+  box-shadow: 4px 6px 16px rgba(0, 0, 0, .5);
 }
-.course .course-item{
+
+.course .course-item {
   width: 1050px;
   background: #fff;
   padding: 20px 30px 20px 20px;
   margin-bottom: 35px;
   border-radius: 2px;
   cursor: pointer;
-  box-shadow: 2px 3px 16px rgba(0,0,0,.1);
+  box-shadow: 2px 3px 16px rgba(0, 0, 0, .1);
   /* css3.0 过渡动画 hover 事件操作 */
   transition: all .2s ease;
 }
-.course .course-item::after{
-  content:"";
+
+.course .course-item::after {
+  content: "";
   display: block;
   clear: both;
 }
+
 /* 顶级元素 父级元素  当前元素{} */
-.course .course-item .course-image{
+.course .course-item .course-image {
   float: left;
   width: 423px;
   height: 210px;
   margin-right: 30px;
 }
-.course .course-item .course-image img{
+
+.course .course-item .course-image img {
   width: 100%;
 }
-.course .course-item .course-info{
+
+.course .course-item .course-info {
   float: left;
   width: 596px;
 }
+
 .course-item .course-info h3 {
   font-size: 26px;
   color: #333;
   font-weight: normal;
   margin-bottom: 8px;
 }
-.course-item .course-info h3 span{
+
+.course-item .course-info h3 span {
   font-size: 14px;
   color: #9b9b9b;
   float: right;
   margin-top: 14px;
 }
-.course-item .course-info h3 span img{
+
+.course-item .course-info h3 span img {
   width: 11px;
   height: auto;
   margin-right: 7px;
 }
-.course-item .course-info .teather-info{
+
+.course-item .course-info .teather-info {
   font-size: 14px;
   color: #9b9b9b;
   margin-bottom: 14px;
   padding-bottom: 14px;
   border-bottom: 1px solid #333;
-  border-bottom-color: rgba(51,51,51,.05);
+  border-bottom-color: rgba(51, 51, 51, .05);
 }
-.course-item .course-info .teather-info span{
+
+.course-item .course-info .teather-info span {
   float: right;
 }
-.course-item .lesson-list::after{
-  content:"";
+
+.course-item .lesson-list::after {
+  content: "";
   display: block;
   clear: both;
 }
+
 .course-item .lesson-list li {
   float: left;
   width: 44%;
@@ -377,19 +407,22 @@ export default {
   /*background: url("/static/image/play-icon-gray.svg") no-repeat left 4px;*/
   margin-bottom: 15px;
 }
-.course-item .lesson-list li .lesson-title{
+
+.course-item .lesson-list li .lesson-title {
   /* 以下3句，文本内容过多，会自动隐藏，并显示省略符号 */
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  display:inline-block;
+  display: inline-block;
   max-width: 200px;
 }
-.course-item .lesson-list li:hover{
+
+.course-item .lesson-list li:hover {
   /*background-image: url("/static/image/play-icon-yellow.svg");*/
   color: #ffc210;
 }
-.course-item .lesson-list li .free{
+
+.course-item .lesson-list li .free {
   width: 34px;
   height: 20px;
   color: #fd7b4d;
@@ -401,16 +434,19 @@ export default {
   font-size: 13px;
   white-space: nowrap;
 }
-.course-item .lesson-list li:hover .free{
+
+.course-item .lesson-list li:hover .free {
   color: #ffc210;
   border-color: #ffc210;
 }
-.course-item .pay-box::after{
-  content:"";
+
+.course-item .pay-box::after {
+  content: "";
   display: block;
   clear: both;
 }
-.course-item .pay-box .discount-type{
+
+.course-item .pay-box .discount-type {
   padding: 6px 10px;
   font-size: 16px;
   color: #fff;
@@ -421,12 +457,14 @@ export default {
   border-radius: 10px 0 10px 0;
   float: left;
 }
-.course-item .pay-box .discount-price{
+
+.course-item .pay-box .discount-price {
   font-size: 24px;
   color: #fa6240;
   float: left;
 }
-.course-item .pay-box .original-price{
+
+.course-item .pay-box .original-price {
   text-decoration: line-through;
   font-size: 14px;
   color: #9b9b9b;
@@ -434,7 +472,8 @@ export default {
   float: left;
   margin-top: 10px;
 }
-.course-item .pay-box .buy-now{
+
+.course-item .pay-box .buy-now {
   width: 120px;
   height: 38px;
   background: transparent;
@@ -447,7 +486,8 @@ export default {
   text-align: center;
   line-height: 38px;
 }
-.course-item .pay-box .buy-now:hover{
+
+.course-item .pay-box .buy-now:hover {
   color: #fff;
   background: #ffc210;
   border: 1px solid #ffc210;

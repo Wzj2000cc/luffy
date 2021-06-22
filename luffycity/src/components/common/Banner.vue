@@ -1,4 +1,3 @@
-
 <template>
   <el-carousel id="bannerSwiper" style="height: 400px">
     <el-carousel-item v-for="(value,index) in banner_list" :key="value.id" style="height: 400px" indicator-position='outside'>
@@ -26,7 +25,7 @@ export default {
     get_banner_data(){
       this.$axios.get(`${this.$settings.Host}/home/banner/`).then((res)=>{
         // console.log(res.data())
-        this.banner_list=res.data;
+        this.banner_list = res.data;
       }).catch((error)=>{
         console.log(error);
       })

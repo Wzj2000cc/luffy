@@ -4,8 +4,7 @@ from luffyapi.utils.models import BaseModel
 
 class Banner(BaseModel):
     """
-    轮播广告图墨香
-
+    轮播广告图模型
     """
     title = models.CharField(max_length=500,verbose_name='广告标题')
     link = models.CharField(max_length=500,verbose_name='广告链接') # 点击跳转到指定页面

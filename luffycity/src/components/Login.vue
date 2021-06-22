@@ -109,8 +109,6 @@ export default {
           }
         })
       });
-
-
     },
 
     GetCapycha(){ // 点击登录，发送第一个get请求，获取我们的验证码标签
@@ -126,7 +124,6 @@ export default {
       });
     },
   },
-  // created() {}
 };
 </script>
 

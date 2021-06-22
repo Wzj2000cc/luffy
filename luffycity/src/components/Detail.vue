@@ -14,17 +14,22 @@
           </video-player>
         </div>
         <div class="wrap-right">
-          <h3 class="course-name">{{course.name}}</h3>
-          <p class="data">{{course.students}}人在学&nbsp;&nbsp;&nbsp;&nbsp;课程总时长：{{course.pub_lessons}}课时/{{course.lessons}}课时&nbsp;&nbsp;&nbsp;&nbsp;
-            难度：{{course.get_level_display}}</p>
-          <div class="sale-time">
-            <p class="sale-type">限时免费</p>
-            <p class="expire">距离结束：仅剩 01天 04小时 33分 <span class="second">08</span> 秒</p>
+          <h3 class="course-name">{{ course.name }}</h3>
+          <p class="data">
+            {{ course.students }}人在学&nbsp;&nbsp;&nbsp;&nbsp;课程总时长：{{ course.pub_lessons }}课时/{{ course.lessons }}课时&nbsp;&nbsp;&nbsp;&nbsp;
+            难度：{{ course.get_level_display }}</p>
+          <div class="sale-time" v-if="course.discount_name">
+            <p class="sale-type">{{ course.discount_name }}</p>
+            <p class="expire">距离结束：
+              仅剩 {{ course.active_time / 60 / 60 / 24 | format_time }}天
+              {{ course.active_time / 60 / 60 % 24 | format_time }}小时
+              {{ course.active_time / 60 % 60 | format_time }}分 <span class="second">
+                {{ course.active_time % 60 | format_time }}</span> 秒</p>
           </div>
           <p class="course-price">
-            <span>活动价</span>
-            <span class="discount">¥0.00</span>
-            <span class="original">¥{{course.price}}</span>
+            <span v-if="course.discount_name">活动价</span>
+            <span class="discount">¥{{ course.active_real_price }}</span>
+            <span class="original" v-if="course.discount_name">¥{{ course.price }}</span>
           </p>
           <div class="buy">
             <div class="buy-btn">
@@ -54,14 +59,18 @@
           <div class="tab-item" v-if="tabIndex==2">
             <div class="tab-item-title">
               <p class="chapter">课程章节</p>
-              <p class="chapter-length">共11章 147个课时</p>
+              <p class="chapter-length">共{{course.len_chapter}}章 更新至{{course.lessons}}课时</p>
             </div>
-            <div class="chapter-item" v-for="(value1,index1) in course.chapter_list" :key="value1.id" @click="hideShow(index1)">
-              <p class="chapter-title"><img src="@/assets/jiahao.png" alt="" v-show="status_dic!==index1"><img src="@/assets/jianhao.png" alt="" v-show="status_dic===index1">
-                {{value1.name}}</p>
-              <ul class="lesson-list" v-for="(value,index) in value1.lesson_list" :key="value.id" v-show="status_dic===index1">
+            <div class="chapter-item" v-for="(value1,index1) in course.chapter_list" :key="value1.id"
+                 @click="hideShow(index1)">
+              <p class="chapter-title"><img src="@/assets/jiahao.png" alt="" v-show="status_dic!==index1"><img
+                src="@/assets/jianhao.png" alt="" v-show="status_dic===index1">
+                {{ value1.name }}</p>
+              <ul class="lesson-list" v-for="(value,index) in value1.lesson_list" :key="value.id"
+                  v-show="status_dic===index1">
                 <li class="lesson-item">
-                  <p class="name"><span class="index">{{index1+1}}-{{value.lesson}}</span> {{value.name}}<span class="free">{{value.free_trail === true?`免费`:`付费`}}</span></p>
+                  <p class="name"><span class="index">{{ index1 + 1 }}-{{ value.lesson }}</span> {{ value.name }}<span
+                    class="free">{{ value.free_trail === true ? `免费` : `付费` }}</span></p>
                   <p class="time">07:30 <img src="@/assets/ziliao.png"></p>
                   <button class="try">立即试学</button>
                 </li>
@@ -76,18 +85,18 @@
           </div>
         </div>
         <div class="course-side">
-        <!--    老师详情框      -->
+          <!--    老师详情框      -->
           <div class="teacher-info">
             <h4 class="side-title"><span>授课老师</span></h4>
             <div class="teacher-content">
               <div class="cont1">
                 <img :src="course.teacher.image">
                 <div class="name">
-                  <p class="teacher-name">{{course.teacher.name}}</p>
-                  <p class="teacher-title">{{course.teacher.title}}</p>
+                  <p class="teacher-name">{{ course.teacher.name }}</p>
+                  <p class="teacher-title">{{ course.teacher.title }}</p>
                 </div>
               </div>
-              <p class="narrative">{{course.teacher.brief}}</p>
+              <p class="narrative">{{ course.teacher.brief }}</p>
             </div>
           </div>
         </div>
@@ -146,6 +155,7 @@ export default {
     this.get_course_detail();
   },
   methods: {
+
     // 获取当前课程的id（使用VUE中的$route.params.id方法）
     get_course_id() {
       let course_id = this.$route.params.id;
@@ -170,11 +180,20 @@ export default {
     get_course_detail() {
       this.$axios.get(`${this.$settings.Host}/course/detail/${this.course_id}/`)
         .then(res => {
-          console.log(res.data.course_img)
+          // console.log(res.data.course_img)
           this.course = res.data;
           // 后端获取的课程视频路径赋值到video值里
           this.playerOptions.sources[0].src=res.data.course_video;
           this.playerOptions.poster=res.data.course_img;
+          if (this.course.active_time > 0){
+            let t = setInterval(() =>{
+              if (this.course.active_time > 1){
+                this.course.active_time--;
+              }else {
+                clearInterval(t)
+              }
+            },1000)
+          }
           }
         ).catch(error => {
           console.log(error.response);
@@ -198,6 +217,7 @@ export default {
       alert("暂停一下，点击确定开始播放");
     },
 
+    // 用户添加购物车时判断该用户登录状态
     check_user_login() {
       let token = localStorage.user_token || sessionStorage.user_token;
       if (!token) {
@@ -212,6 +232,8 @@ export default {
       }
       return token
     },
+
+    // 点击将该课程添加到购物车
     AddCart() {
       //先要验证用户是否登录
       let token = this.check_user_login();
@@ -231,8 +253,18 @@ export default {
       }).catch(error => {
         console.log(error.response)
       })
-
     },
+  },
+
+  filters:{
+    // 课程活动倒计时计时器（判断数字小于10时数字前拼接0；例如：09,08,07）
+    format_time(val){
+      let timer = parseInt(val)
+      if (timer < 10){
+        timer = `0${timer}`;
+      }
+      return timer
+    }
   },
   // 挂载
   components: {

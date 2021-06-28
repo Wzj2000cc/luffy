@@ -20,7 +20,7 @@ class CartAPIView(ViewSet):
     print('go!')
 
     """ 用户身份认证"""
-    # permission_classes = [IsAuthenticated,]
+    permission_classes = [IsAuthenticated,]
 
     """post：detail课程详情页面将该课程加入购物车"""
 
@@ -57,8 +57,8 @@ class CartAPIView(ViewSet):
 
     def cart_list(self, request):
 
-        # user_id = request.user.id
-        user_id = 1
+        user_id = request.user.id
+        # user_id = 1
         redis_conn = get_redis_connection('cart')
 
         # 取出所有课程数据
@@ -94,6 +94,19 @@ class CartAPIView(ViewSet):
         user_id = request.user.id
         course_id = request.data.get('course_id')
         is_selected = request.data.get('is_selected')
+
+        redis_conn = get_redis_connection('cart')
+        keys = redis_conn.hkeys(f"cart_{user_id}")
+        if request.data.get('is_selected_all') == 2:
+            # 全勾选
+            for i in keys:
+                redis_conn.sadd(f"select_{user_id}", i.decode())
+            return Response({'msg': True}, status=status.HTTP_200_OK)
+        elif request.data.get('is_selected_all') == 1:
+            # 全不勾选
+            for i in keys:
+                redis_conn.srem(f"select_{user_id}", i.decode())
+            return Response({'msg': False}, status=status.HTTP_200_OK)
 
         try:
             course_models.Course.objects.get(pk=course_id)
@@ -167,3 +180,54 @@ class CartAPIView(ViewSet):
             return Response({'msg': "服务器内部错误"}, status=status.HTTP_400_BAD_REQUEST)
 
         return Response({'msg': "删除商品成功"}, status=status.HTTP_204_NO_CONTENT)
+
+
+
+    def get_selected_course(self,request):
+        user_id = request.user.id
+        redis_conn = get_redis_connection('cart')
+
+        # 取出所有课程数据
+        cart_data_dict = redis_conn.hgetall(f'cart_{user_id}')
+
+        # 获取所有选中的课程id
+        selected_course_data = redis_conn.smembers(f'select_{user_id}')
+        # print("selected_course_data--->", selected_course_data)  {b'2', b'1'}
+        data = []
+        real_total_price = 0  # 初始化自定义总价为0
+        origin_total_price = 0
+
+        for course_id_bytes,expire_bytes in cart_data_dict.items():
+            course_id = int(course_id_bytes.decode())
+            expire_id = int(expire_bytes.decode())
+
+            if course_id_bytes in selected_course_data:
+
+                try: # 获取被选中的课程对象加入到结算页面
+                    course_obj = course_models.Course.objects.get(pk=course_id,is_show=True, is_deleted=False)
+                except course_models.Course.DoesNotExist:
+                    continue
+
+                expire_text = '永久有效'
+                try:
+                    if expire_id > 0:
+                        expire_queryset = course_models.CourseExpire.objects.filter(pk=expire_id,is_show=True, is_deleted=False)
+                        if not expire_queryset:
+                            raise course_models.CourseExpire.DoesNotExist
+                        expire_text = expire_queryset[0].expire_text
+                except course_models.CourseExpire.DoesNotExist:
+                    continue
+                # 每个参加优惠策略后的课程价格
+                real_price = course_obj.real_price(int(expire_id))
+                data.append({
+                    'id': course_id,
+                    'course_img': contants.SERVER_HOST + course_obj.course_img.url,
+                    'name': course_obj.name,
+                    'origin_price': course_obj.price,
+                    'real_price': course_obj.real_price(int(expire_id)),
+                    'expire_text': expire_text,
+                    'discount_name':course_obj.discount_name,
+                })
+                real_total_price += float(real_price)  # 结算页面课程总价
+                origin_total_price += float(course_obj.price)
+        return Response({'course_list': data,'real_total_price': real_total_price,'origin_total_price':origin_total_price}, status=status.HTTP_200_OK)

@@ -16,17 +16,17 @@
         </div>
         <div class="cart_course_list">
           <CartItem v-for="(value,index) in cart_list" :key="value.id"
-                    :cart="value" :check="checked"
-                    @change_expire_handler="calc_price" @del_course="del_course(index)">
+                    :cart="value" :check="checked" :status="status"
+                    @change_expire_handler="calc_price" @del_course="del_course(index)" @select_ret="select_obj">
           </CartItem>
         </div>
         <div class="cart_footer_row">
-          <span class="cart_select"><label> <el-checkbox v-model="checked"></el-checkbox><span>全选</span></label></span>
+          <span class="cart_select" @click="select_all"><label> <el-checkbox v-model="checked"></el-checkbox><span>全选</span></label></span>
           <span class="cart_delete"><i class="el-icon-delete"></i>
             <el-button type="danger" @click="delete_select" style="height: 30px;line-height: 5px">删除选中</el-button>
             <!--            <span @click="delete_select">全部删除</span>-->
           </span>
-          <span class="goto_pay">去结算</span>
+          <router-link :to="'/order/'" class="goto_pay">去结算</router-link>
           <span class="cart_total">总计：¥{{ total_price.toFixed(2) }}</span>
         </div>
       </div>
@@ -39,11 +39,13 @@
 import Header from "./common/Header"
 import Footer from "./common/Footer"
 import CartItem from "./common/CartItem"
+import Add from "./common/Add";
 
 export default {
   name: "Cart",
   data() {
     return {
+      status: true,
       checked: true,
       cart_list: [],
       total_price: 0,
@@ -82,8 +84,18 @@ export default {
       }).then(res => {
         this.cart_list = res.data.msg;
         this.calc_price()
+
         let cart_len = res.data.course_len;
         this.$store.commit('add_cart', cart_len)
+
+        let that = this;
+        this.checked = true;
+        this.cart_list.some(function (val, i) {
+          if (!val.is_selected) {
+            that.checked = false;
+            return true
+          }
+        });
       }).catch(error => {
         console.log(error.response);
       })
@@ -98,6 +110,50 @@ export default {
         }
       })
       this.total_price = total
+    },
+
+    select_all() {
+      let token = this.check_user_login();
+      if (!token) {
+        return false
+      }
+      let status = 1;
+      this.cart_list.forEach(function (value, index) {
+        // console.log(value.is_selected);
+        if (!value.is_selected) {
+          status = 2;
+          // console.log('全选')
+          }
+      });
+      let that = this;
+      this.$axios.patch(`${this.$settings.Host}/cart/`,
+        {is_selected_all: status},
+        {
+          headers: {'Authorization': 'jwt ' + token}
+        }).then(res => {
+        this.status = false;
+        this.cart_list.forEach(function (value, index) {
+          value.is_selected = res.data.msg;
+        });
+        setTimeout(function () {
+          that.status = true;
+        }, 1000);
+        this.calc_price();
+      }).catch(error => {
+      })
+    },
+    select_obj() {
+      let that = this;
+
+      this.checked = true;
+      this.cart_list.some(function (val, i) {
+        if (!val.is_selected) {
+          that.checked = false;
+          console.log(that.checked)
+          return true
+        }
+      });
+      console.log(this.checked,2)
     },
 
     // 删除前端单个的cart_list中的课程信息
@@ -158,6 +214,7 @@ export default {
     Header,
     Footer,
     CartItem,
+    Add
   }
 }
 </script>

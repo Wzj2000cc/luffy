@@ -8,6 +8,7 @@ import Register from "../components/Register";
 import Account from "../components/Account";
 import Respwd from "../components/Respwd";
 import Course from "../components/Course";
+import Order from "../components/Order";
 
 Vue.use(Router)
 
@@ -51,5 +52,10 @@ export default new Router({
       path:'/respwd/',
       name:'respwd',
       component:Respwd
+    },
+    {
+      path:'/order/',
+      name:'order',
+      component:Order
     },
   ]})

@@ -38,6 +38,11 @@ urlpatterns = [
 
     path(r'cart/',include('cart.urls')),
 
+    path(r'order/',include('order.urls')),
+
     re_path(r'^ckeditor',include('ckeditor_uploader.urls')),
+
+    # 优惠券接口
+    path('coupon/', include("coupon.urls")),
 
 ]

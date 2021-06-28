@@ -49,7 +49,7 @@
               <span class="discount-type" v-if="value.discount_name">{{ value.discount_name }}</span>
               <span class="discount-price">￥{{ value.active_real_price }}元</span>
               <span class="original-price" v-if="value.discount_name">原价：{{ value.price }}元</span>
-              <span class="buy-now">立即购买</span>
+              <router-link class="buy-now" :to="'/course/detail/'+ value.id+'/'">立即购买</router-link>
             </div>
           </div>
         </div>

@@ -26,25 +26,22 @@ export default {
     return {
       checked: false,
       expire: "1个月有效",
-
+      ret:true,
     }
   },
-  props: ['cart','check'],
+  props: ['cart','status'],
   watch:{
-    "cart.is_selected":function (){
-      this.change_course_selected()
+    'status': function () {
+      this.ret = this.status
+    },
+    'cart.is_selected': function () {
+      if (this.ret) {
+        this.change_course_selected()
+      }
     },
     "cart.expire_id":function (){
       this.change_expire()
     },
-    // 监听父组件全选按钮的状态
-    'check':function (){
-      if (this.check===true){
-        this.cart.is_selected = true
-      }else {
-        this.cart.is_selected = false
-      }
-    }
 
 
   },
@@ -83,6 +80,8 @@ export default {
       }).then(res=>{
         this.$message.success(res.data.msg)
         this.$emit('change_expire_handler')
+        this.$emit('select_ret');
+
       }).catch(error=>{
         this.$message.error(error.response.msg);
         this.cart.is_selected = !this.cart.is_selected

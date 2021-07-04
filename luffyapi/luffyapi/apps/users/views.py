@@ -3,7 +3,7 @@ import re
 
 from django.core.mail import send_mail
 from rest_framework.views import APIView
-from rest_framework.generics import ListCreateAPIView,UpdateAPIView,RetrieveUpdateAPIView
+from rest_framework.generics import ListCreateAPIView,UpdateAPIView,RetrieveUpdateAPIView,ListAPIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.viewsets import ModelViewSet
@@ -11,12 +11,14 @@ from .geetest import GeetestLib
 from django.shortcuts import HttpResponse
 from django_redis import get_redis_connection
 from luffyapi.settings import contants
+from rest_framework.permissions import IsAuthenticated
 
 from luffyapi.settings import dev
 from . import models
-from .serializers import UserModelSerializer,AccountModelSerializer,UserRetrieveModelSerializer
+from .serializers import UserModelSerializer,AccountModelSerializer,UserRetrieveModelSerializer,UserOrderModelSerializer
 from .utils import get_user_by_account, get_user_by_email
 
+from order.models import Order
 
 # Create your views here.
 # 实例化日志对象
@@ -169,3 +171,13 @@ class Mailbox(APIView):
 class PasswordAPIView(RetrieveUpdateAPIView):
     queryset = models.User.objects.all()
     serializer_class = UserRetrieveModelSerializer
+
+
+class UserOrderAPIView(ListAPIView):
+    serializer_class = UserOrderModelSerializer
+
+    def get_queryset(self):
+        return Order.objects.filter(user_id=self.request.user.id)
+
+
+

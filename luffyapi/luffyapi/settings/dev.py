@@ -53,6 +53,9 @@ INSTALLED_APPS = [
     'users',
     'course',
     'cart',
+    'order',
+    'coupon',
+    'payments',
 ]
 
 MIDDLEWARE = [
@@ -305,3 +308,30 @@ CKEDITOR_CONFIGS = {
     },
 }
 CKEDITOR_UPLOAD_PATH = ''
+
+
+# 支付宝配置信息
+ALIPAY_CONFIG = {
+    # "gateway_url": "https://openapi.alipay.com/gateway.do?", # 真实支付宝网关地址
+    "gateway_url": "https://openapi.alipaydev.com/gateway.do?", # 沙箱支付宝网关地址
+    "appid": "2021000117680623",  #沙箱中那个应用id
+    "app_notify_url": None,  # 与下面的notify_url一样，这个我们写None就行
+    "app_private_key_path": os.path.join(BASE_DIR, "apps/payments/keys/app_private_key.pem"),
+
+    "alipay_public_key_path": os.path.join(BASE_DIR, "apps/payments/keys/alipay_public_key.pem"),
+    "sign_type": "RSA2",
+    "debug": False,
+    "verbose": False,  # 输出调试数据
+    "timeout": 15, # 请求超时时间
+    "return_url": "http://www.luffycity.cn:8080/payments/result", # 同步回调地址
+    "notify_url": "http://api.luffycity.cn:8001/payments/result", # 异步结果通知
+}
+
+
+# 保利威视频加密服务
+POLYV_CONFIG = {
+    "userId":"7617a871ce",
+    "secretkey":"uYLcgx2PR3",
+    # "tokenUrl":"http://api.polyv.net/v2/play-list/create",
+    "tokenUrl":"http://hls.videocc.net/service/v1/token",
+}

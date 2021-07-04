@@ -17,13 +17,10 @@ logger = logging.getLogger('django')
 
 
 class CartAPIView(ViewSet):
-    print('go!')
+    permission_classes = [IsAuthenticated,] # 用户登录身份验证
 
-    """ 用户身份认证"""
-    # permission_classes = [IsAuthenticated,]
 
     """post：detail课程详情页面将该课程加入购物车"""
-
     def add(self, request):
 
         course_id = request.data.get('course_id')
@@ -37,7 +34,7 @@ class CartAPIView(ViewSet):
         except course_models.Course.DoesNotExist:
             return Response({'msg': '商品不存在，请重新选择'}, status=status.HTTP_400_BAD_REQUEST)
 
-        # todo 判断此用户是否已经添加过本课程
+        # 判断此用户是否已经添加过本课程
         try:
             redis_conn = get_redis_connection('cart')
             pipe = redis_conn.pipeline()
@@ -53,12 +50,12 @@ class CartAPIView(ViewSet):
             return Response({'msg': '购物车添加失败'}, status=status.HTTP_507_INSUFFICIENT_STORAGE)
         return Response({'msg': '商品添加成功', 'course_len': course_len}, status=status.HTTP_201_CREATED)
 
-    """ get：获取购物车所有购买的课程数据"""
 
+    """ get：获取购物车所有购买的课程数据"""
     def cart_list(self, request):
 
-        # user_id = request.user.id
-        user_id = 1
+        user_id = request.user.id
+        # user_id = 1
         redis_conn = get_redis_connection('cart')
 
         # 取出所有课程数据
@@ -87,13 +84,26 @@ class CartAPIView(ViewSet):
             return Response({'msg': '课程获取失败'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         return Response({'msg': data, 'course_len': course_len}, status=status.HTTP_200_OK)
 
-    """ patch请求：购物车页面商品修改勾选状态"""
 
+    """ patch请求：购物车页面商品修改勾选状态"""
     def change_course_selected(self, request):
 
         user_id = request.user.id
         course_id = request.data.get('course_id')
         is_selected = request.data.get('is_selected')
+
+        redis_conn = get_redis_connection('cart')
+        keys = redis_conn.hkeys(f"cart_{user_id}")
+        if request.data.get('is_selected_all') == 2:
+            # 全勾选
+            for i in keys:
+                redis_conn.sadd(f"select_{user_id}", i.decode())
+            return Response({'msg': True}, status=status.HTTP_200_OK)
+        elif request.data.get('is_selected_all') == 1:
+            # 全不勾选
+            for i in keys:
+                redis_conn.srem(f"select_{user_id}", i.decode())
+            return Response({'msg': False}, status=status.HTTP_200_OK)
 
         try:
             course_models.Course.objects.get(pk=course_id)
@@ -107,8 +117,8 @@ class CartAPIView(ViewSet):
             redis_conn.srem(f'select_{user_id}', course_id)
         return Response({'msg': '勾选状态修改成功'}, status=status.HTTP_200_OK)
 
-    """ put请求：购物车页面修改课程有效期状态"""
 
+    """ put请求：购物车页面修改课程有效期状态"""
     def change_expire(self, request):
 
         user_id = request.user.id
@@ -116,7 +126,6 @@ class CartAPIView(ViewSet):
         expire_id = request.data.get('expire_id')
         try:
             course_obj = course_models.Course.objects.get(pk=course_id)
-
             # 永久有效的记录没有在course—_expire这个表中，我们先要做排除
             if expire_id > 0:
                 expire_obj = course_models.CourseExpire.objects.filter(is_show=True, is_deleted=False)
@@ -128,7 +137,6 @@ class CartAPIView(ViewSet):
             redis_conn.hset(f'cart_{user_id}', course_id, expire_id)
 
         except course_models.CourseExpire.DoesNotExist:
-
             return Response({'msg': '有效期无效！'}, status=status.HTTP_400_BAD_REQUEST)
 
         except Exception:
@@ -137,8 +145,8 @@ class CartAPIView(ViewSet):
         real_price = course_obj.real_price(expire_id)
         return Response({'msg': '切换有效期选项成功！', 'real_price': real_price}, status=status.HTTP_200_OK)
 
-    """ delete请求，删除购物车中课程数据 """
 
+    """ delete请求，删除购物车中课程数据 """
     def delete_course(self, request):
 
         user_id = request.user.id
@@ -167,3 +175,54 @@ class CartAPIView(ViewSet):
             return Response({'msg': "服务器内部错误"}, status=status.HTTP_400_BAD_REQUEST)
 
         return Response({'msg': "删除商品成功"}, status=status.HTTP_204_NO_CONTENT)
+
+
+    # 获取勾选的课程
+    def get_selected_course(self,request):
+        user_id = request.user.id
+        redis_conn = get_redis_connection('cart')
+
+        # 取出所有课程数据
+        cart_data_dict = redis_conn.hgetall(f'cart_{user_id}')
+
+        # 获取所有选中的课程id
+        selected_course_data = redis_conn.smembers(f'select_{user_id}')
+        # print("selected_course_data--->", selected_course_data)  {b'2', b'1'}
+        data = []
+        real_total_price = 0  # 初始化自定义总价为0
+        origin_total_price = 0
+
+        for course_id_bytes,expire_bytes in cart_data_dict.items():
+            course_id = int(course_id_bytes.decode())
+            expire_id = int(expire_bytes.decode())
+
+            if course_id_bytes in selected_course_data:
+
+                try: # 获取被选中的课程对象加入到结算页面
+                    course_obj = course_models.Course.objects.get(pk=course_id,is_show=True, is_deleted=False)
+                except course_models.Course.DoesNotExist:
+                    continue
+
+                expire_text = '永久有效'
+                try:
+                    if expire_id > 0:
+                        expire_queryset = course_models.CourseExpire.objects.filter(pk=expire_id,is_show=True, is_deleted=False)
+                        if not expire_queryset:
+                            raise course_models.CourseExpire.DoesNotExist
+                        expire_text = expire_queryset[0].expire_text
+                except course_models.CourseExpire.DoesNotExist:
+                    continue
+                # 每个参加优惠策略后的课程价格
+                real_price = course_obj.real_price(int(expire_id))
+                data.append({
+                    'id': course_id,
+                    'course_img': contants.SERVER_HOST + course_obj.course_img.url,
+                    'name': course_obj.name,
+                    'origin_price': course_obj.price,
+                    'real_price': course_obj.real_price(int(expire_id)),
+                    'expire_text': expire_text,
+                    'discount_name':course_obj.discount_name,
+                })
+                real_total_price += float(real_price)  # 结算页面课程总价
+                origin_total_price += float(course_obj.price)
+        return Response({'course_list': data,'real_total_price': real_total_price,'origin_total_price':origin_total_price}, status=status.HTTP_200_OK)

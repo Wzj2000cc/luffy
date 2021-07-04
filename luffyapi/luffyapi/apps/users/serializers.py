@@ -7,6 +7,10 @@ from . import models
 from .utils import get_user_by_account
 from django.contrib.auth.hashers import make_password
 
+from order.models import Order
+
+
+
 # 注册功能序列化器反序列化
 class UserModelSerializer(serializers.ModelSerializer):
 
@@ -111,9 +115,11 @@ class UserRetrieveModelSerializer(serializers.ModelSerializer):
         hash_password = make_password(password)
         models.User.objects.filter(id=instance.id).update(password=hash_password)
 
-        jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
-        jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
-        payload = jwt_payload_handler(user)
-        token = jwt_encode_handler(payload)
-        user.token = token
-        return user
+
+
+class UserOrderModelSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Order
+        fields = ['order_title', 'total_price', 'real_price', 'order_number', 'order_status', 'pay_type', 'credit',
+                  'coupon', 'order_desc', 'created_time', 'user', 'order_course']

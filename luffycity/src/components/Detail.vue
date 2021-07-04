@@ -72,7 +72,7 @@
                   <p class="name"><span class="index">{{ index1 + 1 }}-{{ value.lesson }}</span> {{ value.name }}<span
                     class="free">{{ value.free_trail === true ? `免费` : `付费` }}</span></p>
                   <p class="time">07:30 <img src="@/assets/ziliao.png"></p>
-                  <button class="try">立即试学</button>
+                  <button class="try"><router-link to="/course/player">立即试学</router-link></button>
                 </li>
               </ul>
             </div>

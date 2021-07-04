@@ -17,13 +17,10 @@ logger = logging.getLogger('django')
 
 
 class CartAPIView(ViewSet):
-    print('go!')
+    permission_classes = [IsAuthenticated,] # 用户登录身份验证
 
-    """ 用户身份认证"""
-    permission_classes = [IsAuthenticated,]
 
     """post：detail课程详情页面将该课程加入购物车"""
-
     def add(self, request):
 
         course_id = request.data.get('course_id')
@@ -37,7 +34,7 @@ class CartAPIView(ViewSet):
         except course_models.Course.DoesNotExist:
             return Response({'msg': '商品不存在，请重新选择'}, status=status.HTTP_400_BAD_REQUEST)
 
-        # todo 判断此用户是否已经添加过本课程
+        # 判断此用户是否已经添加过本课程
         try:
             redis_conn = get_redis_connection('cart')
             pipe = redis_conn.pipeline()
@@ -53,8 +50,8 @@ class CartAPIView(ViewSet):
             return Response({'msg': '购物车添加失败'}, status=status.HTTP_507_INSUFFICIENT_STORAGE)
         return Response({'msg': '商品添加成功', 'course_len': course_len}, status=status.HTTP_201_CREATED)
 
-    """ get：获取购物车所有购买的课程数据"""
 
+    """ get：获取购物车所有购买的课程数据"""
     def cart_list(self, request):
 
         user_id = request.user.id
@@ -87,8 +84,8 @@ class CartAPIView(ViewSet):
             return Response({'msg': '课程获取失败'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         return Response({'msg': data, 'course_len': course_len}, status=status.HTTP_200_OK)
 
-    """ patch请求：购物车页面商品修改勾选状态"""
 
+    """ patch请求：购物车页面商品修改勾选状态"""
     def change_course_selected(self, request):
 
         user_id = request.user.id
@@ -120,8 +117,8 @@ class CartAPIView(ViewSet):
             redis_conn.srem(f'select_{user_id}', course_id)
         return Response({'msg': '勾选状态修改成功'}, status=status.HTTP_200_OK)
 
-    """ put请求：购物车页面修改课程有效期状态"""
 
+    """ put请求：购物车页面修改课程有效期状态"""
     def change_expire(self, request):
 
         user_id = request.user.id
@@ -129,7 +126,6 @@ class CartAPIView(ViewSet):
         expire_id = request.data.get('expire_id')
         try:
             course_obj = course_models.Course.objects.get(pk=course_id)
-
             # 永久有效的记录没有在course—_expire这个表中，我们先要做排除
             if expire_id > 0:
                 expire_obj = course_models.CourseExpire.objects.filter(is_show=True, is_deleted=False)
@@ -141,7 +137,6 @@ class CartAPIView(ViewSet):
             redis_conn.hset(f'cart_{user_id}', course_id, expire_id)
 
         except course_models.CourseExpire.DoesNotExist:
-
             return Response({'msg': '有效期无效！'}, status=status.HTTP_400_BAD_REQUEST)
 
         except Exception:
@@ -150,8 +145,8 @@ class CartAPIView(ViewSet):
         real_price = course_obj.real_price(expire_id)
         return Response({'msg': '切换有效期选项成功！', 'real_price': real_price}, status=status.HTTP_200_OK)
 
-    """ delete请求，删除购物车中课程数据 """
 
+    """ delete请求，删除购物车中课程数据 """
     def delete_course(self, request):
 
         user_id = request.user.id
@@ -182,7 +177,7 @@ class CartAPIView(ViewSet):
         return Response({'msg': "删除商品成功"}, status=status.HTTP_204_NO_CONTENT)
 
 
-
+    # 获取勾选的课程
     def get_selected_course(self,request):
         user_id = request.user.id
         redis_conn = get_redis_connection('cart')

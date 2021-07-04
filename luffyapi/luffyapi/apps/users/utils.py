@@ -1,6 +1,7 @@
 from django.contrib.auth.backends import ModelBackend
 from django.db.models import Q
 from . import models
+from luffyapi.settings import contants
 
 # 登录判断账号是否存在
 def get_user_by_account(username):
@@ -29,7 +30,9 @@ def jwt_response_payload_handler(token, user=None, request=None):
     return {
         'token': token,
         'id': user.id,
-        'username': user.username
+        'username': user.username,
+        'credit_to_money':contants.CREDIT_MONEY,
+        'user_credit': user.credit
     }
 
 

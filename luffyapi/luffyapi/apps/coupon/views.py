@@ -7,11 +7,9 @@ from . import models,serializers
 
 # Create your views here.
 
+# 订单生成并写入数据库
 class UserCouponAPIView(ListAPIView):
-    # queryset = models.UserCoupon.objects.filter(is_show=True,
-    #                                             is_deleted=False,
-    #                                             is_use=False,
-    #                                             user_id = )
+
     permission_classes = [IsAuthenticated, ]
     serializer_class = serializers.UserCouponModelSerializer
 

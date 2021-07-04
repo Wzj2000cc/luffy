@@ -11,3 +11,9 @@ SMS_INTERVAL_TIME = 60
 
 
 SERVER_HOST = 'http://api.luffycity.cn:8001'
+
+# 积分和现金的兑换比例【兑换1元的积分数量】
+CREDIT_MONEY = 10
+
+# celery定时任务过期时间
+ORDER_TIMEOUT = 12 * 60 * 60

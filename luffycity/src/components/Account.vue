@@ -10,7 +10,6 @@
                 <div data-v-f06ef9a0>
                   <img alt="用户头像" class="new-img" data-v-f06ef9a0 v-for="i in user" :src="i">
                   <div class="camera-icon" style="display:none;" data-v-f06ef9a0>
-
                   </div>
                 </div>
               </dt>
@@ -19,7 +18,7 @@
 
                 </h4>
                 <p class="city" data-v-f06ef9a0>
-                  <span data-v-f06ef9a0>  中国</span>
+                  <span data-v-f06ef9a0> 中国</span>
                 </p>
                 <p class="signature" data-v-f06ef9a0>这个人很懒，什么有没有留下 ~
                 </p>
@@ -117,7 +116,7 @@
                       <span class="label-point" data-v-f06ef9a0>{{email}}</span>
                     </li>
                     <li class="base-info-item" data-v-f06ef9a0>
-                      <label class="label" data-v-f06ef9a0>收件地址</label>
+                      <label class="label" data-v-f06ef9a0>所在城市</label>
                       <span class="label-point" data-v-f06ef9a0>{{address}}</span>
                     </li>
                     <li class="base-info-item" data-v-f06ef9a0>
@@ -229,9 +228,10 @@ export default {
         'sex':this.sex,
         'password':this.password
       }).then(data=>{
-        console.log(this.education)
+        // console.log(this.education)
+        this.$message.success('修改信息成功！')
       }).catch(error => {
-        console.log(error)
+        this.$message.error('修改失败')
       })
     },
     change2(){

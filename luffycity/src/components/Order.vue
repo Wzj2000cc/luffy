@@ -2,11 +2,12 @@
   <div class="cart">
     <Header></Header>
     <div class="cart-info">
-      <h3 class="cart-top">购物车结算 <span>共1门课程</span></h3>
+      <h3 class="cart-top">购物车结算 <span>共{{course_list.length}}门课程</span></h3>
       <div class="cart-title">
         <el-row>
           <el-col :span="2">&nbsp;</el-col>
-          <el-col :span="10">课程</el-col>
+          <el-col :span="5">课程</el-col>
+          <el-col :span="5">名称</el-col>
           <el-col :span="8">有效期</el-col>
           <el-col :span="4">价格</el-col>
         </el-row>
@@ -31,7 +32,7 @@
               <a class="select-icon unselect" :class="use_coupon?'is_selected':''" @click="use_coupon=!use_coupon"><img class="sign is_show_select" src="../../static/image/12.png" alt=""></a>
               <span class="coupon-num">有{{coupon_list.length}}张可用</span>
             </div>
-            <p class="sum-price-wrap">商品总金额：<span class="sum-price">0.00元</span></p>
+            <p class="sum-price-wrap">商品总金额：<span class="sum-price">{{real_total_price}}元</span></p>
           </div>
           <div id="collapseOne" v-if="use_coupon">
             <ul class="coupon-list"  v-if="coupon_list.length > 0">
@@ -51,9 +52,11 @@
         <div class="credit-box">
           <label class="my_el_check_box"><el-checkbox class="my_el_checkbox" v-model="use_credit"></el-checkbox></label>
           <p class="discount-num1" v-if="!use_credit">使用我的贝里</p>
-          <p class="discount-num2" v-else><span>总积分：100，已抵扣 ￥0.00，本次花费0积分</span></p>
+          <p class="discount-num2" v-else><span>总积分：{{user_credit}}，
+            抵扣 <el-input-number @change="handleChange"  v-model="credit" :min="0" :max="max_credit()" label="请填写积分"></el-input-number>，
+            本次花费以后，剩余{{parseInt(user_credit-credit)}}积分</span></p>
         </div>
-        <p class="sun-coupon-num">优惠券抵扣：<span>0.00元</span></p>
+        <p class="sun-coupon-num">优惠券与积分共抵扣：<span>{{(real_total_price - real_total_price_show + credit / credit_to_money).toFixed(2)}}元</span></p>
       </div>
 
       <div class="calc">
@@ -65,9 +68,9 @@
             <span class="alipay wechat" v-if="pay_type===1"><img src="../../static/image/wechat2.jpg" alt=""></span>
             <span class="alipay wechat" v-else @click="pay_type=1"><img src="../../static/image/wechat.jpg" alt=""></span>
           </el-col>
-          <el-col :span="8" class="count">实付款： <span>¥{{real_total_price_show.toFixed(2)}}</span></el-col>
-          <el-col :span="4" class="cart-pay" v-if="pay_type===0"><span @click="pay">支付宝支付</span></el-col>
-          <el-col :span="4" class="cart-pay" v-else><span @click="pay">微信支付</span></el-col>
+          <el-col :span="8" class="count">实付款： <span>¥{{ (real_total_price_show - credit / credit_to_money).toFixed(2)}}</span></el-col>
+          <el-col :span="4" class="cart-pay" v-if="pay_type===0"><span @click="pay(pay_type)">支付宝支付</span></el-col>
+          <el-col :span="4" class="cart-pay" v-else><span @click="pay(pay_type)">微信支付</span></el-col>
         </el-row>
       </div>
     </div>
@@ -85,14 +88,16 @@ export default {
     return {
       course_list: [],
       real_total_price: 0, // 真实价格
-      real_total_price_show: 0,  //
-      origin_total_price: 0,
+      real_total_price_show: 0,  // 设置一个变量，优惠券后的价格
+      origin_total_price: 0,  // 商品未参加所有优惠的价格
       pay_type: 0, // 设置支付方式的切换状态
       credit:0,  // 积分
       coupon:0,  // 优惠券对象id
-      use_credit: false,  // 是否使用了优惠券
-      use_coupon: false,
-      coupon_list:[1]   // 优惠券对象列表
+      use_credit: false,  // 是否使用了积分
+      use_coupon: false,  // 是否使用优惠券
+      coupon_list:[1],   // 优惠券对象列表
+      user_credit: localStorage.user_credit || sessionStorage.user_credit,  // 获取当前用户积分
+      credit_to_money: localStorage.credit_to_money || sessionStorage.credit_to_money,  // 获取积分折合金额计算方式
     }
   },
   components: {
@@ -106,6 +111,7 @@ export default {
     this.get_coupon();
   },
   methods: {
+    // 登录认证
     check_user_login() {
       let token = localStorage.user_token || sessionStorage.user_token;
       if (!token) {
@@ -120,32 +126,26 @@ export default {
       }
       return token;
     },
-
-    // 获取订单页面所有选中的课后才能数据
+    // 订单页面获取购物车选中的所有课程数据
     get_course_list() {
       let token = this.check_user_login();
-
       // 将课程id发送到后端
       if (!token) {  // 如果token为false，AddCart函数不执行
         return false;
       }
       this.$axios.get(`${this.$settings.Host}/cart/order/`, {
-        headers: {
-          'Authorization': 'jwt ' + token,
-        }
-      })
-        .then(res => {
+        headers: {'Authorization': 'jwt ' + token,}
+      }).then(res => {
           this.course_list = res.data.course_list;
           this.real_total_price = res.data.real_total_price;
           this.real_total_price_show = this.real_total_price;
           this.origin_total_price = res.data.origin_total_price;
-        })
-        .catch(error =>{
+        }).catch(error =>{
           this.$message.error(error.response.data);
         })
     },
 
-    // 获取用户优惠券信息
+    // 获取当前用户优惠券信息
     get_coupon(){
       if (!this.token){
         this.$router.push('/login/')
@@ -153,9 +153,7 @@ export default {
       }
       // get请求获取当前用户的优惠券
       this.$axios.get(`${this.$settings.Host}/coupon/`, {
-        headers: {
-          "Authorization": "jwt " + this.token,
-        }
+        headers: {"Authorization": "jwt " + this.token,}
       }).then(response => {
         this.coupon_list = response.data
       }).catch(error => {
@@ -163,12 +161,12 @@ export default {
       })
     },
 
-    // 优惠券的状态显示
+    // 优惠券的选中状态显示
     selected_coupon(index) {
       let user_coupon = this.coupon_list[index];  // 当前的优惠券对象
       // 判断总价格是否满足优惠卷的使用
       if (this.real_total_price < user_coupon.coupon.condition) {
-        return 'disable';
+        return 'disable'
       }
 
       // 判断优惠券是否处于使用的时间范围内
@@ -205,7 +203,7 @@ export default {
       this.calc_real_price(index)
     },
 
-
+    // 计算使用全场优惠券之后的价格
     calc_real_price(index) {
       let ret = this.coupon_list[index];
       let calc_func = ret.coupon.sale;
@@ -215,49 +213,100 @@ export default {
       } else {
         this.real_total_price_show = this.real_total_price - d;
       }
+      // 解决先使用积分扣光总金额在使用优惠券总金额会显示负数的bug
+      if (this.real_total_price_show * this.credit_to_money < this.credit ) {
+        this.credit = this.max_credit()
+      }
     },
 
-    // 点击立即支付弹出收款码
-    pay(){
+    // 积分折合金额最大不能超过此订单金额
+    max_credit(){
+      let max_credit_to_money = this.user_credit / this.credit_to_money
+      let ret = 0
+      if(max_credit_to_money > this.real_total_price_show){
+        ret = parseInt(this.real_total_price_show * this.credit_to_money)
+      }else {
+        ret = parseInt(this.user_credit);
+      }
+      return ret
+    },
+
+    // 积分输入框变化就触发
+    handleChange(value){
+      // console.log(value)  value是当前用户选择使用积分数量
+      if(!value){
+        this.credit = 0
+      }
+    },
+
+    // 点击 微信/支付宝 支付弹出收款码
+    pay(type){
       let token = this.check_user_login();
 
       // 将课程id发送到后端
       if (!token) {  // 如果token为false，AddCart函数不执行
         return false;
       }
-      this.$axios.post(`${this.$settings.Host}/order/`, {
-        pay_type:this.pay_type,
-        credit:this.credit,
-        coupon:this.coupon,
-        },{
-        headers: {
-          'Authorization': 'jwt ' + token,
-        }}).then(res =>{
-        this.$message.success('订单生成成功，即将跳转到支付页面')
-      }).catch(error =>{
-        this.$message.error('订单生成失败')
-      })
-
-      this.$confirm(
-        '<strong> <img src="../../static/image/pay.jpg" alt="" style="width: 300px;height: 500px" v-if="pay_type===0">'+
-        '<p></p></strong>',
-
-        '请尽快完成支付哦亲！',  //弹窗标题
-        {
-          dangerouslyUseHTMLString: true,//true的时候message会被作为HTML片段处理
-          center:true, // 设置弹出框居中对齐
-          showCancelButton: true, //显示取消按钮
-          confirmButtonText: '确定',
-          cancelButtonText: '取消',
-          beforeClose: (action, instance, done) => {
-            if (action === 'confirm') { //点击确认
-              done();
-              window.history.go(-1)
-            }else{   //点击取消
-              done();
+      // 支付宝支付
+      if (type === 0){
+          // 弹框点击确定发送订单生成请求
+          this.$axios.post(`${this.$settings.Host}/order/`, {
+            pay_type:this.pay_type,
+            credit:this.credit,
+            coupon:this.coupon,
+          },{
+            headers: {
+              'Authorization': 'jwt ' + token,
+            }}).then(res =>{
+            this.$message.success('订单生成成功，即将跳转页面')
+            this.$axios.get(`${this.$settings.Host}/payments/alipay`,{
+              params:{
+                order_number:res.data.order_number
+              }
+            }).then(response => {
+              // 支付成功跳转到指定的页面
+              location.href = response.data
+            }).catch(error => {
+              console.log(error.response)
+            })
+            // window.history.go(-1) // 跳转到上一级页面
+          }).catch(error =>{
+            this.$message.error('订单生成失败')
+          })
+        }
+      // 微信支付
+      else {
+        this.$confirm(
+          '<strong> <img src="../../static/image/pay1.jpg" alt="" style="width: 350px;height: 480px">'+
+          '<p></p></strong>',
+          '请尽快完成支付哦亲！',  //弹窗标题
+          {
+            dangerouslyUseHTMLString: true,//true的时候message会被作为HTML片段处理
+            center:true, // 设置弹出框居中对齐
+            showCancelButton: true, //显示取消按钮
+            confirmButtonText: '确定',
+            cancelButtonText: '取消',
+            beforeClose: (action, instance, done) => {
+              if (action === 'confirm') { //点击确认
+                this.$axios.post(`${this.$settings.Host}/order/`, {
+                  pay_type:this.pay_type,
+                  credit:this.credit,
+                  coupon:this.coupon,
+                },{
+                  headers: {
+                    'Authorization': 'jwt ' + token,
+                  }}).then(res =>{
+                  this.$message.success('订单生成成功，即将跳转页面')
+                  window.history.go(-1)
+                }).catch(error =>{
+                  this.$message.error('订单生成失败')
+                })
+              }else{   //点击取消
+                done();
+              }
             }
-          }
-        });
+          });
+      }
     },
   }
 }

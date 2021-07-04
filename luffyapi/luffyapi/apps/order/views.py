@@ -1,6 +1,8 @@
 from django.shortcuts import render
-from rest_framework.generics import CreateAPIView
+from rest_framework.generics import CreateAPIView,ListAPIView,RetrieveAPIView
 from rest_framework.permissions import IsAuthenticated
+from rest_framework.views import APIView
+
 from .models import Order
 from .serializers import OrderModelSerializer
 
@@ -12,3 +14,10 @@ class OrderAPIView(CreateAPIView):
     queryset = Order.objects.filter(is_deleted=False, is_show=True)
     serializer_class = OrderModelSerializer
     permission_classes = [IsAuthenticated,]
+
+
+
+
+
+
+

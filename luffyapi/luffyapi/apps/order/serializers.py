@@ -6,6 +6,8 @@ from datetime import datetime
 from .models import Order,OrderDetail
 from course.models import Course,CourseExpire
 from coupon.models import UserCoupon
+from users.models import User,Credit
+from luffyapi.settings import contants
 
 
 class OrderModelSerializer(serializers.ModelSerializer):
@@ -32,8 +34,6 @@ class OrderModelSerializer(serializers.ModelSerializer):
         except:
             raise serializers.ValidationError('对不起，当前不支持选中的支付方式')
 
-        # todo 判断积分使用是否上限,总共200个，你发过来2000个，需要判断一下
-
         # 判断优惠券是否满足使用条件，是否存在，或者是否已经过期
         user_coupon_id = attrs.get('coupon')
 
@@ -41,9 +41,7 @@ class OrderModelSerializer(serializers.ModelSerializer):
         if user_coupon_id > 0:
             try:
                 # 判断用户有没有这个优惠券(并获取该优惠券)
-                user_coupon = UserCoupon.objects.get(is_show=True,
-                                                     is_deleted=False,
-                                                     is_use=False,
+                user_coupon = UserCoupon.objects.get(is_show=True,is_deleted=False,is_use=False,
                                                      user_id=self.context['request'].user.id,
                                                      pk = user_coupon_id)
             except:
@@ -55,6 +53,12 @@ class OrderModelSerializer(serializers.ModelSerializer):
             now_time = datetime.now().timestamp()
             if now_time < start_time or now_time > end_time:
                 raise serializers.ValidationError('当前优惠券已过期')
+
+        # 判断积分使用是否上限,总共200个，你发过来2000个，需要判断一下
+        user_credit = self.context['request'].user.credit
+        credit = attrs.get('credit',0)
+        if credit > user_credit:
+            raise serializers.ValidationError('对不起，当时使用积分超出上限')
 
         # todo 这里有可能订单生成了，但是他未支付，2个多月以后他才支付，但是这课程已经下架了
 
@@ -168,6 +172,28 @@ class OrderModelSerializer(serializers.ModelSerializer):
                     order.real_price *= sale_num
                 elif user_coupon.coupon.sale[0] == '-':
                     order.real_price -= sale_num
+                order.coupon = user_coupon_id
+
+
+            # 对总价加入积分折扣
+            if credit > 0:
+                # 判断积分折合成钱大于该订单总价就抛出异常
+                if credit > order.real_price * contants.CREDIT_MONEY:
+                    transaction.savepoint_rollback(save_id)
+                    raise serializers.ValidationError('订单生成失败，当前积分超过使用上限')
+                order.real_price =float('%.2f' %(order.real_price - credit / contants.CREDIT_MONEY))
+                order.credit = credit
+
+                # todo 积分流水表添加相应数据
+                if credit:
+                    credit_obj = Credit.objects.create(
+                        is_show=True,
+                        is_deleted=False,
+                        user_id = user_id,
+                        number = credit,
+                        opera = 2
+                    )
+
 
             order.save()
             pipe.execute()
@@ -176,3 +202,9 @@ class OrderModelSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError('对不起，订单生成失败')
         # 返回生成的模型
         return order
+
+
+
+
+
+

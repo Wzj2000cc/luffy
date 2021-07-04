@@ -20,6 +20,7 @@
                     @change_expire_handler="calc_price" @del_course="del_course(index)" @select_ret="select_obj">
           </CartItem>
         </div>
+        <Add></Add>
         <div class="cart_footer_row">
           <span class="cart_select" @click="select_all"><label> <el-checkbox v-model="checked"></el-checkbox><span>全选</span></label></span>
           <span class="cart_delete"><i class="el-icon-delete"></i>
@@ -112,6 +113,7 @@ export default {
       this.total_price = total
     },
 
+    // 全选
     select_all() {
       let token = this.check_user_login();
       if (!token) {

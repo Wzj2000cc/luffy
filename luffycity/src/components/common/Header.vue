@@ -70,7 +70,9 @@
                              alt="">
                       </li>
                       <li>
+                        <router-link to="/user/order">
                         我的订单
+                        </router-link>
                         <img src="https://hcdn1.luffycity.com/static/frontend/activity/back_1568185800.821227.svg"
                              alt="">
                       </li>

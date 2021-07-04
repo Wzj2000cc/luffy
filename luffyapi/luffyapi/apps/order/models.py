@@ -1,7 +1,8 @@
 from django.db import models
 from luffyapi.utils.models import BaseModel
 from users.models import User
-from course.models import Course
+from course.models import Course,CourseExpire
+from luffyapi.settings import contants
 
 
 class Order(BaseModel):
@@ -35,6 +36,45 @@ class Order(BaseModel):
 
     def __str__(self):
         return "%s,总价: %s,实付: %s" % (self.order_title, self.total_price, self.real_price)
+
+    # @property
+    # def order_course(self):
+    #     order_course_list =[]
+    #     order_course = self.order_courses.filter()
+    #     for i in order_course:
+    #         dict = {}
+    #         dict['name'] = i.course.name
+    #         if i.expire == 0:
+    #             dict['expire'] = '永久有效'
+    #         else:
+    #             dict['expire'] = CourseExpire.objects.filter(pk=i.expire).first().expire_text
+    #         dict['course_img'] = contants.SERVER_HOST + i.course.course_img.url
+    #         dict['price'] = i.price
+    #         dict['real_price'] = i.real_price
+    #         dict['discount_name'] = i.discount_name
+    #         order_course_list.append(dict)
+    #     return order_course_list
+
+    @property
+    def order_course(self):
+        order_course_list = self.order_courses.all()
+        data = []
+        for order_course in order_course_list:
+            if order_course.expire == 0:
+                expire = '永久有效'
+            else:
+                expire = CourseExpire.objects.get(pk=order_course.expire).expire_text
+
+            data.append({
+                'name':order_course.course.name,
+                'course_img' : contants.SERVER_HOST + order_course.course.course_img.url,
+                'expire':expire,
+                'origin_price':order_course.price,
+                'real_price':order_course.real_price,
+                'discount_name':order_course.discount_name,
+            })
+        return data
+
 
 
 class OrderDetail(BaseModel):

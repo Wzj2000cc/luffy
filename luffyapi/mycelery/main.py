@@ -15,4 +15,4 @@ app = Celery('luffy')
 app.config_from_object('mycelery.config')
 
 # 3. 自动发信任务
-app.autodiscover_tasks(['mycelery.sms','mycelery.email'])
+app.autodiscover_tasks(['mycelery.order',])

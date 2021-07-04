@@ -45,4 +45,7 @@ urlpatterns = [
     # 优惠券接口
     path('coupon/', include("coupon.urls")),
 
+    # 支付宝
+    path('payments/', include('payments.urls')),
+
 ]

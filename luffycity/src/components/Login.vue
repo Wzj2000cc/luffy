@@ -73,11 +73,15 @@ export default {
           localStorage.user_token = data.token;
           localStorage.user_id = data.id;
           localStorage.user_name = data.name;
+          localStorage.user_credit = data.user_credit;
+          localStorage.credit_to_money = data.credit_to_money;
         }else { // 临时保存
           localStorage.clear(); // 临时保存前先清空永久保存的数据
           sessionStorage.user_token = data.token;
           sessionStorage.user_id = data.id;
           sessionStorage.user_name = data.name;
+          sessionStorage.user_credit = data.user_credit;
+          sessionStorage.credit_to_money = data.credit_to_money;
         }
         this.$router.push('/'); // vue跳转页面功能
         this.$message({

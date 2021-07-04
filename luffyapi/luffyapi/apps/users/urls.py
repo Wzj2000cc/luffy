@@ -12,8 +12,11 @@ urlpatterns = [
     # 注册
     path(r'register/', views.UserAPIView.as_view()),
 
+    # 个人订单页面
+    path(r'order/', views.UserOrderAPIView.as_view()),
     # 个人资料
     re_path(r'account/(?P<pk>\d+)',views.AccountAPIView.as_view({'get':'retrieve','put':'update'})),
+
     # 注册页面校验手机号是否已经存在
     re_path(r'mobile/(?P<mobile>1[3-9]\d{9})/$', views.MobileAPIView.as_view()),
     # 注册容联云手机号验证
@@ -23,5 +26,4 @@ urlpatterns = [
     re_path(r'mailbox/(?P<email>.*)/$', views.Mailbox.as_view()),
     # 修改密码
     re_path(r'password/(?P<pk>\d+)/', views.PasswordAPIView.as_view()),
-
 ]
